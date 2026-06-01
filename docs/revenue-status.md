@@ -36,13 +36,14 @@ Status checked: 2026-06-02
 ### OOBE x Ace Data Cloud Bounty
 
 - Public repo: `https://github.com/kgy7247/proofdeskqa-oobe-agent`
+- Public walkthrough: `https://github.com/kgy7247/proofdeskqa-oobe-agent/blob/main/docs/demo-walkthrough.md`
 - Submission package created in `docs/oobe-submission-package.md`.
 - Local demo script: `npm run bounty:oobe:demo`.
 - Latest local demo output: `output/oobe-agent-run.json`.
 - Latest submission report: `output/oobe-submission-report.md`.
 - Readiness script: `npm run bounty:oobe:ready`.
 - Latest readiness output: `output/oobe-live-readiness.json`.
-- Current readiness: not ready for final bounty submission because live SAP/Ace/x402 credentials, public demo URL, and live transaction evidence are missing.
+- Current readiness: not ready for final bounty submission because live SAP/Ace/x402 credentials and live transaction evidence are missing.
 - SDK status: Synapse client SDK and Virtuals ACP SDK import successfully. Synapse SAP package ESM entry fails under this Node environment, but direct CJS fallback import succeeds and is detected by the readiness script.
 
 ## Latest Local Verification
@@ -53,7 +54,7 @@ Checked on 2026-06-02:
 - `npm run wallets:check`: user wallet `0.647780141 SOL`, Virtuals SOL wallet `0 SOL`.
 - `npm run bounty:oobe:demo`: passed; latest run ID is recorded in `output/oobe-agent-run.json`.
 - `npm run bounty:oobe:report`: passed.
-- `npm run bounty:oobe:ready`: `not_ready`; public repo URL is now present, but live SAP/Ace/x402 environment variables and public demo URL are still missing.
+- `npm run bounty:oobe:ready`: `not_ready`; public repo and walkthrough URLs are now present, but live SAP/Ace/x402 environment variables are still missing.
 - `npm run superteam:check`: passed API call, but returned stale agent-eligible listings.
 - `npm run android:probe`: adb is not installed or not on PATH, so emulator QA is prepared but not runnable on this machine yet.
 

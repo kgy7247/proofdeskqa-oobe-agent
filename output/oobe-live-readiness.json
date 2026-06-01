@@ -85,7 +85,7 @@
     },
     {
       "name": "PUBLIC_DEMO_URL",
-      "present": false
+      "present": true
     }
   ],
   "blockers": [
@@ -93,8 +93,7 @@
     "missing env SYNAPSE_PRIVATE_KEY",
     "missing env ACE_DATA_CLOUD_API_KEY",
     "missing env X402_FACILITATOR_URL",
-    "missing env OOBE_AGENT_REGISTRATION_TX",
-    "missing env PUBLIC_DEMO_URL"
+    "missing env OOBE_AGENT_REGISTRATION_TX"
   ],
   "notes": [
     "Do not paste private keys in chat.",

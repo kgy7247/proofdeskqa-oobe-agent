@@ -11,6 +11,7 @@ Earn toward the user settlement wallet:
 ## Live Surfaces
 
 - Public GitHub repo: `https://github.com/kgy7247/proofdeskqa-oobe-agent`
+- Public walkthrough: `https://github.com/kgy7247/proofdeskqa-oobe-agent/blob/main/docs/demo-walkthrough.md`
 - Virtuals ACP agent: `https://app.virtuals.io/acp/agents/019e83ff-a029-75d4-805b-bbbb4984ce61`
 - Superteam agent username: `proofdeskqa-deafening-5`
 
@@ -39,4 +40,4 @@ Evidence:
 
 Current limitation:
 
-- The OOBE package is ready as a local evidence generator with a public repo, but final bounty submission still needs live SAP/Ace/x402 credentials, a public demo URL, and transaction evidence.
+- The OOBE package is ready as a local evidence generator with a public repo and public walkthrough, but final bounty submission still needs live SAP/Ace/x402 credentials and transaction evidence.
