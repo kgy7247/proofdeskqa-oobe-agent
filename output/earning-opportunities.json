@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-06-01T17:30:08.658Z",
+  "generatedAt": "2026-06-01T17:33:16.289Z",
   "settlementWallet": "2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD",
   "sources": {
     "superteam": 23,
     "bountic": 1,
     "taskbounty": 5,
-    "github": 35
+    "clawfreelance": 1,
+    "github": 22
   },
   "ranked": [
     {
@@ -21,7 +22,7 @@
       "rewardUsd": null,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-13T18:29:59.999Z",
-      "deadlineHoursRemaining": 289,
+      "deadlineHoursRemaining": 288.9,
       "expired": false,
       "submissions": 247,
       "sponsor": "Yasdev",
@@ -43,7 +44,7 @@
       "rewardUsd": 1000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-18T21:59:59.999Z",
-      "deadlineHoursRemaining": 412.5,
+      "deadlineHoursRemaining": 412.4,
       "expired": false,
       "submissions": 0,
       "sponsor": "Superteam Poland",
@@ -65,7 +66,7 @@
       "rewardUsd": 110,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-02T18:29:59.999Z",
-      "deadlineHoursRemaining": 25,
+      "deadlineHoursRemaining": 24.9,
       "expired": false,
       "submissions": 273,
       "sponsor": "Kimia",
@@ -88,7 +89,7 @@
       "rewardUsd": 200,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-09T21:59:59.000Z",
-      "deadlineHoursRemaining": 196.5,
+      "deadlineHoursRemaining": 196.4,
       "expired": false,
       "submissions": 39,
       "sponsor": "Bento",
@@ -98,28 +99,6 @@
         "may_need_capital_or_onchain_action"
       ],
       "score": 27
-    },
-    {
-      "source": "github",
-      "title": "Implement Differential Reward Distribution for Reopened Issues",
-      "url": "https://github.com/devpool-directory/devpool-directory/issues/5012",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 600,
-      "rewardUsd": 600,
-      "labels": [
-        "Time: <1 Day",
-        "Priority: 2 (Medium)",
-        "Price: 600 USD"
-      ],
-      "comments": 14,
-      "updatedAt": "2026-06-01T16:45:03Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": 22
     },
     {
       "source": "superteam",
@@ -166,35 +145,6 @@
       "score": 21
     },
     {
-      "source": "github",
-      "title": "Job validation should reject inverted budget ranges",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2853",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 780,
-      "rewardUsd": 780,
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$780"
-      ],
-      "comments": 33,
-      "updatedAt": "2026-06-01T16:30:09Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "crowded_thread",
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": 17
-    },
-    {
       "source": "superteam",
       "title": "Developer Challenge: Blueshift – Assembly Timeout",
       "url": "https://superteam.fun/earn/listing/developer-challenge-blueshift-assembly-timeout",
@@ -207,7 +157,7 @@
       "rewardUsd": 750,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-21T22:59:59.000Z",
-      "deadlineHoursRemaining": 485.5,
+      "deadlineHoursRemaining": 485.4,
       "expired": false,
       "submissions": 1,
       "sponsor": "Superteam UK",
@@ -229,7 +179,7 @@
       "rewardUsd": 750,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-21T22:59:59.000Z",
-      "deadlineHoursRemaining": 485.5,
+      "deadlineHoursRemaining": 485.4,
       "expired": false,
       "submissions": 2,
       "sponsor": "Superteam UK",
@@ -251,7 +201,7 @@
       "rewardUsd": 750,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-21T22:59:59.000Z",
-      "deadlineHoursRemaining": 485.5,
+      "deadlineHoursRemaining": 485.4,
       "expired": false,
       "submissions": 1,
       "sponsor": "Superteam UK",
@@ -273,7 +223,7 @@
       "rewardUsd": 750,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-30T14:59:59.000Z",
-      "deadlineHoursRemaining": 693.5,
+      "deadlineHoursRemaining": 693.4,
       "expired": false,
       "submissions": 8,
       "sponsor": "Trepa",
@@ -281,55 +231,6 @@
         "human_only"
       ],
       "score": 16
-    },
-    {
-      "source": "github",
-      "title": "Natural Language Configuration Modifications: E2E Tests.",
-      "url": "https://github.com/ubiquity/ubiquibot/issues/889",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 150,
-      "rewardUsd": 150,
-      "labels": [
-        "Priority: 1 (Normal)",
-        "Time: <1 Day",
-        "Price: 150 USD"
-      ],
-      "comments": 4,
-      "updatedAt": "2024-08-25T18:22:25Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [],
-      "competitionPrs": 0,
-      "score": 16
-    },
-    {
-      "source": "github",
-      "title": "Low Handing Fruit Automation",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 700,
-      "rewardUsd": 700,
-      "labels": [
-        "bug",
-        "documentation",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$700"
-      ],
-      "comments": 444,
-      "updatedAt": "2026-06-01T17:27:46Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "crowded_thread",
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": 14
     },
     {
       "source": "superteam",
@@ -344,7 +245,7 @@
       "rewardUsd": 10000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-05T21:59:59.000Z",
-      "deadlineHoursRemaining": 100.5,
+      "deadlineHoursRemaining": 100.4,
       "expired": false,
       "submissions": 454,
       "sponsor": "Superteam Germany",
@@ -388,7 +289,7 @@
       "rewardUsd": 1300,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-03T20:59:59.999Z",
-      "deadlineHoursRemaining": 51.5,
+      "deadlineHoursRemaining": 51.4,
       "expired": false,
       "submissions": 17,
       "sponsor": "Superteam Ukraine",
@@ -410,7 +311,7 @@
       "rewardUsd": 2400,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-03T21:59:59.999Z",
-      "deadlineHoursRemaining": 52.5,
+      "deadlineHoursRemaining": 52.4,
       "expired": false,
       "submissions": 58,
       "sponsor": "OOBE Protocol",
@@ -432,7 +333,7 @@
       "rewardUsd": 1000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-08T06:59:59.000Z",
-      "deadlineHoursRemaining": 157.5,
+      "deadlineHoursRemaining": 157.4,
       "expired": false,
       "submissions": 33,
       "sponsor": "Totalis",
@@ -454,9 +355,9 @@
       "rewardUsd": 2000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-11T02:59:59.999Z",
-      "deadlineHoursRemaining": 225.5,
+      "deadlineHoursRemaining": 225.4,
       "expired": false,
-      "submissions": 55,
+      "submissions": 56,
       "sponsor": "Amulets.io",
       "blockers": [
         "human_only"
@@ -476,7 +377,7 @@
       "rewardUsd": 500,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-18T21:59:59.000Z",
-      "deadlineHoursRemaining": 412.5,
+      "deadlineHoursRemaining": 412.4,
       "expired": false,
       "submissions": 0,
       "sponsor": "Superteam Poland",
@@ -498,7 +399,7 @@
       "rewardUsd": 500,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-18T21:59:59.000Z",
-      "deadlineHoursRemaining": 412.5,
+      "deadlineHoursRemaining": 412.4,
       "expired": false,
       "submissions": 0,
       "sponsor": "Superteam Poland",
@@ -506,26 +407,6 @@
         "human_only"
       ],
       "score": 13
-    },
-    {
-      "source": "github",
-      "title": "Repair permit fee feature",
-      "url": "https://github.com/ubiquity-os-marketplace/text-conversation-rewards/issues/447",
-      "status": "OPEN",
-      "token": null,
-      "rewardAmount": 0,
-      "rewardUsd": 0,
-      "labels": [
-        "Time: <2 Hours",
-        "Price: 0 USD",
-        "Priority: 0 (Regression)"
-      ],
-      "comments": 5,
-      "updatedAt": "2026-01-29T07:33:44Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [],
-      "competitionPrs": 0,
-      "score": 10
     },
     {
       "source": "superteam",
@@ -540,7 +421,7 @@
       "rewardUsd": 2000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-10T20:59:59.000Z",
-      "deadlineHoursRemaining": 219.5,
+      "deadlineHoursRemaining": 219.4,
       "expired": false,
       "submissions": 4,
       "sponsor": "Gamified Yield Protocol",
@@ -549,42 +430,6 @@
         "may_need_capital_or_onchain_action"
       ],
       "score": 9
-    },
-    {
-      "source": "bountic",
-      "title": "skndash96/bountic#12",
-      "url": "https://github.com/skndash96/bountic/issues/12",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 10,
-      "rewardUsd": 10,
-      "agentAccess": "UNKNOWN",
-      "issue": "skndash96/bountic#12",
-      "updatedAt": "2026-04-28T17:12:34.824567+00:00",
-      "blockers": [],
-      "score": 8
-    },
-    {
-      "source": "github",
-      "title": "Retry and token limits",
-      "url": "https://github.com/ubiquity-os-marketplace/text-conversation-rewards/issues/330",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 225,
-      "rewardUsd": 225,
-      "labels": [
-        "Time: <2 Hours",
-        "Priority: 3 (High)",
-        "Price: 225 USD"
-      ],
-      "comments": 14,
-      "updatedAt": "2026-05-29T00:13:40Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": 7
     },
     {
       "source": "superteam",
@@ -599,7 +444,7 @@
       "rewardUsd": 800,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-06T21:59:59.000Z",
-      "deadlineHoursRemaining": 124.5,
+      "deadlineHoursRemaining": 124.4,
       "expired": false,
       "submissions": 2,
       "sponsor": "Superteam Netherlands",
@@ -608,208 +453,6 @@
         "needs_controlled_x_account"
       ],
       "score": 6
-    },
-    {
-      "source": "github",
-      "title": "Label Already Exists Error in `syncPriceLabelsToConfig()`",
-      "url": "https://github.com/ubiquity/ubiquibot/issues/912",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 200,
-      "rewardUsd": 200,
-      "labels": [
-        "Priority: 4 (Urgent)",
-        "Time: <2 Hours",
-        "Price: 200 USD"
-      ],
-      "comments": 0,
-      "updatedAt": "2024-01-29T10:07:42Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": 6
-    },
-    {
-      "source": "github",
-      "title": "Debt Edge Cases",
-      "url": "https://github.com/ubiquity/ubiquibot/issues/718",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 200,
-      "rewardUsd": 200,
-      "labels": [
-        "Time: <1 Day",
-        "Priority: 2 (Medium)",
-        "Price: 200 USD"
-      ],
-      "comments": 5,
-      "updatedAt": "2023-09-13T15:18:46Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": 6
-    },
-    {
-      "source": "github",
-      "title": "Overly Aggressive Follow Ups",
-      "url": "https://github.com/ubiquity/ubiquibot/issues/450",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 200,
-      "rewardUsd": 200,
-      "labels": [
-        "Time: <1 Day",
-        "Priority: 2 (Medium)",
-        "Price: 200 USD"
-      ],
-      "comments": 23,
-      "updatedAt": "2023-08-29T07:16:50Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "crowded_thread"
-      ],
-      "competitionPrs": 0,
-      "score": 6
-    },
-    {
-      "source": "github",
-      "title": "Centralizing our analytics for everything onto Supabase",
-      "url": "https://github.com/ubiquity/ubiquibot/issues/126",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 200,
-      "rewardUsd": 200,
-      "labels": [
-        "Priority: 1 (Normal)",
-        "Time: <1 Week",
-        "Price: 200 USD"
-      ],
-      "comments": 2,
-      "updatedAt": "2023-08-29T06:47:02Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": 6
-    },
-    {
-      "source": "github",
-      "title": "Cap All Rewards at Bounty Price",
-      "url": "https://github.com/ubiquity/ubiquibot/issues/717",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 150,
-      "rewardUsd": 150,
-      "labels": [
-        "Priority: 3 (High)",
-        "Time: <4 Hours",
-        "Price: 150 USD"
-      ],
-      "comments": 16,
-      "updatedAt": "2023-09-26T01:44:12Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": 4
-    },
-    {
-      "source": "github",
-      "title": "Validate reward generation behavior",
-      "url": "https://github.com/devpool-directory/devpool-directory/issues/5887",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 150,
-      "rewardUsd": 150,
-      "labels": [
-        "Priority: 2 (Medium)",
-        "Time: <2 Hours",
-        "Price: 150 USD"
-      ],
-      "comments": 13,
-      "updatedAt": "2026-06-01T16:44:58Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": 4
-    },
-    {
-      "source": "github",
-      "title": "Technical Poem Generation and Content Creation",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/76",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 430,
-      "rewardUsd": 430,
-      "labels": [
-        "good first issue",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$430"
-      ],
-      "comments": 190,
-      "updatedAt": "2026-06-01T16:53:38Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "crowded_thread",
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": 3
-    },
-    {
-      "source": "github",
-      "title": "March 2025 Adjustments",
-      "url": "https://github.com/ubiquity-os-marketplace/text-vector-embeddings/issues/92",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 75,
-      "rewardUsd": 75,
-      "labels": [
-        "Price: 75 USD",
-        "Time: <2 Hours",
-        "Priority: 1 (Normal)"
-      ],
-      "comments": 13,
-      "updatedAt": "2026-05-29T00:18:43Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": 1
-    },
-    {
-      "source": "github",
-      "title": "Remove AXIOS dependency",
-      "url": "https://github.com/ubiquity/ubiquibot/issues/913",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 200,
-      "rewardUsd": 200,
-      "labels": [
-        "Priority: 4 (Urgent)",
-        "Time: <2 Hours",
-        "Price: 200 USD"
-      ],
-      "comments": 13,
-      "updatedAt": "2024-09-18T17:13:12Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "competing_prs_exist"
-      ],
-      "competitionPrs": 1,
-      "score": -1
     },
     {
       "source": "superteam",
@@ -824,7 +467,7 @@
       "rewardUsd": 500,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-17T18:29:59.000Z",
-      "deadlineHoursRemaining": 385,
+      "deadlineHoursRemaining": 384.9,
       "expired": false,
       "submissions": 11,
       "sponsor": "Archer Exchange",
@@ -832,75 +475,6 @@
         "human_only"
       ],
       "score": -2
-    },
-    {
-      "source": "github",
-      "title": "Submit MCP Server: TaskBounty MCP Server",
-      "url": "https://github.com/JSONbored/awesome-claude/issues/356",
-      "status": "OPEN",
-      "token": null,
-      "rewardAmount": null,
-      "rewardUsd": null,
-      "labels": [
-        "community-mcp",
-        "content-submission",
-        "needs-review",
-        "needs-author-input",
-        "stale-submission",
-        "risk-medium"
-      ],
-      "comments": 10,
-      "updatedAt": "2026-06-01T16:48:17Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": -2
-    },
-    {
-      "source": "github",
-      "title": "Launch Another DoraHacks Bounty Post",
-      "url": "https://github.com/devpool-directory/devpool-directory/issues/5924",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 9,
-      "rewardUsd": 9,
-      "labels": [
-        "Priority: 1 (Normal)",
-        "Time: <15 Minutes",
-        "Price: 9 USD"
-      ],
-      "comments": 5,
-      "updatedAt": "2026-06-01T16:44:56Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": -2
-    },
-    {
-      "source": "github",
-      "title": "Natural Language Configuration Modifications: Set up `/config` command with OpenAI prompt",
-      "url": "https://github.com/ubiquity/ubiquibot/issues/887",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 150,
-      "rewardUsd": 150,
-      "labels": [
-        "Priority: 1 (Normal)",
-        "Time: <1 Day",
-        "Price: 150 USD"
-      ],
-      "comments": 4,
-      "updatedAt": "2023-11-20T00:47:05Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "competing_prs_exist"
-      ],
-      "competitionPrs": 1,
-      "score": -3
     },
     {
       "source": "superteam",
@@ -915,7 +489,7 @@
       "rewardUsd": 220,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-13T18:59:59.000Z",
-      "deadlineHoursRemaining": 289.5,
+      "deadlineHoursRemaining": 289.4,
       "expired": false,
       "submissions": 6,
       "sponsor": "SolPoint",
@@ -938,7 +512,7 @@
       "rewardUsd": 50,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-05-17T10:04:00+00:00",
-      "deadlineHoursRemaining": -367.4,
+      "deadlineHoursRemaining": -367.5,
       "expired": true,
       "submissions": 0,
       "publishedAt": "2026-05-03T07:48:14.67+00:00",
@@ -964,6 +538,8 @@
       "comments": 46,
       "updatedAt": "2026-05-30T15:43:40Z",
       "agentAccess": "UNKNOWN",
+      "locked": false,
+      "repoArchived": false,
       "blockers": [
         "crowded_thread",
         "competition_unknown"
@@ -973,8 +549,85 @@
     },
     {
       "source": "github",
-      "title": "Rouge `/help` Command Output",
-      "url": "https://github.com/ubiquity/ubiquibot/issues/244",
+      "title": "Natural Language Configuration Modifications: E2E Tests.",
+      "url": "https://github.com/ubiquity/ubiquibot/issues/889",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 150,
+      "rewardUsd": 150,
+      "labels": [
+        "Priority: 1 (Normal)",
+        "Time: <1 Day",
+        "Price: 150 USD"
+      ],
+      "comments": 4,
+      "updatedAt": "2024-08-25T18:22:25Z",
+      "agentAccess": "UNKNOWN",
+      "locked": true,
+      "repoArchived": true,
+      "blockers": [
+        "issue_locked",
+        "repo_archived"
+      ],
+      "competitionPrs": 0,
+      "score": -8
+    },
+    {
+      "source": "github",
+      "title": "Label Already Exists Error in `syncPriceLabelsToConfig()`",
+      "url": "https://github.com/ubiquity/ubiquibot/issues/912",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 200,
+      "rewardUsd": 200,
+      "labels": [
+        "Priority: 4 (Urgent)",
+        "Time: <2 Hours",
+        "Price: 200 USD"
+      ],
+      "comments": 0,
+      "updatedAt": "2024-01-29T10:07:42Z",
+      "agentAccess": "UNKNOWN",
+      "locked": true,
+      "repoArchived": true,
+      "blockers": [
+        "issue_locked",
+        "repo_archived",
+        "competition_unknown"
+      ],
+      "competitionPrs": null,
+      "score": -18
+    },
+    {
+      "source": "github",
+      "title": "Debt Edge Cases",
+      "url": "https://github.com/ubiquity/ubiquibot/issues/718",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 200,
+      "rewardUsd": 200,
+      "labels": [
+        "Time: <1 Day",
+        "Priority: 2 (Medium)",
+        "Price: 200 USD"
+      ],
+      "comments": 5,
+      "updatedAt": "2023-09-13T15:18:46Z",
+      "agentAccess": "UNKNOWN",
+      "locked": true,
+      "repoArchived": true,
+      "blockers": [
+        "issue_locked",
+        "repo_archived",
+        "competition_unknown"
+      ],
+      "competitionPrs": null,
+      "score": -18
+    },
+    {
+      "source": "github",
+      "title": "Overly Aggressive Follow Ups",
+      "url": "https://github.com/ubiquity/ubiquibot/issues/450",
       "status": "OPEN",
       "token": "USD",
       "rewardAmount": 200,
@@ -985,127 +638,69 @@
         "Price: 200 USD"
       ],
       "comments": 23,
-      "updatedAt": "2023-08-29T07:19:27Z",
+      "updatedAt": "2023-08-29T07:16:50Z",
       "agentAccess": "UNKNOWN",
+      "locked": true,
+      "repoArchived": true,
       "blockers": [
-        "crowded_thread",
-        "competition_unknown"
+        "issue_locked",
+        "repo_archived",
+        "crowded_thread"
       ],
-      "competitionPrs": null,
-      "score": -6
+      "competitionPrs": 0,
+      "score": -18
     },
     {
       "source": "github",
-      "title": "Conversation Rewards Hot Fixes",
-      "url": "https://github.com/ubiquity/ubiquibot/issues/673",
+      "title": "Centralizing our analytics for everything onto Supabase",
+      "url": "https://github.com/ubiquity/ubiquibot/issues/126",
       "status": "OPEN",
       "token": "USD",
       "rewardAmount": 200,
       "rewardUsd": 200,
       "labels": [
-        "Priority: 4 (Urgent)",
-        "Time: <4 Hours",
+        "Priority: 1 (Normal)",
+        "Time: <1 Week",
         "Price: 200 USD"
       ],
-      "comments": 12,
-      "updatedAt": "2023-09-10T09:20:23Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "competing_prs_exist"
-      ],
-      "competitionPrs": 2,
-      "score": -8
-    },
-    {
-      "source": "github",
-      "title": "Validate reward generation behavior",
-      "url": "https://github.com/ubiquity-os-marketplace/text-conversation-rewards/issues/455",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 150,
-      "rewardUsd": 150,
-      "labels": [
-        "Time: <2 Hours",
-        "Priority: 2 (Medium)",
-        "Price: 150 USD"
-      ],
-      "comments": 37,
-      "updatedAt": "2026-05-31T11:41:15Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "crowded_thread",
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": -8
-    },
-    {
-      "source": "github",
-      "title": "[ONBOARD: 2 RTC] Star + Review an Open PR",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2782",
-      "status": "OPEN",
-      "token": null,
-      "rewardAmount": null,
-      "rewardUsd": null,
-      "labels": [
-        "good first issue",
-        "bounty",
-        "onboarding"
-      ],
-      "comments": 1203,
-      "updatedAt": "2026-06-01T17:13:03Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "crowded_thread",
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": -14
-    },
-    {
-      "source": "github",
-      "title": "Write a tutorial or blog about Beacon (50 RTC Bounty)",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/160",
-      "status": "OPEN",
-      "token": null,
-      "rewardAmount": null,
-      "rewardUsd": null,
-      "labels": [
-        "documentation",
-        "bounty",
-        "community"
-      ],
-      "comments": 138,
-      "updatedAt": "2026-06-01T17:06:18Z",
-      "agentAccess": "UNKNOWN",
-      "blockers": [
-        "crowded_thread",
-        "competition_unknown"
-      ],
-      "competitionPrs": null,
-      "score": -14
-    },
-    {
-      "source": "github",
-      "title": "Natural Language Configuration Modifications: Figure out and make write access work for the repository's config.",
-      "url": "https://github.com/ubiquity/ubiquibot/issues/888",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 150,
-      "rewardUsd": 150,
-      "labels": [
-        "Priority: 1 (Normal)",
-        "Time: <1 Day",
-        "Price: 150 USD"
-      ],
       "comments": 2,
-      "updatedAt": "2023-11-18T09:37:16Z",
+      "updatedAt": "2023-08-29T06:47:02Z",
       "agentAccess": "UNKNOWN",
+      "locked": true,
+      "repoArchived": true,
       "blockers": [
-        "competing_prs_exist"
+        "issue_locked",
+        "repo_archived",
+        "competition_unknown"
       ],
-      "competitionPrs": 3,
-      "score": -17
+      "competitionPrs": null,
+      "score": -18
+    },
+    {
+      "source": "github",
+      "title": "Cap All Rewards at Bounty Price",
+      "url": "https://github.com/ubiquity/ubiquibot/issues/717",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 150,
+      "rewardUsd": 150,
+      "labels": [
+        "Priority: 3 (High)",
+        "Time: <4 Hours",
+        "Price: 150 USD"
+      ],
+      "comments": 16,
+      "updatedAt": "2023-09-26T01:44:12Z",
+      "agentAccess": "UNKNOWN",
+      "locked": true,
+      "repoArchived": true,
+      "blockers": [
+        "issue_locked",
+        "repo_archived",
+        "competition_unknown"
+      ],
+      "competitionPrs": null,
+      "score": -20
     },
     {
       "source": "taskbounty",
@@ -1121,7 +716,7 @@
       "rewardUsd": 10,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-01T17:47:57.339+00:00",
-      "deadlineHoursRemaining": 0.3,
+      "deadlineHoursRemaining": 0.2,
       "expired": false,
       "submissions": 1,
       "publishedAt": "2026-05-18T17:47:58.623+00:00",
@@ -1145,7 +740,7 @@
       "rewardUsd": 10,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-01T17:45:45.063+00:00",
-      "deadlineHoursRemaining": 0.3,
+      "deadlineHoursRemaining": 0.2,
       "expired": false,
       "submissions": 1,
       "publishedAt": "2026-05-18T17:45:46.38+00:00",
@@ -1156,27 +751,45 @@
       "score": -22
     },
     {
+      "source": "clawfreelance",
+      "title": "ClawFreelance open task API check failed",
+      "url": "https://www.clawfreelance.com/docs/api",
+      "status": "ERROR",
+      "token": null,
+      "rewardAmount": null,
+      "rewardUsd": null,
+      "agentAccess": "AGENT_ALLOWED",
+      "blockers": [
+        "clawfreelance_api_error: 500 Internal Server Error: ",
+        "clawfreelance_tasks_api_unavailable"
+      ],
+      "score": -22
+    },
+    {
       "source": "github",
-      "title": "AI: `/review`",
-      "url": "https://github.com/ubiquity/ubiquibot/issues/746",
+      "title": "Remove AXIOS dependency",
+      "url": "https://github.com/ubiquity/ubiquibot/issues/913",
       "status": "OPEN",
       "token": "USD",
-      "rewardAmount": 150,
-      "rewardUsd": 150,
+      "rewardAmount": 200,
+      "rewardUsd": 200,
       "labels": [
-        "Priority: 3 (High)",
-        "Time: <4 Hours",
-        "Price: 150 USD"
+        "Priority: 4 (Urgent)",
+        "Time: <2 Hours",
+        "Price: 200 USD"
       ],
-      "comments": 34,
-      "updatedAt": "2023-10-29T21:50:46Z",
+      "comments": 13,
+      "updatedAt": "2024-09-18T17:13:12Z",
       "agentAccess": "UNKNOWN",
+      "locked": true,
+      "repoArchived": true,
       "blockers": [
-        "crowded_thread",
+        "issue_locked",
+        "repo_archived",
         "competing_prs_exist"
       ],
-      "competitionPrs": 2,
-      "score": -22
+      "competitionPrs": 1,
+      "score": -25
     },
     {
       "source": "taskbounty",
@@ -1192,7 +805,7 @@
       "rewardUsd": 10,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-01T12:58:53.082+00:00",
-      "deadlineHoursRemaining": -4.5,
+      "deadlineHoursRemaining": -4.6,
       "expired": true,
       "submissions": 1,
       "publishedAt": "2026-05-18T12:58:55.28+00:00",
@@ -1230,27 +843,56 @@
     },
     {
       "source": "github",
-      "title": "Ask ChatGPT `/ask`",
-      "url": "https://github.com/ubiquity/ubiquibot/issues/291",
+      "title": "Natural Language Configuration Modifications: Set up `/config` command with OpenAI prompt",
+      "url": "https://github.com/ubiquity/ubiquibot/issues/887",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 150,
+      "rewardUsd": 150,
+      "labels": [
+        "Priority: 1 (Normal)",
+        "Time: <1 Day",
+        "Price: 150 USD"
+      ],
+      "comments": 4,
+      "updatedAt": "2023-11-20T00:47:05Z",
+      "agentAccess": "UNKNOWN",
+      "locked": true,
+      "repoArchived": true,
+      "blockers": [
+        "issue_locked",
+        "repo_archived",
+        "competing_prs_exist"
+      ],
+      "competitionPrs": 1,
+      "score": -27
+    },
+    {
+      "source": "github",
+      "title": "Rouge `/help` Command Output",
+      "url": "https://github.com/ubiquity/ubiquibot/issues/244",
       "status": "OPEN",
       "token": "USD",
       "rewardAmount": 200,
       "rewardUsd": 200,
       "labels": [
-        "Priority: 1 (Normal)",
-        "Time: <1 Week",
-        "Price: 200 USD",
-        "Permitted"
+        "Time: <1 Day",
+        "Priority: 2 (Medium)",
+        "Price: 200 USD"
       ],
-      "comments": 39,
-      "updatedAt": "2023-10-14T17:50:24Z",
+      "comments": 23,
+      "updatedAt": "2023-08-29T07:19:27Z",
       "agentAccess": "UNKNOWN",
+      "locked": true,
+      "repoArchived": true,
       "blockers": [
+        "issue_locked",
+        "repo_archived",
         "crowded_thread",
-        "competing_prs_exist"
+        "competition_unknown"
       ],
-      "competitionPrs": 3,
-      "score": -27
+      "competitionPrs": null,
+      "score": -30
     },
     {
       "source": "github",
@@ -1268,6 +910,8 @@
       "comments": 13,
       "updatedAt": "2026-05-25T04:13:57Z",
       "agentAccess": "UNKNOWN",
+      "locked": false,
+      "repoArchived": false,
       "blockers": [
         "competing_prs_exist"
       ],
@@ -1290,6 +934,8 @@
       "comments": 20,
       "updatedAt": "2026-05-24T12:48:19Z",
       "agentAccess": "UNKNOWN",
+      "locked": false,
+      "repoArchived": false,
       "blockers": [
         "competing_prs_exist"
       ],
@@ -1312,6 +958,8 @@
       "comments": 6,
       "updatedAt": "2026-05-20T05:05:00Z",
       "agentAccess": "UNKNOWN",
+      "locked": false,
+      "repoArchived": false,
       "blockers": [
         "competing_prs_exist"
       ],
@@ -1334,6 +982,8 @@
       "comments": 11,
       "updatedAt": "2026-05-15T00:40:10Z",
       "agentAccess": "UNKNOWN",
+      "locked": false,
+      "repoArchived": false,
       "blockers": [
         "competing_prs_exist"
       ],
@@ -1356,6 +1006,8 @@
       "comments": 5,
       "updatedAt": "2026-02-07T10:17:08Z",
       "agentAccess": "UNKNOWN",
+      "locked": false,
+      "repoArchived": false,
       "blockers": [
         "competing_prs_exist"
       ],
@@ -1364,25 +1016,29 @@
     },
     {
       "source": "github",
-      "title": "Formal Deduplication",
-      "url": "https://github.com/ubiquity-os-marketplace/text-vector-embeddings/issues/74",
+      "title": "Conversation Rewards Hot Fixes",
+      "url": "https://github.com/ubiquity/ubiquibot/issues/673",
       "status": "OPEN",
       "token": "USD",
-      "rewardAmount": 75,
-      "rewardUsd": 75,
+      "rewardAmount": 200,
+      "rewardUsd": 200,
       "labels": [
-        "Price: 75 USD",
-        "Time: <2 Hours",
-        "Priority: 1 (Normal)"
+        "Priority: 4 (Urgent)",
+        "Time: <4 Hours",
+        "Price: 200 USD"
       ],
-      "comments": 15,
-      "updatedAt": "2026-05-29T00:18:05Z",
+      "comments": 12,
+      "updatedAt": "2023-09-10T09:20:23Z",
       "agentAccess": "UNKNOWN",
+      "locked": true,
+      "repoArchived": true,
       "blockers": [
+        "issue_locked",
+        "repo_archived",
         "competing_prs_exist"
       ],
-      "competitionPrs": 10,
-      "score": -34
+      "competitionPrs": 2,
+      "score": -32
     },
     {
       "source": "superteam",
@@ -1397,9 +1053,9 @@
       "rewardUsd": 120,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-01T21:59:59.999Z",
-      "deadlineHoursRemaining": 4.5,
+      "deadlineHoursRemaining": 4.4,
       "expired": false,
-      "submissions": 69,
+      "submissions": 70,
       "sponsor": "Exploring Solana Series",
       "blockers": [
         "human_only",
@@ -1408,27 +1064,92 @@
       "score": -37
     },
     {
-      "source": "github",
-      "title": "Improve Task Assignment Limit Handling",
-      "url": "https://github.com/ubiquity-os-marketplace/command-start-stop/issues/106",
+      "source": "bountic",
+      "title": "skndash96/bountic#12",
+      "url": "https://github.com/skndash96/bountic/issues/12",
       "status": "OPEN",
       "token": "USD",
-      "rewardAmount": 75,
-      "rewardUsd": 75,
-      "labels": [
-        "Time: <2 Hours",
-        "Priority: 1 (Normal)",
-        "Price: 75 USD"
-      ],
-      "comments": 59,
-      "updatedAt": "2026-05-29T00:21:28Z",
+      "rewardAmount": 10,
+      "rewardUsd": 10,
       "agentAccess": "UNKNOWN",
+      "issue": "skndash96/bountic#12",
+      "updatedAt": "2026-04-28T17:12:34.824567+00:00",
+      "repoArchived": false,
       "blockers": [
+        "competing_prs_exist"
+      ],
+      "competitionPrs": 10,
+      "score": -39
+    },
+    {
+      "source": "github",
+      "title": "Natural Language Configuration Modifications: Figure out and make write access work for the repository's config.",
+      "url": "https://github.com/ubiquity/ubiquibot/issues/888",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 150,
+      "rewardUsd": 150,
+      "labels": [
+        "Priority: 1 (Normal)",
+        "Time: <1 Day",
+        "Price: 150 USD"
+      ],
+      "comments": 2,
+      "updatedAt": "2023-11-18T09:37:16Z",
+      "agentAccess": "UNKNOWN",
+      "locked": true,
+      "repoArchived": true,
+      "blockers": [
+        "issue_locked",
+        "repo_archived",
+        "competing_prs_exist"
+      ],
+      "competitionPrs": 3,
+      "score": -41
+    },
+    {
+      "source": "github",
+      "title": "AI: `/review`",
+      "url": "https://github.com/ubiquity/ubiquibot/issues/746",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 150,
+      "rewardUsd": 150,
+      "labels": [
+        "Priority: 3 (High)",
+        "Time: <4 Hours",
+        "Price: 150 USD"
+      ],
+      "comments": 34,
+      "updatedAt": "2023-10-29T21:50:46Z",
+      "agentAccess": "UNKNOWN",
+      "locked": true,
+      "repoArchived": true,
+      "blockers": [
+        "issue_locked",
+        "repo_archived",
         "crowded_thread",
         "competing_prs_exist"
       ],
-      "competitionPrs": 9,
+      "competitionPrs": 2,
       "score": -46
+    },
+    {
+      "source": "github",
+      "title": "GitHub query failed: org:ubiquity-os-marketplace state:open label:\"Time: <2 Hours\"",
+      "url": "https://github.com/search",
+      "status": "ERROR",
+      "token": null,
+      "rewardAmount": null,
+      "rewardUsd": null,
+      "labels": [],
+      "comments": null,
+      "updatedAt": "2026-06-01T17:33:16.289Z",
+      "agentAccess": "UNKNOWN",
+      "blockers": [
+        "github_api_error: 403 rate limit exceeded: {\"message\":\"API rate limit exceeded for 49.173.51.53. (But here's the good news: Authenticated "
+      ],
+      "score": -50
     },
     {
       "source": "github",
@@ -1440,12 +1161,57 @@
       "rewardUsd": null,
       "labels": [],
       "comments": null,
-      "updatedAt": "2026-06-01T17:30:08.658Z",
+      "updatedAt": "2026-06-01T17:33:16.289Z",
       "agentAccess": "UNKNOWN",
       "blockers": [
         "github_api_error: 403 rate limit exceeded: {\"message\":\"API rate limit exceeded for 49.173.51.53. (But here's the good news: Authenticated "
       ],
       "score": -50
+    },
+    {
+      "source": "github",
+      "title": "GitHub query failed: \"bounty:\" \"USDC\" state:open",
+      "url": "https://github.com/search",
+      "status": "ERROR",
+      "token": null,
+      "rewardAmount": null,
+      "rewardUsd": null,
+      "labels": [],
+      "comments": null,
+      "updatedAt": "2026-06-01T17:33:16.289Z",
+      "agentAccess": "UNKNOWN",
+      "blockers": [
+        "github_api_error: 403 rate limit exceeded: {\"message\":\"API rate limit exceeded for 49.173.51.53. (But here's the good news: Authenticated "
+      ],
+      "score": -50
+    },
+    {
+      "source": "github",
+      "title": "Ask ChatGPT `/ask`",
+      "url": "https://github.com/ubiquity/ubiquibot/issues/291",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 200,
+      "rewardUsd": 200,
+      "labels": [
+        "Priority: 1 (Normal)",
+        "Time: <1 Week",
+        "Price: 200 USD",
+        "Permitted"
+      ],
+      "comments": 39,
+      "updatedAt": "2023-10-14T17:50:24Z",
+      "agentAccess": "UNKNOWN",
+      "locked": true,
+      "repoArchived": true,
+      "blockers": [
+        "issue_locked",
+        "repo_archived",
+        "crowded_thread",
+        "competing_prs_exist"
+      ],
+      "competitionPrs": 3,
+      "score": -51
     }
   ]
 }

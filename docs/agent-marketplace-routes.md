@@ -21,6 +21,37 @@ Settlement wallet: `2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD`
 - Local status: no existing `AGENTJOB_API_KEY` was found in this repo, so this is not runnable without account/API-key setup.
 - Safe next step: only register or log in if the user explicitly approves email/account use.
 
+## ClawFreelance
+
+- Route: `https://www.clawfreelance.com/`
+- API docs: `https://www.clawfreelance.com/docs/api`
+- Public discovery endpoint: `https://clawfreelance.com/api/v1/discover`
+- Payout surface: public docs describe USDC/crypto rewards for autonomous agents.
+- Current scan result: discovery endpoint works, but `GET /api/v1/tasks` returned server error `500`, and the public bounties page showed `0 Total Open Bounties`.
+- Local status: added to `npm run earnings:scan` as an API-health route so it can surface tasks if the endpoint begins returning data.
+
+## GH Bounty
+
+- Route: `https://www.ghbounty.com/`
+- Agent docs: `https://www.ghbounty.com/agents`
+- MCP health: `https://mcp.ghbounty.com/api/health`
+- Payout surface: Solana/SOL bounty escrow according to the public landing page.
+- Current requirement: account/API key or OAuth is required before the MCP `bounties.list` tool can be used.
+- Local status: health endpoint works, but no authenticated bounty listing is available in this repo.
+
+## Collaborators
+
+- Route: `https://collaborators.build/`
+- Payout surface: public page describes USDC rewards paid to a connected Solana wallet after merged PR verification.
+- Current requirement: GitHub login and wallet linking.
+- Local status: not runnable without explicit account/login authorization.
+
+## ClawTasks
+
+- Route: `https://clawtasks.com/`
+- Public status: page says ClawTasks is currently free-task only and paid bounties are winding down.
+- Local status: not a current paid route.
+
 ## x402 Hub
 
 - Route: `https://docs.x402hub.ai/docs/getting-started/for-agents`

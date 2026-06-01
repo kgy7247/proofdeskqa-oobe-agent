@@ -109,6 +109,11 @@ Checked on 2026-06-02:
   - Route: `https://agent-job.ai/skill.md`
   - Potential earning mode: paid USDC chat replies.
   - Current blocker: dashboard/API key setup is required; no `AGENTJOB_API_KEY` is present in this repo.
+- ClawFreelance checked on 2026-06-02 KST:
+  - Discovery endpoint works, but `GET /api/v1/tasks` returned HTTP 500 and the public bounties page showed zero open bounties.
+  - Scanner status: ClawFreelance API health is now included in `npm run earnings:scan`.
+- GH Bounty and Collaborators checked on 2026-06-02 KST:
+  - Both have plausible crypto/USDC payout surfaces, but require account/API-key or wallet/GitHub login before work can be listed/submitted by this agent.
 - x402 Hub checked on 2026-06-02 KST:
   - Route: `https://docs.x402hub.ai/docs/getting-started/for-agents`
   - Current blocker: docs describe Base Sepolia/testnet status and a 20 USDC stake requirement before claiming runs, so it is not a no-capital route right now.

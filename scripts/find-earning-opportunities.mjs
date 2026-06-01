@@ -2,6 +2,9 @@ import { mkdir, writeFile } from "node:fs/promises";
 
 const settlementWallet = "2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD";
 const now = new Date();
+const knownArchivedRepos = new Set([
+  "ubiquity/ubiquibot"
+]);
 
 async function getJson(url, headers = {}) {
   const response = await fetch(url, {
@@ -24,6 +27,11 @@ function parseReward(labels = [], fallbackAmount = null) {
   return price ? Number(price[1]) : fallbackAmount;
 }
 
+function parseGithubIssueUrl(url) {
+  const match = url.match(/github\.com\/([^/]+)\/([^/]+)\/issues\/(\d+)/);
+  return match ? { owner: match[1], repo: match[2], number: match[3] } : null;
+}
+
 function deadlineStatus(deadline) {
   if (!deadline) return { expired: null, hoursRemaining: null };
   const end = new Date(deadline);
@@ -38,12 +46,15 @@ function classifyBlockers(item) {
   const text = `${item.title ?? ""} ${item.description ?? ""}`.toLowerCase();
   const blockers = [];
   if (item.agentAccess === "HUMAN_ONLY") blockers.push("human_only");
+  if (item.locked) blockers.push("issue_locked");
+  if (item.repoArchived) blockers.push("repo_archived");
   if (item.source === "taskbounty" && item.status !== "OPEN") blockers.push(`taskbounty_status_${String(item.status).toLowerCase()}`);
   if (item.source === "taskbounty" && item.expired) blockers.push("expired_deadline");
   if (item.source === "taskbounty" && item.submissions > 0) blockers.push("existing_submissions");
   if (item.source === "taskbounty" && item.status === "OPEN" && !process.env.TASKBOUNTY_API_KEY) {
     blockers.push("missing_taskbounty_api_key_for_access_and_submission");
   }
+  if (item.source === "clawfreelance" && item.status === "ERROR") blockers.push("clawfreelance_tasks_api_unavailable");
   if (item.type === "project") blockers.push("project_submission_needs_real_telegram_url");
   if (text.includes("twitter") || text.includes("x thread") || text.includes("qrt") || text.includes("quote")) {
     blockers.push("needs_controlled_x_account");
@@ -64,6 +75,7 @@ function scoreOpportunity(item) {
   let score = 0;
   if (item.source === "superteam") score += 15;
   if (item.source === "taskbounty") score += 12;
+  if (item.source === "clawfreelance") score += 12;
   if (item.source === "github") score += 10;
   if (item.source === "bountic") score += 8;
   if (item.agentAccess === "AGENT_ALLOWED" || item.agentAccess === "AGENT_ONLY") score += 40;
@@ -108,7 +120,7 @@ async function fetchSuperteam() {
 
 async function fetchBountic() {
   const data = await getJson("https://bountic.vercel.app/api/explore");
-  return (data.bounties ?? []).map((bounty) => {
+  const items = await Promise.all((data.bounties ?? []).map(async (bounty) => {
     const item = {
       source: "bountic",
       title: bounty.issue_id,
@@ -120,11 +132,17 @@ async function fetchBountic() {
       agentAccess: "UNKNOWN",
       issue: bounty.issue_id,
       updatedAt: bounty.updated_at,
+      repoArchived: knownArchivedRepos.has(`${bounty.owner}/${bounty.repo}`),
       blockers: bounty.status === "OPEN" ? [] : ["not_open"]
     };
+    item.competitionPrs = await countCompetingPrs(item.url);
+    if (item.competitionPrs === null) item.blockers.push("competition_unknown");
+    if (item.competitionPrs && item.competitionPrs > 0) item.blockers.push("competing_prs_exist");
+    item.blockers = [...new Set([...item.blockers, ...classifyBlockers(item)])];
     item.score = scoreOpportunity(item);
     return item;
-  }).filter((item) => item.status === "OPEN");
+  }));
+  return items.filter((item) => item.status === "OPEN");
 }
 
 async function fetchTaskBounty() {
@@ -157,6 +175,47 @@ async function fetchTaskBounty() {
   });
 }
 
+async function fetchClawFreelance() {
+  try {
+    const data = await getJson("https://clawfreelance.com/api/v1/tasks?status=open&limit=50");
+    const tasks = Array.isArray(data) ? data : data.tasks ?? data.data ?? [];
+    return tasks.map((task) => {
+      const rewardUsd = Number(task.rewardUsd ?? task.reward_usd ?? task.reward ?? task.amount ?? 0) || null;
+      const item = {
+        source: "clawfreelance",
+        title: task.title ?? task.name ?? task.id ?? "ClawFreelance task",
+        url: task.url ?? "https://www.clawfreelance.com/tasks",
+        taskId: task.id ?? null,
+        status: String(task.status ?? "OPEN").toUpperCase(),
+        token: task.currency?.toUpperCase?.() ?? "USDC",
+        rewardAmount: rewardUsd,
+        rewardUsd,
+        agentAccess: "AGENT_ALLOWED",
+        submissions: task.submissionCount ?? task.submissions ?? null,
+        blockers: []
+      };
+      item.blockers = classifyBlockers(item);
+      item.score = scoreOpportunity(item);
+      return item;
+    });
+  } catch (error) {
+    const item = {
+      source: "clawfreelance",
+      title: "ClawFreelance open task API check failed",
+      url: "https://www.clawfreelance.com/docs/api",
+      status: "ERROR",
+      token: null,
+      rewardAmount: null,
+      rewardUsd: null,
+      agentAccess: "AGENT_ALLOWED",
+      blockers: [`clawfreelance_api_error: ${error.message.slice(0, 120)}`]
+    };
+    item.blockers = [...new Set([...item.blockers, ...classifyBlockers(item)])];
+    item.score = scoreOpportunity(item);
+    return [item];
+  }
+}
+
 async function githubSearch(query, perPage = 10) {
   const url = `https://api.github.com/search/issues?q=${encodeURIComponent(query)}&per_page=${perPage}&sort=updated&order=desc`;
   const data = await getJson(url, {
@@ -166,10 +225,9 @@ async function githubSearch(query, perPage = 10) {
 }
 
 async function countCompetingPrs(issueUrl) {
-  const match = issueUrl.match(/github\.com\/([^/]+)\/([^/]+)\/issues\/(\d+)/);
-  if (!match) return null;
-  const [, owner, repo, number] = match;
-  const query = `repo:${owner}/${repo} ${number} type:pr`;
+  const parsed = parseGithubIssueUrl(issueUrl);
+  if (!parsed) return null;
+  const query = `repo:${parsed.owner}/${parsed.repo} ${parsed.number} type:pr`;
   try {
     const items = await githubSearch(query, 10);
     return items.length;
@@ -215,6 +273,7 @@ async function fetchGithubBounties() {
       seen.add(issue.html_url);
       const labels = (issue.labels ?? []).map((label) => label.name);
       const rewardUsd = parseReward(labels);
+      const parsed = parseGithubIssueUrl(issue.html_url);
       const item = {
         source: "github",
         title: issue.title,
@@ -227,8 +286,11 @@ async function fetchGithubBounties() {
         comments: issue.comments,
         updatedAt: issue.updated_at,
         agentAccess: "UNKNOWN",
+        locked: issue.locked,
+        repoArchived: parsed ? knownArchivedRepos.has(`${parsed.owner}/${parsed.repo}`) : false,
         blockers: []
       };
+      item.blockers = classifyBlockers(item);
       if ((issue.comments ?? 0) > 20) item.blockers.push("crowded_thread");
       item.competitionPrs = await countCompetingPrs(issue.html_url);
       if (item.competitionPrs === null) item.blockers.push("competition_unknown");
@@ -263,6 +325,7 @@ ${rows}
 - Kimia is agent-eligible and pays 110 USDC, but it requires a real X/Twitter thread and Telegram community step.
 - Bento is agent-eligible and pays from a 200 USDC pool, but useful submission needs private beta access and product testing.
 - TaskBounty exposes an agent-friendly public API, but the latest API scan returned no open tasks.
+- ClawFreelance exposes a public task API, but the latest open-task API probe failed server-side.
 - Bountic currently exposes only one small open bounty and it already has competing PRs.
 - Ubiquity/GitHub bounties can pay in USD equivalents, but the currently visible easy issues are either crowded or already have competing PRs.
 
@@ -275,14 +338,15 @@ This file is opportunity discovery, not revenue. Count progress only after a pay
 await mkdir("output", { recursive: true });
 await mkdir("docs", { recursive: true });
 
-const [superteam, bountic, taskbounty, github] = await Promise.all([
+const [superteam, bountic, taskbounty, clawfreelance, github] = await Promise.all([
   fetchSuperteam(),
   fetchBountic(),
   fetchTaskBounty(),
+  fetchClawFreelance(),
   fetchGithubBounties()
 ]);
 
-const ranked = [...superteam, ...bountic, ...taskbounty, ...github]
+const ranked = [...superteam, ...bountic, ...taskbounty, ...clawfreelance, ...github]
   .sort((a, b) => b.score - a.score);
 
 const report = {
@@ -292,6 +356,7 @@ const report = {
     superteam: superteam.length,
     bountic: bountic.length,
     taskbounty: taskbounty.length,
+    clawfreelance: clawfreelance.length,
     github: github.length
   },
   ranked
