@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-06-01T23:28:51.443Z",
+  "taskUrl": "https://app.gib.work/tasks/b7c2a3c9-c412-4613-9cfb-d8a5f54d14b7",
+  "prUrl": "https://github.com/gibwork/gibwork-website/pull/13",
+  "payoutWalletSolana": "2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD",
+  "uiStatus": "In Review",
+  "evidenceExcerpt": [
+    "  - paragraph: Get your submission reviewed first",
+    "  - paragraph: Subscribe to Plus to move your work ahead when creators review submissions.",
+    "  - heading \"Improve Gibwork Landing Page or Submit a GitHub Enhancement\" [level=1]",
+    "  - generic: $350.00",
+    "    - tab \"Your Submission\" [selected]:",
+    "      - generic: Your Submission",
+    "  - tabpanel \"Your Submission\":",
+    "      - generic: In Review",
+    "          - text: \"GitHub PR:\"",
+    "        - paragraph: \"- Added a new product highlights section covering mobile use, submission review flow, and wallet-native reward release.\""
+  ]
+}

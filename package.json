@@ -12,6 +12,7 @@
     "pyrimid:integration": "node scripts/pyrimid-integration-demo.mjs",
     "pyrimid:signals": "node scripts/pyrimid-signal-distributor.mjs",
     "bento:evidence": "node scripts/bento-sdk-evidence.mjs",
+    "gibwork:local-agent": "node scripts/gibwork-local-bounty-scout.mjs",
     "superteam:check": "powershell -ExecutionPolicy Bypass -File scripts/check-superteam-agent.ps1",
     "wallets:check": "powershell -ExecutionPolicy Bypass -File scripts/check-solana-wallets.ps1",
     "bounty:oobe:demo": "node scripts/oobe-agent-demo.mjs",

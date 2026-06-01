@@ -47,4 +47,4 @@ This directly addresses the task request for mobile app messaging, updated posit
 
 ## Current Revenue Status
 
-Not counted as earned revenue yet. The PR is open and the Gibwork task still needs logged-in platform submission and creator approval before any USDC is claimable.
+Not counted as earned revenue yet. The PR is open and the logged-in Gibwork submission now shows `In Review`; creator approval or claimable/received USDC/SOL is still required before this counts toward the 5 SOL target.

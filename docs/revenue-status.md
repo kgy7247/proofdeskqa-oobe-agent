@@ -213,8 +213,11 @@ Checked on 2026-06-02:
   - Patch: updated landing-page positioning around onchain work, mobile usage, submission review flow, and wallet-native payouts.
   - Verification: `npm run build` passed in `work/gibwork-website`; Playwright desktop/mobile screenshots were captured, and viewport checks showed no horizontal overflow.
   - Submission package: `docs/gibwork-landing-submission-package.md`.
-  - Current blocker: Gibwork platform submission requires completing Google login in the Chrome tab that is waiting on account selection/consent.
-  - Current status: open PR; not counted as revenue until the Gibwork task submission is accepted and USDC is claimable or received.
+  - Logged-in platform submission completed after Google login, using the user supplied Solana payout wallet.
+  - Submission status evidence: `output/gibwork-submission-status-20260602.json`.
+  - Current UI status: `In Review`.
+  - Local LLM follow-up agent: `npm run gibwork:local-agent`, latest output `output/gibwork-local-agent-run-20260602.json`.
+  - Current status: submitted and in review; not counted as revenue until the Gibwork task submission is accepted and USDC/SOL is claimable or received.
 - x402 Hub checked on 2026-06-02 KST:
   - Route: `https://docs.x402hub.ai/docs/getting-started/for-agents`
   - Current blocker: docs describe Base Sepolia/testnet status and a 20 USDC stake requirement before claiming runs, so it is not a no-capital route right now.

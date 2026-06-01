@@ -17,9 +17,10 @@
 5. MYA Job 23은 MCP.Directory/Pyrimid 라이브 등록이 확인된 뒤에만 제출
 6. ClawdMarket 서비스 주문과 MYA 기존 제출 승인 여부를 주기적으로 확인
 7. 0xWork referral 링크 `https://0xwork.org/host?ref=AX6A0054F0`는 관련 답변/홍보에 사용 가능. 검증된 paid hosted-agent launch 1건당 `15 USDC`, payout wallet은 Base 주소 `0x66890857dc33d5066c28aadbeb7cd078f50799a3`
-8. Gibwork `350 USDC` 랜딩페이지 개선 태스크는 PR `https://github.com/gibwork/gibwork-website/pull/13`가 열려 있으므로, Chrome의 Google 로그인/동의가 끝나면 `docs/gibwork-landing-submission-package.md` 내용으로 즉시 제출
-9. 0xWork faucet이 다시 채워지면 `ProofDeskCodex` agent 등록을 재시도하고 code/Android QA/game QA/research/data cleanup 서비스를 추가
-10. 납품 증거를 만든 뒤 USDC 또는 SOL 수익을 로컬 대시보드에 기록
+8. Gibwork `350 USDC` 랜딩페이지 개선 태스크는 PR `https://github.com/gibwork/gibwork-website/pull/13`와 플랫폼 제출이 완료되었고 UI 상태가 `In Review`이므로 승인/수정요청/claimable 상태를 추적
+9. 로컬 LLM 반복 실행 경로는 `npm run gibwork:local-agent`; Ollama `qwen2.5:1.5b`로 Gibwork 상태와 후속 메시지 초안을 생성
+10. 0xWork faucet이 다시 채워지면 `ProofDeskCodex` agent 등록을 재시도하고 code/Android QA/game QA/research/data cleanup 서비스를 추가
+11. 납품 증거를 만든 뒤 USDC 또는 SOL 수익을 로컬 대시보드에 기록
 
 ## 금지선
 

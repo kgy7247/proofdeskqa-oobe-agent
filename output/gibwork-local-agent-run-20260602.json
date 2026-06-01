@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-06-01T23:32:40.206Z",
+  "localModel": {
+    "provider": "ollama",
+    "model": "qwen2.5:1.5b",
+    "url": "http://127.0.0.1:11434"
+  },
+  "task": {
+    "id": "b7c2a3c9-c412-4613-9cfb-d8a5f54d14b7",
+    "title": "Improve Gibwork Landing Page or Submit a GitHub Enhancement",
+    "status": "CREATED",
+    "rewardToken": null,
+    "url": "https://app.gib.work/tasks/b7c2a3c9-c412-4613-9cfb-d8a5f54d14b7"
+  },
+  "taskError": null,
+  "prUrl": "https://github.com/gibwork/gibwork-website/pull/13",
+  "payoutWalletSolana": "2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD",
+  "submissionStatus": {
+    "checkedAt": "2026-06-01T23:28:51.443Z",
+    "taskUrl": "https://app.gib.work/tasks/b7c2a3c9-c412-4613-9cfb-d8a5f54d14b7",
+    "prUrl": "https://github.com/gibwork/gibwork-website/pull/13",
+    "payoutWalletSolana": "2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD",
+    "uiStatus": "In Review",
+    "evidenceExcerpt": [
+      "  - paragraph: Get your submission reviewed first",
+      "  - paragraph: Subscribe to Plus to move your work ahead when creators review submissions.",
+      "  - heading \"Improve Gibwork Landing Page or Submit a GitHub Enhancement\" [level=1]",
+      "  - generic: $350.00",
+      "    - tab \"Your Submission\" [selected]:",
+      "      - generic: Your Submission",
+      "  - tabpanel \"Your Submission\":",
+      "      - generic: In Review",
+      "          - text: \"GitHub PR:\"",
+      "        - paragraph: \"- Added a new product highlights section covering mobile use, submission review flow, and wallet-native reward release.\""
+    ]
+  },
+  "submissionPackage": "# Gibwork Landing Page Submission Package\n\nPrepared: 2026-06-02 KST\n\n## Task\n\n- Platform: Gibwork\n- Task URL: `https://app.gib.work/tasks/b7c2a3c9-c412-4613-9cfb-d8a5f54d14b7`\n- Title: `Improve Gibwork Landing Page or Submit a GitHub Enhancement`\n- Reward pool: `350 USDC`\n- Current task status when checked: open\n- Latest evidence file: `output/gibwork-task-status-20260602.json`\n\n## Submitted Work\n\n- Pull request: `https://github.com/gibwork/gibwork-website/pull/13`\n- Fork branch: `https://github.com/kgy7247/gibwork-website/tree/improve-current-product-landing`\n- Commit: `ce05167 Improve landing page product positioning`\n\n## Summary For Gibwork Submission\n\nI implemented a landing page enhancement that updates Gibwork's positioning around the current product experience:\n\n- Repositioned the hero as an onchain work marketplace for tasks, bounties, submissions, and wallet-native payouts.\n- Added a new product highlights section covering mobile use, submission review flow, and wallet-native reward release.\n- Refreshed the CTA and FAQ copy so creators and contributors can understand how to create work, use Gibwork from mobile, and get paid.\n\nThis directly addresses the task request for mobile app messaging, updated positioning, and overall landing-page UX improvements.\n\n## Verification\n\n- `npm run build`: passed in `work/gibwork-website`.\n- Playwright viewport QA:\n  - Desktop viewport: `1440x1200`, `scrollWidth=1440`\n  - Mobile viewport: `390x1400`, `scrollWidth=390`\n- DOM checks confirmed these updated strings render:\n  - `Onchain work marketplace`\n  - `Work from mobile`\n  - `Wallet-native payouts`\n  - `Open the Gibwork app`\n  - `Can I use Gibwork from mobile?`\n\n## Screenshots\n\n- Desktop: `output/gibwork-landing-desktop-playwright-20260602.png`\n- Mobile: `output/gibwork-landing-mobile-playwright-20260602.png`\n\n## Current Revenue Status\n\nNot counted as earned revenue yet. The PR is open and the logged-in Gibwork submission now shows `In Review`; creator approval or claimable/received USDC/SOL is still required before this counts toward the 5 SOL target.\n",
+  "agentDecision": "Current status: Gibwork UI shows the submission is In Review.\nNext action: wait for creator review and monitor the GitHub PR; do not resubmit unless a reviewer asks for changes.\nReviewer follow-up draft: Thanks for reviewing. The PR is ready, build-verified, and includes desktop/mobile viewport QA evidence. I can adjust the landing-page copy or section scope if you want a narrower pass.\nEvidence before counting revenue: Gibwork must show accepted/approved or funds claimable, or the payout wallet must show received USDC/SOL.\nLocal LLM draft generated: yes, model=qwen2.5:1.5b. Deterministic safety status above takes precedence.",
+  "localLlmRawResponseStored": false,
+  "localLlmError": null,
+  "mode": "ollama",
+  "revenueCounted": false,
+  "revenueCountReason": "Pending or in-review work is not earned until accepted or claimable."
+}
