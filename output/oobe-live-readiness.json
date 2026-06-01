@@ -1,0 +1,105 @@
+{
+  "status": "not_ready",
+  "checks": [
+    {
+      "name": "@oobe-protocol-labs/synapse-client-sdk",
+      "status": "ok",
+      "exportedSymbols": [
+        "ASSOCIATED_TOKEN_PROGRAM",
+        "AccountReader",
+        "AccountRole",
+        "AccountsClient",
+        "AssociatedToken",
+        "AsyncProviderError",
+        "COMPUTE_BUDGET_PROGRAM",
+        "CircularDependencyError",
+        "ComputeBudget",
+        "DEFAULT_RPC_CONFIG",
+        "DEFAULT_RPC_SUBSCRIPTIONS_CONFIG",
+        "DasClient"
+      ]
+    },
+    {
+      "name": "@oobe-protocol-labs/synapse-sap-sdk",
+      "status": "ok",
+      "importMode": "direct-cjs-fallback",
+      "esmError": "Directory import 'C:\\Users\\kgy72\\Documents\\Codex\\2026-06-02\\ai-2ngzynmbnjnvjsxupqle1j5ghdklzfahse1bkgdxbwwd\\node_modules\\@oobe-protocol-labs\\synapse-sap-sdk\\dist\\esm\\core' is not supported resolving ES modules imported from C:\\Users\\kgy72\\Documents\\Codex\\2026-06-02\\ai-2ngzynmbnjnvjsxupqle1j5ghdklzfahse1bkgdxbwwd\\node_modules\\@oobe-protocol-labs\\synapse-sap-sdk\\dist\\esm\\index.js",
+      "exportedSymbols": [
+        "AGENT_VERSION",
+        "AgentBuilder",
+        "AgentModule",
+        "AttestationModule",
+        "BaseModule",
+        "BillingInterval",
+        "CompressionType",
+        "DEFAULT_BATCH_SETTLE_COMPUTE_UNITS",
+        "DEFAULT_SETTLE_COMPUTE_UNITS",
+        "DEFAULT_SETTLE_PRIORITY_FEE",
+        "DEVNET_SAP_PROGRAM_ID",
+        "DelegatePermission"
+      ]
+    },
+    {
+      "name": "@virtuals-protocol/acp-node-v2",
+      "status": "ok",
+      "exportedSymbols": [
+        "ACP_ABI",
+        "ACP_CONTRACT_ADDRESSES",
+        "ACP_SELECTORS",
+        "ACP_SERVER_URL",
+        "ACP_TESTNET_SERVER_URL",
+        "AcpAgent",
+        "AcpApiClient",
+        "AcpHttpClient",
+        "AcpIntent",
+        "AcpJob",
+        "AcpJobStatus",
+        "AgentSort"
+      ]
+    }
+  ],
+  "env": [
+    {
+      "name": "SYNAPSE_RPC_URL",
+      "present": false
+    },
+    {
+      "name": "SYNAPSE_PRIVATE_KEY",
+      "present": false
+    },
+    {
+      "name": "ACE_DATA_CLOUD_API_KEY",
+      "present": false
+    },
+    {
+      "name": "X402_FACILITATOR_URL",
+      "present": false
+    },
+    {
+      "name": "OOBE_AGENT_REGISTRATION_TX",
+      "present": false
+    },
+    {
+      "name": "PUBLIC_REPO_URL",
+      "present": false
+    },
+    {
+      "name": "PUBLIC_DEMO_URL",
+      "present": false
+    }
+  ],
+  "blockers": [
+    "missing env SYNAPSE_RPC_URL",
+    "missing env SYNAPSE_PRIVATE_KEY",
+    "missing env ACE_DATA_CLOUD_API_KEY",
+    "missing env X402_FACILITATOR_URL",
+    "missing env OOBE_AGENT_REGISTRATION_TX",
+    "missing env PUBLIC_REPO_URL",
+    "missing env PUBLIC_DEMO_URL"
+  ],
+  "notes": [
+    "Do not paste private keys in chat.",
+    "Set secrets locally, then rerun this readiness check.",
+    "The local demo remains valid as an offline evidence generator, but bounty submission needs live SAP/Ace/x402 evidence."
+  ]
+}
