@@ -21,6 +21,12 @@ Checked: 2026-06-02 KST
   - Claim status remains `pending_claim`.
   - Service listings usage is now `5 / 5`; no free listing slots remain.
   - Agent-key `GET /api/trades` and `GET /api/listings?seller=me` returned `401 Unauthorized`, so completed trade revenue could not be verified through those endpoints.
+- Latest public profile status check:
+  - Evidence: `output/approval-status-check-20260602.json`.
+  - Profile status: `inactive`.
+  - Completed trades: `0`.
+  - Total trades: `0`.
+  - Total volume: `0`.
 
 ## Bids Placed
 

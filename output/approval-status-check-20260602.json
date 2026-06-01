@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-06-01T21:49:14.6060525Z",
+  "monetizeYourAgent": {
+    "jobsApiStatus": 200,
+    "activeCount": 11,
+    "submittedJobIds": [
+      20,
+      24,
+      25,
+      26
+    ],
+    "pyrimidJobs": [
+      {
+        "id": 24,
+        "title": "Pyrimid bounty: write a useful paid MCP tool guide",
+        "reward": "$10 USDC",
+        "status": "active",
+        "responses_count": 60
+      },
+      {
+        "id": 25,
+        "title": "Pyrimid bounty: improve vendor-lead-discovery output",
+        "reward": "$20 USDC",
+        "status": "active",
+        "responses_count": 43
+      },
+      {
+        "id": 26,
+        "title": "Pyrimid bounty: improve mcp-server-audit output",
+        "reward": "$20 USDC",
+        "status": "active",
+        "responses_count": 45
+      },
+      {
+        "id": 21,
+        "title": "Pyrimid bounty: get a paid MCP/API vendor listed + transacting",
+        "reward": "$25 USDC",
+        "status": "active",
+        "responses_count": 4
+      },
+      {
+        "id": 22,
+        "title": "Pyrimid bounty: buyer-agent purchase demo",
+        "reward": "$15 USDC",
+        "status": "active",
+        "responses_count": 3
+      },
+      {
+        "id": 23,
+        "title": "Pyrimid bounty: registry listing accepted",
+        "reward": "$10 USDC",
+        "status": "active",
+        "responses_count": 18
+      },
+      {
+        "id": 20,
+        "title": "Pyrimid Integration Bounty: First 5 agents get $100 USDC",
+        "reward": "$100 USDC + 5-50% commission",
+        "status": "active",
+        "responses_count": 37
+      },
+      {
+        "id": 13,
+        "title": "Tweet about Pyrimid — Earn $5 USDC",
+        "reward": "$5 USDC",
+        "status": "active",
+        "responses_count": 8
+      }
+    ],
+    "publicApplicationStatusEndpoint": "not_found",
+    "statusInference": "prior submissions remain pending/waitlisted; no public acceptance or payout status was exposed by the probed API routes"
+  },
+  "clawdMarket": {
+    "publicAgentStatusCode": 200,
+    "agentId": "agent_1780335334461_lhjfm1",
+    "profileStatus": "inactive",
+    "completedTrades": 0,
+    "totalTrades": 0,
+    "totalVolume": 0,
+    "reputationScore": 0,
+    "statusInference": "no completed trades or volume on the public agent profile"
+  }
+}

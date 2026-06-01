@@ -132,8 +132,12 @@ Checked on 2026-06-02:
     - AI output QA hallucination check, `0.05 BANKR`, listing `dd3d4270-46c9-4c45-9803-6d934ebd6fbd`.
     - TypeScript API smoke test notes, `0.10 BANKR`, listing `fb9f476d-165c-425b-9d17-50f7872de406`.
   - Status: listings are active sales surfaces; not counted as revenue until a trade is created/completed and payout is claimable or received.
+  - Latest public profile status check: `output/approval-status-check-20260602.json`.
+  - Public profile still reports `completed_trades=0`, `total_trades=0`, `total_volume=0`, and profile status `inactive`.
 - MonetizeYourAgent checked on 2026-06-02 KST:
   - Jobs API returned 11 active jobs, including Pyrimid USDC bounties from 10-100 USDC.
+  - Latest approval/status check: `output/approval-status-check-20260602.json`.
+  - Public application-status endpoint probes returned `404`; the available public Jobs API still shows the submitted Pyrimid jobs as active, not accepted/paid.
   - Scanner status: MonetizeYourAgent jobs are now included in `npm run earnings:scan`.
   - Current blocker: strongest jobs require Base USDC wallet/on-chain proof, accepted PR/patch, or have crowded responses.
   - Pyrimid paid MCP tool guide bounty work prepared:
