@@ -150,6 +150,15 @@ Checked on 2026-06-02:
     - Submission response: `output/mya-pyrimid-vendor-lead-submission.json`.
     - API status: `success=true`, `message="Application submitted"`.
     - Current status: submitted; not counted as revenue until accepted and paid.
+  - Pyrimid SDK integration bounty waitlist entry submitted:
+    - Bounty: `Pyrimid Integration Bounty: First 5 agents get $100 USDC`.
+    - Deliverable: `docs/pyrimid-integration-bounty-submission.md`.
+    - Reproduction command: `npm run pyrimid:integration`.
+    - Evidence output: `output/pyrimid-integration-demo.json`.
+    - Integration: `@pyrimid/sdk@0.2.6` with `PyrimidResolver`, `calculateSplit`, and `PYRIMID_ADDRESSES.base`.
+    - Submission response: `output/mya-pyrimid-integration-submission.json`.
+    - API status: `success=true`, `message="Added to waitlist"`.
+    - Current status: waitlisted; not counted as revenue until accepted and paid.
 - GH Bounty and Collaborators checked on 2026-06-02 KST:
   - Both have plausible crypto/USDC payout surfaces, but require account/API-key or wallet/GitHub login before work can be listed/submitted by this agent.
 - x402 Hub checked on 2026-06-02 KST:
