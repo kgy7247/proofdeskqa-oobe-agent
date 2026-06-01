@@ -1,0 +1,310 @@
+{
+  "generatedAt": "2026-06-01T17:48:52.382Z",
+  "integration": {
+    "sdk": "@pyrimid/sdk",
+    "path": "PyrimidResolver embedded resolver",
+    "affiliateId": "proofdeskqa-2ngzynm",
+    "catalogUrl": "https://pyrimid.ai/api/v1/catalog?source=pyrimid-seed",
+    "need": "mcp audit x402 agent tools",
+    "paymentNetwork": "Base",
+    "asset": "USDC",
+    "contracts": {
+      "REGISTRY": "0x34e22fc20D457095e2814CdFfad1e42980EEC389",
+      "CATALOG": "0xC935d6B73034dDDb97AD2a1BbD2106F34A977908",
+      "ROUTER": "0xc949AEa380D7b7984806143ddbfE519B03ABd68B",
+      "TREASURY": "0x74A512F4f3F64aD479dEc4554a12855Ce943E12C",
+      "USDC": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "ERC_8004": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+    }
+  },
+  "catalog": {
+    "productCount": 115,
+    "categories": [
+      "agent-discovery",
+      "ai-generation",
+      "blockchain",
+      "compute",
+      "data-feeds",
+      "devtools",
+      "growth-data",
+      "nlp",
+      "other",
+      "search-scraping",
+      "security",
+      "storage",
+      "trading",
+      "trading-data"
+    ]
+  },
+  "recommendations": [
+    {
+      "product_id": "mcp-server-audit",
+      "vendor_id": "pyrimid-growth",
+      "vendor_name": "Pyrimid Growth",
+      "category": "devtools",
+      "endpoint": "https://pyrimid.ai/api/v1/paid/mcp-server-audit?url=https://example.com/mcp",
+      "method": "GET",
+      "price_display": "$0.10",
+      "affiliate_bps": 4000,
+      "tags": [
+        "mcp",
+        "audit",
+        "monetization",
+        "paid-tools",
+        "x402",
+        "developer-tools"
+      ],
+      "split": {
+        "total_usdc": 100000,
+        "protocol_fee": 1000,
+        "affiliate_commission": 39600,
+        "vendor_share": 59400,
+        "affiliate_bps": 4000
+      },
+      "affiliate_commission_display_usdc": "0.039600"
+    },
+    {
+      "product_id": "mya-agent-enrichment",
+      "vendor_id": "mya-launchpad",
+      "vendor_name": "MYA Launchpad",
+      "category": "agent-discovery",
+      "endpoint": "https://pyrimid.ai/api/v1/paid/mya-agent-enrichment?agent=demo",
+      "method": "GET",
+      "price_display": "$0.10",
+      "affiliate_bps": 3000,
+      "tags": [
+        "mya",
+        "agent-directory",
+        "enrichment",
+        "monetization",
+        "x402",
+        "mcp"
+      ],
+      "split": {
+        "total_usdc": 100000,
+        "protocol_fee": 1000,
+        "affiliate_commission": 29700,
+        "vendor_share": 69300,
+        "affiliate_bps": 3000
+      },
+      "affiliate_commission_display_usdc": "0.029700"
+    },
+    {
+      "product_id": "agentzone-trust-search",
+      "vendor_id": "agentzone",
+      "vendor_name": "AgentZone",
+      "category": "agent-discovery",
+      "endpoint": "https://pyrimid.ai/api/v1/paid/agentzone-search?q=agent-commerce",
+      "method": "GET",
+      "price_display": "$0.05",
+      "affiliate_bps": 2500,
+      "tags": [
+        "agentzone",
+        "agent-search",
+        "erc8004",
+        "reputation",
+        "x402",
+        "base"
+      ],
+      "split": {
+        "total_usdc": 50000,
+        "protocol_fee": 500,
+        "affiliate_commission": 12375,
+        "vendor_share": 37125,
+        "affiliate_bps": 2500
+      },
+      "affiliate_commission_display_usdc": "0.012375"
+    },
+    {
+      "product_id": "pragma-signal-snapshot",
+      "vendor_id": "pragma-trading",
+      "vendor_name": "pragma.trading",
+      "category": "trading-data",
+      "endpoint": "https://pyrimid.ai/api/v1/paid/signals",
+      "method": "GET",
+      "price_display": "$0.25",
+      "affiliate_bps": 5000,
+      "tags": [
+        "btc",
+        "perps",
+        "signals",
+        "x402",
+        "base",
+        "agent-api"
+      ],
+      "split": {
+        "total_usdc": 250000,
+        "protocol_fee": 2500,
+        "affiliate_commission": 123750,
+        "vendor_share": 123750,
+        "affiliate_bps": 5000
+      },
+      "affiliate_commission_display_usdc": "0.123750"
+    },
+    {
+      "product_id": "mya-category-scout",
+      "vendor_id": "mya-launchpad",
+      "vendor_name": "MYA Launchpad",
+      "category": "agent-discovery",
+      "endpoint": "https://pyrimid.ai/api/v1/paid/mya-category-scout?category=developer-tools",
+      "method": "GET",
+      "price_display": "$0.05",
+      "affiliate_bps": 3000,
+      "tags": [
+        "mya",
+        "category-search",
+        "agent-scouting",
+        "buyer-agent",
+        "x402"
+      ],
+      "split": {
+        "total_usdc": 50000,
+        "protocol_fee": 500,
+        "affiliate_commission": 14850,
+        "vendor_share": 34650,
+        "affiliate_bps": 3000
+      },
+      "affiliate_commission_display_usdc": "0.014850"
+    }
+  ],
+  "affiliateStats": {
+    "protocol": {
+      "total_volume_usdc": 2670000,
+      "total_volume_display": "$2.67",
+      "total_transactions": 29,
+      "total_affiliates": 3,
+      "total_vendors": 4,
+      "total_products_onchain": 16,
+      "total_products_indexed": 115,
+      "treasury_balance_usdc": 26700,
+      "treasury_balance_display": "$0.0267",
+      "total_affiliate_payouts_usdc": 222750,
+      "total_protocol_fees_usdc": 26700
+    },
+    "catalog": {
+      "total_products": 115,
+      "categories": {
+        "agent-discovery": 3,
+        "trading-data": 1,
+        "growth-data": 1,
+        "devtools": 2,
+        "security": 1,
+        "trading": 3,
+        "other": 75,
+        "storage": 2,
+        "ai-generation": 2,
+        "nlp": 4,
+        "data-feeds": 13,
+        "blockchain": 1,
+        "search-scraping": 6,
+        "compute": 1
+      },
+      "sources": {
+        "pyrimid-seed": 7,
+        "onchain": 16,
+        "bazaar": 92
+      }
+    },
+    "recent_transactions": [
+      {
+        "total_usdc": 100000,
+        "total_display": "$0.1000",
+        "platform_fee": 1000,
+        "affiliate_commission": 0,
+        "vendor_share": 99000,
+        "timestamp": "2026-05-21T16:04:33.000Z",
+        "tx_hash": "0x59b76cbab1a899b80db30fb996a6e20d3aabf13b788c7207c16006c44cfa49c1"
+      },
+      {
+        "total_usdc": 50000,
+        "total_display": "$0.0500",
+        "platform_fee": 500,
+        "affiliate_commission": 0,
+        "vendor_share": 49500,
+        "timestamp": "2026-05-21T16:04:23.000Z",
+        "tx_hash": "0x7c7f45b52ef6f329649ea840063130ef41374731999e60f26127662faaa7f922"
+      },
+      {
+        "total_usdc": 50000,
+        "total_display": "$0.0500",
+        "platform_fee": 500,
+        "affiliate_commission": 0,
+        "vendor_share": 49500,
+        "timestamp": "2026-05-20T15:56:23.000Z",
+        "tx_hash": "0x043cac0d17bfbd8f5b9b50a540a367a84da5f6091610441cd4de5f36a0d10dcb"
+      },
+      {
+        "total_usdc": 70000,
+        "total_display": "$0.0700",
+        "platform_fee": 700,
+        "affiliate_commission": 0,
+        "vendor_share": 69300,
+        "timestamp": "2026-05-19T17:06:17.000Z",
+        "tx_hash": "0x5017740af3f904cf788b104e2242f00a11e3155b76576f6ff205b342e58a0fc3"
+      },
+      {
+        "total_usdc": 50000,
+        "total_display": "$0.0500",
+        "platform_fee": 500,
+        "affiliate_commission": 0,
+        "vendor_share": 49500,
+        "timestamp": "2026-05-19T17:06:11.000Z",
+        "tx_hash": "0x4b8b61a446da67ae8f51124de200d08d035657e48c3e9b5d3b7706f94047c254"
+      },
+      {
+        "total_usdc": 100000,
+        "total_display": "$0.1000",
+        "platform_fee": 1000,
+        "affiliate_commission": 0,
+        "vendor_share": 99000,
+        "timestamp": "2026-05-19T17:04:05.000Z",
+        "tx_hash": "0x84fd189af175355a28ebe08d47bd7027a85714fa3cab89324ad6eabee7e7d5a1"
+      },
+      {
+        "total_usdc": 50000,
+        "total_display": "$0.0500",
+        "platform_fee": 500,
+        "affiliate_commission": 0,
+        "vendor_share": 49500,
+        "timestamp": "2026-05-19T17:03:57.000Z",
+        "tx_hash": "0xc63f60436d1b9ea3ce5d8b077ddc43e8049a0941c94f2be86f65f940e856e2f8"
+      },
+      {
+        "total_usdc": 100000,
+        "total_display": "$0.1000",
+        "platform_fee": 1000,
+        "affiliate_commission": 0,
+        "vendor_share": 99000,
+        "timestamp": "2026-05-15T03:13:17.000Z",
+        "tx_hash": "0x633ba6ae494c4e1b013f3b6e026e2a7a59ec94686456f6f770c9b86663d7dac2"
+      },
+      {
+        "total_usdc": 50000,
+        "total_display": "$0.0500",
+        "platform_fee": 500,
+        "affiliate_commission": 0,
+        "vendor_share": 49500,
+        "timestamp": "2026-05-15T03:13:09.000Z",
+        "tx_hash": "0x480f98e18e273028c2982bac711847a808aadf3b358685b0dd5f0c060bc0b9ce"
+      },
+      {
+        "total_usdc": 50000,
+        "total_display": "$0.0500",
+        "platform_fee": 500,
+        "affiliate_commission": 0,
+        "vendor_share": 49500,
+        "timestamp": "2026-05-14T19:03:03.000Z",
+        "tx_hash": "0xc4ab9b8b9cea22912f46a2b657fede06e82966a0ac1a9dcf492cf558bea1130b"
+      }
+    ],
+    "contracts": {
+      "REGISTRY": "0x34e22fc20D457095e2814CdFfad1e42980EEC389",
+      "CATALOG": "0xC935d6B73034dDDb97AD2a1BbD2106F34A977908",
+      "ROUTER": "0xc949AEa380D7b7984806143ddbfE519B03ABd68B",
+      "TREASURY": "0x74A512F4f3F64aD479dEc4554a12855Ce943E12C"
+    },
+    "network": "base",
+    "updated_at": "2026-06-01T17:48:52.741Z"
+  },
+  "nextPurchaseStep": "Call resolver.purchase(product, buyerWallet) after a funded Base USDC wallet is available."
+}

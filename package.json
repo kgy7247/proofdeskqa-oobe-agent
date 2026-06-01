@@ -9,6 +9,7 @@
     "preview": "vite preview --host 127.0.0.1",
     "android:probe": "powershell -ExecutionPolicy Bypass -File scripts/android-qa-probe.ps1",
     "earnings:scan": "node scripts/find-earning-opportunities.mjs",
+    "pyrimid:integration": "node scripts/pyrimid-integration-demo.mjs",
     "bento:evidence": "node scripts/bento-sdk-evidence.mjs",
     "superteam:check": "powershell -ExecutionPolicy Bypass -File scripts/check-superteam-agent.ps1",
     "wallets:check": "powershell -ExecutionPolicy Bypass -File scripts/check-solana-wallets.ps1",
@@ -17,8 +18,10 @@
     "bounty:oobe:report": "node scripts/oobe-submission-report.mjs"
   },
   "dependencies": {
+    "@pyrimid/sdk": "^0.2.6",
     "@oobe-protocol-labs/synapse-client-sdk": "^2.0.6",
     "@oobe-protocol-labs/synapse-sap-sdk": "^0.13.0",
+    "@pyrimid/sdk": "^0.2.6",
     "@virtuals-protocol/acp-node-v2": "^0.1.2",
     "phaser": "^3.90.0",
     "vite": "^6.0.7"
