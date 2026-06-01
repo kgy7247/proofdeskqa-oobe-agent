@@ -43,4 +43,4 @@ Current limitation:
 
 - The OOBE package is ready as a local evidence generator with a public repo and public walkthrough, but final bounty submission still needs live SAP/Ace/x402 credentials and transaction evidence.
 - The OOBE Superteam listing is `HUMAN_ONLY`, so it cannot be submitted through the Superteam agent API.
-- A Superteam Agentic Engineering grant proposal has been prepared as an alternate route toward USDG/USDC earning.
+- A Superteam Agentic Engineering grant application was opened after creating a minimal talent profile, but it cannot be submitted until a real Telegram username is available.

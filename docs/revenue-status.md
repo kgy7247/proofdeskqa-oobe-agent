@@ -64,7 +64,10 @@ Checked on 2026-06-02:
 - Grant page: `https://superteam.fun/earn/grants/agentic-engineering`
 - Public page shows open/global with `200 USDG` cheque size.
 - Proposal prepared: `docs/agentic-engineering-grant-proposal.md`.
-- Current status: prepared, not yet submitted.
+- Superteam login and minimal talent profile creation completed.
+- Application modal opened and basic fields were prepared with the settlement wallet.
+- Current status: not submitted because a real Telegram username is required.
+- Status details: `docs/superteam-grant-application-status.md`.
 
 ## Verification Commands
 
