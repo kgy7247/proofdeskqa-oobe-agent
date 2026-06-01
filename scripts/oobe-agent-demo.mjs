@@ -3,6 +3,8 @@ import { randomUUID } from "node:crypto";
 
 const settlementWallet = "2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD";
 const virtualsAgentWallet = "8MNSiALJ5FmB7huPeUL67MGZTZPxjvR7oDoXLNR9FweU";
+const publicRepoUrl = process.env.PUBLIC_REPO_URL || "https://github.com/kgy7247/proofdeskqa-oobe-agent";
+const publicDemoUrl = process.env.PUBLIC_DEMO_URL || "";
 
 const services = [
   {
@@ -73,12 +75,15 @@ function executeService(service, input) {
   }
 
   if (service.capability === "classification") {
+    const risks = [
+      { severity: "high", issue: "No live x402 credentials in this local run", fix: "Set LIVE_X402=1 with Ace/Synapse credentials before paid execution" },
+      { severity: "low", issue: "Demo evidence is local JSON", fix: "Record a short walkthrough video from this run" }
+    ];
+    if (!publicDemoUrl) {
+      risks.push({ severity: "medium", issue: "No public demo URL yet", fix: "Record and publish a short walkthrough video" });
+    }
     return {
-      risks: [
-        { severity: "high", issue: "No live x402 credentials in this local run", fix: "Set LIVE_X402=1 with Ace/Synapse credentials before paid execution" },
-        { severity: "medium", issue: "No public GitHub URL yet", fix: "Publish this workspace before final Superteam submission" },
-        { severity: "low", issue: "Demo evidence is local JSON", fix: "Record a short walkthrough video from this run" }
-      ],
+      risks,
       confidence: 0.84
     };
   }
@@ -128,6 +133,13 @@ async function main() {
   }
 
   const totalUsdc = payments.reduce((sum, payment) => sum + payment.amountUsdc, 0);
+  const missingForFinalSubmission = [
+    "live SAP mainnet registration evidence",
+    "live Ace Data Cloud account/API key",
+    "live x402 facilitator or escrow transaction hashes",
+    ...(!publicRepoUrl ? ["public GitHub repository URL"] : []),
+    ...(!publicDemoUrl ? ["demo video or public walkthrough URL"] : [])
+  ];
   const report = {
     runId,
     agent: {
@@ -135,7 +147,9 @@ async function main() {
       virtualsAgentId: "019e83ff-a029-75d4-805b-bbbb4984ce61",
       virtualsAgentUrl: "https://app.virtuals.io/acp/agents/019e83ff-a029-75d4-805b-bbbb4984ce61",
       virtualsSolWallet: virtualsAgentWallet,
-      settlementWallet
+      settlementWallet,
+      publicRepoUrl,
+      publicDemoUrl: publicDemoUrl || null
     },
     bountyFit: {
       superteamListing: "autonomous-agent-bounty-oobe-ace-data-cloud",
@@ -147,13 +161,7 @@ async function main() {
         "x402-compatible payment ledger",
         "trigger to execution to payment trace"
       ],
-      missingForFinalSubmission: [
-        "live SAP mainnet registration evidence",
-        "live Ace Data Cloud account/API key",
-        "live x402 facilitator or escrow transaction hashes",
-        "public GitHub repository URL",
-        "demo video or public walkthrough URL"
-      ]
+      missingForFinalSubmission
     },
     trigger,
     toolDiscovery,

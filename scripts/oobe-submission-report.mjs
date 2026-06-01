@@ -12,6 +12,8 @@ const lines = [
   "",
   `- Name: \`${run.agent.name}\``,
   `- Virtuals agent: ${run.agent.virtualsAgentUrl}`,
+  ...(run.agent.publicRepoUrl ? [`- Public repo: ${run.agent.publicRepoUrl}`] : []),
+  ...(run.agent.publicDemoUrl ? [`- Public demo: ${run.agent.publicDemoUrl}`] : []),
   `- Settlement wallet: \`${run.agent.settlementWallet}\``,
   "",
   "## Requirement Coverage",

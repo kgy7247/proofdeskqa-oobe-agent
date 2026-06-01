@@ -81,7 +81,7 @@
     },
     {
       "name": "PUBLIC_REPO_URL",
-      "present": false
+      "present": true
     },
     {
       "name": "PUBLIC_DEMO_URL",
@@ -94,7 +94,6 @@
     "missing env ACE_DATA_CLOUD_API_KEY",
     "missing env X402_FACILITATOR_URL",
     "missing env OOBE_AGENT_REGISTRATION_TX",
-    "missing env PUBLIC_REPO_URL",
     "missing env PUBLIC_DEMO_URL"
   ],
   "notes": [

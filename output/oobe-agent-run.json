@@ -1,11 +1,13 @@
 {
-  "runId": "c5aff58c-69c7-4792-ac12-c3c09a0da2fc",
+  "runId": "77fcb203-eef5-4efe-b981-c0e4a512c4c3",
   "agent": {
     "name": "ProofDeskQA",
     "virtualsAgentId": "019e83ff-a029-75d4-805b-bbbb4984ce61",
     "virtualsAgentUrl": "https://app.virtuals.io/acp/agents/019e83ff-a029-75d4-805b-bbbb4984ce61",
     "virtualsSolWallet": "8MNSiALJ5FmB7huPeUL67MGZTZPxjvR7oDoXLNR9FweU",
-    "settlementWallet": "2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD"
+    "settlementWallet": "2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD",
+    "publicRepoUrl": "https://github.com/kgy7247/proofdeskqa-oobe-agent",
+    "publicDemoUrl": null
   },
   "bountyFit": {
     "superteamListing": "autonomous-agent-bounty-oobe-ace-data-cloud",
@@ -21,7 +23,6 @@
       "live SAP mainnet registration evidence",
       "live Ace Data Cloud account/API key",
       "live x402 facilitator or escrow transaction hashes",
-      "public GitHub repository URL",
       "demo video or public walkthrough URL"
     ]
   },
@@ -29,7 +30,7 @@
     "type": "scheduled-bounty-scout",
     "source": "local-runner",
     "objective": "Find earning opportunities, evaluate risk, and prepare payable QA deliverables",
-    "startedAt": "2026-06-01T16:43:28.888Z"
+    "startedAt": "2026-06-01T16:47:44.976Z"
   },
   "toolDiscovery": [
     {
@@ -69,8 +70,8 @@
     {
       "serviceId": "ace.search.web",
       "provider": "Ace Data Cloud",
-      "startedAt": "2026-06-01T16:43:28.889Z",
-      "paymentId": "x402-cc1c623c-6485-4402-b865-09a8cd900952",
+      "startedAt": "2026-06-01T16:47:44.976Z",
+      "paymentId": "x402-5597049a-a7ba-485c-824b-185c363ba9fc",
       "result": {
         "findings": [
           "OOBE x Ace Data Cloud rewards autonomous SAP agents that discover tools, execute tasks, and settle payments.",
@@ -83,8 +84,8 @@
     {
       "serviceId": "ace.summarize.brief",
       "provider": "Ace Data Cloud",
-      "startedAt": "2026-06-01T16:43:28.889Z",
-      "paymentId": "x402-5f7afee5-59ff-4063-9463-651c708a8b20",
+      "startedAt": "2026-06-01T16:47:44.976Z",
+      "paymentId": "x402-336d8618-1074-4a42-beaf-2414d649b1e8",
       "result": {
         "brief": "Workflow ProofDeskQA autonomous bounty scout should use three Ace services, one Sentinel review, and a payment record per tool call.",
         "confidence": 0.9
@@ -93,8 +94,8 @@
     {
       "serviceId": "ace.risk.classify",
       "provider": "Ace Data Cloud",
-      "startedAt": "2026-06-01T16:43:28.889Z",
-      "paymentId": "x402-8936209b-0d71-4337-b02a-5dd6b873df9a",
+      "startedAt": "2026-06-01T16:47:44.976Z",
+      "paymentId": "x402-725c203b-4f98-4b3e-992b-7db881a65757",
       "result": {
         "risks": [
           {
@@ -103,14 +104,14 @@
             "fix": "Set LIVE_X402=1 with Ace/Synapse credentials before paid execution"
           },
           {
-            "severity": "medium",
-            "issue": "No public GitHub URL yet",
-            "fix": "Publish this workspace before final Superteam submission"
-          },
-          {
             "severity": "low",
             "issue": "Demo evidence is local JSON",
             "fix": "Record a short walkthrough video from this run"
+          },
+          {
+            "severity": "medium",
+            "issue": "No public demo URL yet",
+            "fix": "Record and publish a short walkthrough video"
           }
         ],
         "confidence": 0.84
@@ -119,8 +120,8 @@
     {
       "serviceId": "synapse.sentinel.review",
       "provider": "Synapse Sentinel",
-      "startedAt": "2026-06-01T16:43:28.889Z",
-      "paymentId": "x402-9f068345-3581-46e5-aff1-9245a53f6d24",
+      "startedAt": "2026-06-01T16:47:44.976Z",
+      "paymentId": "x402-c95efd40-73db-403e-adc4-9accf9d7f309",
       "result": {
         "sentinel": "Workflow reviewed for artificial-loop risk. It uses bounded tool calls and no wash-volume loop.",
         "confidence": 0.82
@@ -129,8 +130,8 @@
   ],
   "payments": [
     {
-      "paymentId": "x402-cc1c623c-6485-4402-b865-09a8cd900952",
-      "runId": "c5aff58c-69c7-4792-ac12-c3c09a0da2fc",
+      "paymentId": "x402-5597049a-a7ba-485c-824b-185c363ba9fc",
+      "runId": "77fcb203-eef5-4efe-b981-c0e4a512c4c3",
       "workflow": "proofdeskqa.oobe.autonomous_qa",
       "status": "simulated",
       "route": "local-x402-ledger",
@@ -140,8 +141,8 @@
       "memo": "ProofDeskQA pays Ace Data Cloud:ace.search.web"
     },
     {
-      "paymentId": "x402-5f7afee5-59ff-4063-9463-651c708a8b20",
-      "runId": "c5aff58c-69c7-4792-ac12-c3c09a0da2fc",
+      "paymentId": "x402-336d8618-1074-4a42-beaf-2414d649b1e8",
+      "runId": "77fcb203-eef5-4efe-b981-c0e4a512c4c3",
       "workflow": "proofdeskqa.oobe.autonomous_qa",
       "status": "simulated",
       "route": "local-x402-ledger",
@@ -151,8 +152,8 @@
       "memo": "ProofDeskQA pays Ace Data Cloud:ace.summarize.brief"
     },
     {
-      "paymentId": "x402-8936209b-0d71-4337-b02a-5dd6b873df9a",
-      "runId": "c5aff58c-69c7-4792-ac12-c3c09a0da2fc",
+      "paymentId": "x402-725c203b-4f98-4b3e-992b-7db881a65757",
+      "runId": "77fcb203-eef5-4efe-b981-c0e4a512c4c3",
       "workflow": "proofdeskqa.oobe.autonomous_qa",
       "status": "simulated",
       "route": "local-x402-ledger",
@@ -162,8 +163,8 @@
       "memo": "ProofDeskQA pays Ace Data Cloud:ace.risk.classify"
     },
     {
-      "paymentId": "x402-9f068345-3581-46e5-aff1-9245a53f6d24",
-      "runId": "c5aff58c-69c7-4792-ac12-c3c09a0da2fc",
+      "paymentId": "x402-c95efd40-73db-403e-adc4-9accf9d7f309",
+      "runId": "77fcb203-eef5-4efe-b981-c0e4a512c4c3",
       "workflow": "proofdeskqa.oobe.autonomous_qa",
       "status": "simulated",
       "route": "local-x402-ledger",
@@ -179,5 +180,5 @@
     "sentinelCalls": 1,
     "simulatedPaymentVolumeUsdc": 0.042
   },
-  "completedAt": "2026-06-01T16:43:28.889Z"
+  "completedAt": "2026-06-01T16:47:44.977Z"
 }

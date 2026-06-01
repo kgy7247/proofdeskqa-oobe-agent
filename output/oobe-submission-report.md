@@ -1,12 +1,13 @@
 # ProofDeskQA OOBE Evidence Report
 
-Run ID: `c5aff58c-69c7-4792-ac12-c3c09a0da2fc`
-Completed: `2026-06-01T16:43:28.889Z`
+Run ID: `77fcb203-eef5-4efe-b981-c0e4a512c4c3`
+Completed: `2026-06-01T16:47:44.977Z`
 
 ## Agent
 
 - Name: `ProofDeskQA`
 - Virtuals agent: https://app.virtuals.io/acp/agents/019e83ff-a029-75d4-805b-bbbb4984ce61
+- Public repo: https://github.com/kgy7247/proofdeskqa-oobe-agent
 - Settlement wallet: `2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD`
 
 ## Requirement Coverage
@@ -21,10 +22,10 @@ Completed: `2026-06-01T16:43:28.889Z`
 
 | Provider | Service | Payment ID | Result Summary |
 | --- | --- | --- | --- |
-| Ace Data Cloud | `ace.search.web` | `x402-cc1c623c-6485-4402-b865-09a8cd900952` | OOBE x Ace Data Cloud rewards autonomous SAP agents that discover tools, execute tasks, and settle payments. |
-| Ace Data Cloud | `ace.summarize.brief` | `x402-5f7afee5-59ff-4063-9463-651c708a8b20` | Workflow ProofDeskQA autonomous bounty scout should use three Ace services, one Sentinel review, and a payment record per tool call. |
-| Ace Data Cloud | `ace.risk.classify` | `x402-8936209b-0d71-4337-b02a-5dd6b873df9a` | No live x402 credentials in this local run |
-| Synapse Sentinel | `synapse.sentinel.review` | `x402-9f068345-3581-46e5-aff1-9245a53f6d24` | Workflow reviewed for artificial-loop risk. It uses bounded tool calls and no wash-volume loop. |
+| Ace Data Cloud | `ace.search.web` | `x402-5597049a-a7ba-485c-824b-185c363ba9fc` | OOBE x Ace Data Cloud rewards autonomous SAP agents that discover tools, execute tasks, and settle payments. |
+| Ace Data Cloud | `ace.summarize.brief` | `x402-336d8618-1074-4a42-beaf-2414d649b1e8` | Workflow ProofDeskQA autonomous bounty scout should use three Ace services, one Sentinel review, and a payment record per tool call. |
+| Ace Data Cloud | `ace.risk.classify` | `x402-725c203b-4f98-4b3e-992b-7db881a65757` | No live x402 credentials in this local run |
+| Synapse Sentinel | `synapse.sentinel.review` | `x402-c95efd40-73db-403e-adc4-9accf9d7f309` | Workflow reviewed for artificial-loop risk. It uses bounded tool calls and no wash-volume loop. |
 
 ## Payment Ledger
 
@@ -47,5 +48,4 @@ Completed: `2026-06-01T16:43:28.889Z`
 - live SAP mainnet registration evidence
 - live Ace Data Cloud account/API key
 - live x402 facilitator or escrow transaction hashes
-- public GitHub repository URL
 - demo video or public walkthrough URL

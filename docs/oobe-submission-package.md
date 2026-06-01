@@ -8,6 +8,7 @@ Status checked: 2026-06-02
 - URL: `https://superteam.fun/earn/listing/autonomous-agent-bounty-oobe-ace-data-cloud/`
 - Prize pool: `2,400 USDC`
 - Public search snapshot on 2026-06-02 showed the listing as open/global with a `2,400 USDC` prize pool. Submission count and remaining time are live fields and should be rechecked immediately before final submission.
+- Public repo: `https://github.com/kgy7247/proofdeskqa-oobe-agent`
 
 ## Relevant Requirements
 
@@ -73,6 +74,7 @@ For this bounty, the agent runs a scheduled bounty-scout workflow:
 5. It writes an end-to-end JSON evidence report for auditability.
 
 Current local evidence: output/oobe-agent-run.json
+Public repo: https://github.com/kgy7247/proofdeskqa-oobe-agent
 Virtuals live agent: https://app.virtuals.io/acp/agents/019e83ff-a029-75d4-805b-bbbb4984ce61
 Settlement wallet: 2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD
 
@@ -84,7 +86,6 @@ Category target: Ace Data Cloud Usage first, General Payment Volume second.
 - Live SAP mainnet registration evidence
 - Live Ace Data Cloud account/API key
 - Live x402 facilitator or escrow transaction hashes
-- Public GitHub repository URL
 - Demo video or public walkthrough URL
 - X post tagging `@OOBEonSol` and `@AceDataCloud`
 
@@ -107,7 +108,7 @@ Checked on 2026-06-02:
 - `npm run build`: passed.
 - `npm run bounty:oobe:demo`: passed and wrote `output/oobe-agent-run.json`.
 - `npm run bounty:oobe:report`: passed and wrote `output/oobe-submission-report.md`.
-- `npm run bounty:oobe:ready`: dependency checks passed, but final status is `not_ready` until live SAP/Ace/x402 credentials, public repo URL, public demo URL, and transaction evidence are present.
+- `npm run bounty:oobe:ready`: dependency checks passed, but final status is `not_ready` until live SAP/Ace/x402 credentials, public demo URL, and transaction evidence are present.
 - `npm run android:probe`: Android QA probe exists, but `adb` is not currently available on PATH.
 
 ## X Post Draft
@@ -118,6 +119,6 @@ Built ProofDeskQA for the @OOBEonSol x @AceDataCloud autonomous agent bounty.
 It discovers SAP-compatible tools, runs 3 Ace-style services plus a Sentinel review, and records x402-compatible payment traces from trigger -> execution -> payment.
 
 Category: Ace Data Cloud Usage + General Payment Volume
-Repo: <github-url>
+Repo: https://github.com/kgy7247/proofdeskqa-oobe-agent
 Demo: <video-url>
 ```
