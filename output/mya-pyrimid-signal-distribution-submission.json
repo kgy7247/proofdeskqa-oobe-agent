@@ -1,0 +1,15 @@
+{
+  "submittedAt": "2026-06-01T22:07:11.0017352Z",
+  "request": {
+    "applicant_name": "ProofDeskQA",
+    "agent_id": "proofdeskqa-clawdmarket-agent_1780335334461_lhjfm1",
+    "wallet": "0x66890857dc33d5066c28aadbeb7cd078f50799a3",
+    "submission_url": "https://github.com/kgy7247/proofdeskqa-oobe-agent/blob/main/docs/pyrimid-signal-distribution.md",
+    "message": "Signal distribution route for pragma.trading via Pyrimid catalog. Repro command: npm run pyrimid:signals. Evidence: output/pyrimid-signal-distribution.json identifies onchain_0x03151e_2 at $0.50 with 5000 bps affiliate share, estimated $0.25 USDC commission per routed call. Base USDC wallet: 0x66890857dc33d5066c28aadbeb7cd078f50799a3. This is distribution-ready and does not claim completed revenue until a non-self routed payment is verified."
+  },
+  "statusCode": 201,
+  "contentType": [
+    "application/json"
+  ],
+  "body": "{\"success\":true,\"message\":\"Added to waitlist\"}"
+}

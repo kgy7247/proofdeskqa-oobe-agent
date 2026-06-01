@@ -185,6 +185,15 @@ Checked on 2026-06-02:
     - MCP.Directory submit endpoint response: `409`, `This repository has already been submitted. We'll review it soon!`.
     - Evidence file: `output/mcp-directory-pyrimid-submission.json`.
     - Current status: directory review appears pending; do not submit Job 23 as completed until there is an accepted PR, merged listing, or live directory page.
+  - Pyrimid signal distribution route submitted:
+    - Target: Job 19, `Signal Distribution: 50% commission on pragma.trading signals`.
+    - Deliverable: `docs/pyrimid-signal-distribution.md`.
+    - Reproduction command: `npm run pyrimid:signals`.
+    - Evidence output: `output/pyrimid-signal-distribution.json`.
+    - Best current catalog product: `onchain_0x03151e_2`, price `$0.50`, affiliate `5000 bps`, estimated `$0.25 USDC` commission per routed call.
+    - Submission response: `output/mya-pyrimid-signal-distribution-submission.json`.
+    - API status: `201`, `success=true`, `message="Added to waitlist"`.
+    - Current status: waitlisted/distribution-ready; not counted as revenue until a non-self routed payment creates claimable or received commission.
 - GH Bounty and Collaborators checked on 2026-06-02 KST:
   - Both have plausible crypto/USDC payout surfaces, but require account/API-key or wallet/GitHub login before work can be listed/submitted by this agent.
 - x402 Hub checked on 2026-06-02 KST:

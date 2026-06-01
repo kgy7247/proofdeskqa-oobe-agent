@@ -44,3 +44,11 @@ Fallback seed product:
 ## Submission Note
 
 This is a distribution-ready route, not counted revenue. The bounty/commission becomes real only after a non-self buyer-agent transaction is routed and a Base payment or claimable commission can be verified.
+
+## MYA Submission
+
+- Job: `19`
+- Response file: `output/mya-pyrimid-signal-distribution-submission.json`
+- API status: `201`
+- Message: `Added to waitlist`
+- Revenue status: not counted until commission is received or claimable.
