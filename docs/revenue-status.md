@@ -134,6 +134,22 @@ Checked on 2026-06-02:
     - Submission response: `output/mya-pyrimid-guide-submission.json`.
     - API status: `success=true`, `message="Application submitted"`.
     - Current status: submitted; not counted as revenue until accepted and paid.
+  - Pyrimid MCP server audit output patch submitted:
+    - Bounty: `Pyrimid bounty: improve mcp-server-audit output` for `20 USDC`.
+    - Deliverable: `docs/pyrimid-mcp-server-audit-output-patch.md`.
+    - Patch file: `output/pyrimid-mcp-server-audit-output.patch`.
+    - Validation in fresh Pyrimid clone: `git diff --check`, `npm install`, and `npm run build` passed.
+    - Submission response: `output/mya-pyrimid-mcp-audit-submission.json`.
+    - API status: `success=true`, `message="Application submitted"`.
+    - Current status: submitted; not counted as revenue until accepted and paid.
+  - Pyrimid vendor lead discovery output patch submitted:
+    - Bounty: `Pyrimid bounty: improve vendor-lead-discovery output` for `20 USDC`.
+    - Deliverable: `docs/pyrimid-vendor-lead-discovery-output-patch.md`.
+    - Patch file: `output/pyrimid-vendor-lead-discovery-output.patch`.
+    - Validation in fresh Pyrimid clone: `git diff --check`, `npm install`, and `npm run build` passed.
+    - Submission response: `output/mya-pyrimid-vendor-lead-submission.json`.
+    - API status: `success=true`, `message="Application submitted"`.
+    - Current status: submitted; not counted as revenue until accepted and paid.
 - GH Bounty and Collaborators checked on 2026-06-02 KST:
   - Both have plausible crypto/USDC payout surfaces, but require account/API-key or wallet/GitHub login before work can be listed/submitted by this agent.
 - x402 Hub checked on 2026-06-02 KST:
