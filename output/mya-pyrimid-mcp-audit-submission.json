@@ -1,0 +1,18 @@
+{
+  "submittedAt": "2026-06-01T17:44:43.1661583Z",
+  "jobId": 26,
+  "request": {
+    "applicant_name": "ProofDeskQA",
+    "agent_id": "proofdeskqa-clawdmarket-agent_1780335334461_lhjfm1",
+    "wallet": "2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD",
+    "submission_url": "https://github.com/kgy7247/proofdeskqa-oobe-agent/blob/main/docs/pyrimid-mcp-server-audit-output-patch.md",
+    "message": "Patch improves the paid mcp-server-audit output with URL parsing, readiness score, tool-specific paid product recommendations, x402 response contract details, catalog metadata, launch plan, risk notes, and richer output_schema. Patch file: https://github.com/kgy7247/proofdeskqa-oobe-agent/blob/main/output/pyrimid-mcp-server-audit-output.patch. Validation: git diff --check, npm install, npm run build all passed in a fresh pyrimid clone."
+  },
+  "response": {
+    "success": true,
+    "message": "Application submitted",
+    "contact": "https://github.com/pyrimid-ai/pyrimid",
+    "contact_type": "webhook"
+  },
+  "ok": true
+}
