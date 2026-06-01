@@ -8,6 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "android:probe": "powershell -ExecutionPolicy Bypass -File scripts/android-qa-probe.ps1",
+    "earnings:scan": "node scripts/find-earning-opportunities.mjs",
     "superteam:check": "powershell -ExecutionPolicy Bypass -File scripts/check-superteam-agent.ps1",
     "wallets:check": "powershell -ExecutionPolicy Bypass -File scripts/check-solana-wallets.ps1",
     "bounty:oobe:demo": "node scripts/oobe-agent-demo.mjs",

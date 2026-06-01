@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Kimia yield layer explainer card">
+  <rect width="1600" height="900" fill="#f7f8fb"/>
+  <rect x="88" y="76" width="1424" height="748" rx="28" fill="#ffffff" stroke="#d8dee9" stroke-width="3"/>
+  <text x="140" y="158" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" fill="#121826">Kimia: The Yield Layer for Perps</text>
+  <text x="140" y="214" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#526070">Turning future perp funding into tradable fixed-income building blocks on Solana</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="140" y="308" width="250" height="160" rx="18" fill="#111827"/>
+    <text x="172" y="370" font-size="30" font-weight="700" fill="#ffffff">1. Perps</text>
+    <text x="172" y="415" font-size="22" fill="#cbd5e1">Longs pay</text>
+    <text x="172" y="448" font-size="22" fill="#cbd5e1">funding</text>
+    <path d="M410 388 H520" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+    <path d="M520 388 l-28 -20 v40 z" fill="#64748b"/>
+    <rect x="540" y="308" width="250" height="160" rx="18" fill="#edf2ff" stroke="#9db7ff" stroke-width="3"/>
+    <text x="572" y="370" font-size="30" font-weight="700" fill="#172554">2. Vault</text>
+    <text x="572" y="415" font-size="22" fill="#334155">Delta-neutral</text>
+    <text x="572" y="448" font-size="22" fill="#334155">yield capture</text>
+    <path d="M810 388 H920" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+    <path d="M920 388 l-28 -20 v40 z" fill="#64748b"/>
+    <rect x="940" y="308" width="250" height="160" rx="18" fill="#ecfdf5" stroke="#86efac" stroke-width="3"/>
+    <text x="972" y="370" font-size="30" font-weight="700" fill="#14532d">3. PT / YT</text>
+    <text x="972" y="415" font-size="22" fill="#334155">Split fixed rate</text>
+    <text x="972" y="448" font-size="22" fill="#334155">from upside</text>
+    <path d="M1210 388 H1320" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+    <path d="M1320 388 l-28 -20 v40 z" fill="#64748b"/>
+    <rect x="1340" y="308" width="120" height="160" rx="18" fill="#fff7ed" stroke="#fdba74" stroke-width="3"/>
+    <text x="1364" y="370" font-size="30" font-weight="700" fill="#9a3412">AMM</text>
+    <text x="1364" y="415" font-size="22" fill="#334155">price</text>
+    <text x="1364" y="448" font-size="22" fill="#334155">yield</text>
+    <rect x="200" y="566" width="1200" height="138" rx="20" fill="#f8fafc" stroke="#d8dee9" stroke-width="3"/>
+    <text x="242" y="624" font-size="30" font-weight="700" fill="#121826">User-facing question</text>
+    <text x="242" y="674" font-size="28" fill="#334155">What fixed rate can I lock, what risk remains, and how do I exit early?</text>
+    <text x="140" y="778" font-size="24" fill="#64748b">Draft visual for a Superteam Kimia thread. Verify terms and risks before posting.</text>
+  </g>
+</svg>

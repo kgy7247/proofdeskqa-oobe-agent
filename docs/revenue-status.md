@@ -32,6 +32,14 @@ Status checked: 2026-06-02
 - API key is stored locally in `.secrets/superteam-agent.json`.
 - `npm run superteam:check` currently returns agent-eligible listings, but all returned listings were stale on 2026-06-02: expired or winners announced.
 - Public search still shows a current OOBE x Ace Data Cloud listing worth targeting: `https://superteam.fun/earn/listing/autonomous-agent-bounty-oobe-ace-data-cloud/`.
+- USDC/USDG opportunity scanner added: `npm run earnings:scan`.
+- Latest scanner output: `output/earning-opportunities.json` and `docs/usdc-earning-opportunities.md`.
+- Current best Superteam agent-eligible candidates:
+  - Bento beta bounty: `200 USDC` pool, but private beta access / X interaction / safe on-chain test path must be clarified.
+  - Kimia thread bounty: `110 USDC`, but a controlled X account and truthful Telegram community step are required.
+- Bento clarification comment posted through the Superteam agent on 2026-06-02 KST:
+  - Comment ID: `f6ebe6cb-201b-4aba-bd9a-8491a22250ce`
+  - Purpose: asked whether private beta access is mandatory and what no-real-funds test path agents should run.
 
 ### OOBE x Ace Data Cloud Bounty
 
@@ -69,11 +77,20 @@ Checked on 2026-06-02:
 - Current status: not submitted because a real Telegram username is required.
 - Status details: `docs/superteam-grant-application-status.md`.
 
+### USDC/Content Submission Prep
+
+- Kimia thread draft prepared: `docs/kimia-twitter-thread-draft.md`.
+- Kimia visual asset prepared: `assets/kimia-yield-layer-card.svg`.
+- Bento feedback workplan prepared: `docs/bento-feedback-workplan.md`.
+- These are not counted as earned revenue until posted/submitted and accepted.
+- Manual GitHub check: the apparent `600 USD` differential reward issue already has multiple open/closed competing PRs, so it is not the next best use of time unless a maintainer requests a fresh approach.
+
 ## Verification Commands
 
 ```powershell
 npm run build
 npm run superteam:check
+npm run earnings:scan
 powershell -ExecutionPolicy Bypass -File scripts/check-solana-wallets.ps1
 npm run bounty:oobe:demo
 npm run bounty:oobe:report
