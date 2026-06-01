@@ -1,0 +1,201 @@
+[
+  {
+    "gid": "github/MDU6SXNzdWU0NjM4NTI2MzM=",
+    "hId": "kistek/boss-demo#3",
+    "sByC": {
+      "EUR": 1200,
+      "USD": 1234
+    },
+    "solvedAt": null,
+    "solvedNid": "",
+    "solvedType": "",
+    "solvedUrl": "",
+    "solvedUserGid": "",
+    "solvedUsername": "",
+    "status": "open",
+    "title": "Demo GitHub Issue with Bounty",
+    "url": "https://github.com/kistek/boss-demo/issues/3",
+    "usd": 2434,
+    "v": 1
+  },
+  {
+    "gid": "github/I_kwDOMDHvl86MsjT4",
+    "hId": "jbilcke-hf/clapper#5",
+    "sByC": {
+      "USD": 1050
+    },
+    "solvedAt": null,
+    "solvedNid": "",
+    "solvedType": "",
+    "solvedUrl": "",
+    "solvedUserGid": "",
+    "solvedUsername": "",
+    "status": "open",
+    "title": "Improve ComfyUI integration",
+    "url": "https://github.com/jbilcke-hf/clapper/issues/5",
+    "usd": 1050,
+    "v": 1
+  },
+  {
+    "gid": "github/I_kwDOLzQ-MM6ZLpew",
+    "hId": "spaceandtimefdn/sxt-proof-of-sql#229",
+    "sByC": {
+      "USD": 1000
+    },
+    "solvedAt": null,
+    "solvedNid": "",
+    "solvedType": "",
+    "solvedUrl": "",
+    "solvedUserGid": "",
+    "solvedUsername": "",
+    "status": "open",
+    "title": "Add `FixedSizeBinary` with support up to at least 32 bytes.",
+    "url": "https://github.com/spaceandtimefdn/sxt-proof-of-sql/issues/229",
+    "usd": 1000,
+    "v": 1
+  },
+  {
+    "gid": "github/I_kwDOMDHvl86O6ONz",
+    "hId": "jbilcke-hf/clapper#10",
+    "sByC": {
+      "USD": 500
+    },
+    "solvedAt": null,
+    "solvedNid": "",
+    "solvedType": "",
+    "solvedUrl": "",
+    "solvedUserGid": "",
+    "solvedUsername": "",
+    "status": "open",
+    "title": "Timeline - Create new Tracks and Clips",
+    "url": "https://github.com/jbilcke-hf/clapper/issues/10",
+    "usd": 500,
+    "v": 1
+  },
+  {
+    "gid": "github/I_kwDOEJLUl85mXGD6",
+    "hId": "Qortal/qortal#122",
+    "sByC": {
+      "USD": 250
+    },
+    "solvedAt": null,
+    "solvedNid": "",
+    "solvedType": "",
+    "solvedUrl": "",
+    "solvedUserGid": "",
+    "solvedUsername": "",
+    "status": "open",
+    "title": "Enhancing Qortal's Scalability and Performance for a More Robust Blockchain Ecosystem",
+    "url": "https://github.com/Qortal/qortal/issues/122",
+    "usd": 250,
+    "v": 1
+  },
+  {
+    "gid": "github/MDU6SXNzdWUyODMyMjAyNzc=",
+    "hId": "jaseg/python-mpv#61",
+    "sByC": {
+      "USD": 250
+    },
+    "solvedAt": null,
+    "solvedNid": "",
+    "solvedType": "",
+    "solvedUrl": "",
+    "solvedUserGid": "",
+    "solvedUsername": "",
+    "status": "open",
+    "title": "Stuck in threading on macOS",
+    "url": "https://github.com/jaseg/python-mpv/issues/61",
+    "usd": 250,
+    "v": 1
+  },
+  {
+    "gid": "github/MDU6SXNzdWUzNDg1NjIzNTE=",
+    "hId": "sveltejs/svelte#1639",
+    "sByC": {
+      "GBP": 100
+    },
+    "solvedAt": null,
+    "solvedNid": "",
+    "solvedType": "",
+    "solvedUrl": "",
+    "solvedUserGid": "",
+    "solvedUsername": "",
+    "status": "open",
+    "title": "TypeScript support",
+    "url": "https://github.com/sveltejs/svelte/issues/1639",
+    "usd": 125,
+    "v": 1
+  },
+  {
+    "gid": "github/I_kwDOANE9Nc5Md0Px",
+    "hId": "jlord/sheetsee-tables#24",
+    "sByC": {
+      "USD": 100
+    },
+    "solvedAt": null,
+    "solvedNid": "",
+    "solvedType": "",
+    "solvedUrl": "",
+    "solvedUserGid": "",
+    "solvedUsername": "",
+    "status": "open",
+    "title": "Step-by-step manual? Demo examples don't work",
+    "url": "https://github.com/jlord/sheetsee-tables/issues/24",
+    "usd": 100,
+    "v": 1
+  },
+  {
+    "gid": "github/I_kwDOQSBVes7W1sRk",
+    "hId": "OpenSword/OpenIsopix#1",
+    "sByC": {
+      "USD": 100
+    },
+    "solvedAt": null,
+    "solvedNid": "",
+    "solvedType": "",
+    "solvedUrl": "",
+    "solvedUserGid": "",
+    "solvedUsername": "",
+    "status": "open",
+    "title": "Implement the goals/requirements initial list",
+    "url": "https://github.com/OpenSword/OpenIsopix/issues/1",
+    "usd": 100,
+    "v": 1
+  },
+  {
+    "gid": "github/MDU6SXNzdWU2NTQ0NzU1MDQ=",
+    "hId": "allure-framework/allure2#1108",
+    "sByC": {
+      "USD": 100
+    },
+    "solvedAt": null,
+    "solvedNid": "",
+    "solvedType": "",
+    "solvedUrl": "",
+    "solvedUserGid": "",
+    "solvedUsername": "",
+    "status": "open",
+    "title": "Additional tabs with results grouped by tags",
+    "url": "https://github.com/allure-framework/allure2/issues/1108",
+    "usd": 100,
+    "v": 1
+  },
+  {
+    "gid": "github/I_kwDOCJZbAc6aiU2Y",
+    "hId": "Alexays/Waybar#3693",
+    "sByC": {
+      "USD": 50
+    },
+    "solvedAt": null,
+    "solvedNid": "",
+    "solvedType": "",
+    "solvedUrl": "",
+    "solvedUserGid": "",
+    "solvedUsername": "",
+    "status": "open",
+    "title": "(hyprland/language) [Feature request] Tooltip on the module",
+    "url": "https://github.com/Alexays/Waybar/issues/3693",
+    "usd": 50,
+    "v": 1
+  }
+]

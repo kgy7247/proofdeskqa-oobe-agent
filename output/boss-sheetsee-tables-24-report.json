@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-06-01T22:17:56.7151266Z",
+  "source": "boss.dev",
+  "bountyUrl": "https://www.boss.dev/issues/github/MDU6SXNzdWUyODMyMjAyNzc=",
+  "issue": "https://github.com/jlord/sheetsee-tables/issues/24",
+  "repo": "https://github.com/jlord/sheetsee-tables",
+  "amountUsd": 100,
+  "patch": "output/boss-sheetsee-tables-24-readme.patch",
+  "localClone": "external/sheetsee-tables",
+  "changeSummary": [
+    "Adds a step-by-step table manual with inline spreadsheet-like data.",
+    "Fixes README typo Sheetsee,js -> Sheetsee.js.",
+    "Fixes broken clear-link examples from class=\".clear\" to class=\"clear\".",
+    "Fixes template id mismatch from tableTemplate to siteTable_template so the example matches the JavaScript options."
+  ],
+  "verification": [
+    "npm install completed with dependency vulnerability warnings from old packages.",
+    "npm run bfy passed.",
+    "npm run lint failed on pre-existing style issues in test/browserify.js and test/data.js; README-only patch does not touch those files."
+  ],
+  "submissionBlocker": "gh is not authenticated, and creating an external fork/PR to jlord/sheetsee-tables requires GitHub account authorization."
+}

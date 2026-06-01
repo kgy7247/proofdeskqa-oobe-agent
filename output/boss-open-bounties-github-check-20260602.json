@@ -1,0 +1,112 @@
+[
+  {
+    "hId": "kistek/boss-demo#3",
+    "usd": 2434,
+    "state": "open",
+    "locked": false,
+    "comments": 25,
+    "assignees": "",
+    "title": "Demo GitHub Issue with Bounty",
+    "url": "https://github.com/kistek/boss-demo/issues/3"
+  },
+  {
+    "hId": "jbilcke-hf/clapper#5",
+    "usd": 1050,
+    "state": "open",
+    "locked": false,
+    "comments": 29,
+    "assignees": "",
+    "title": "Improve ComfyUI integration",
+    "url": "https://github.com/jbilcke-hf/clapper/issues/5"
+  },
+  {
+    "hId": "spaceandtimefdn/sxt-proof-of-sql#229",
+    "usd": 1000,
+    "state": "open",
+    "locked": false,
+    "comments": 21,
+    "assignees": "Dustin-Ray",
+    "title": "Add `FixedSizeBinary` with support up to at least 32 bytes.",
+    "url": "https://github.com/spaceandtimefdn/sxt-proof-of-sql/issues/229"
+  },
+  {
+    "hId": "jbilcke-hf/clapper#10",
+    "usd": 500,
+    "state": "open",
+    "locked": false,
+    "comments": 19,
+    "assignees": "",
+    "title": "Timeline - Create new Tracks and Clips",
+    "url": "https://github.com/jbilcke-hf/clapper/issues/10"
+  },
+  {
+    "hId": "Qortal/qortal#122",
+    "usd": 250,
+    "state": "open",
+    "locked": false,
+    "comments": 8,
+    "assignees": "",
+    "title": "BOUNTY: ($250) Enhancing Scalability & Performance of the Qortal Blockchain",
+    "url": "https://github.com/Qortal/qortal/issues/122"
+  },
+  {
+    "hId": "jaseg/python-mpv#61",
+    "usd": 250,
+    "state": "open",
+    "locked": false,
+    "comments": 30,
+    "assignees": "",
+    "title": "Stuck in threading on macOS",
+    "url": "https://github.com/jaseg/python-mpv/issues/61"
+  },
+  {
+    "hId": "sveltejs/svelte#1639",
+    "usd": 125,
+    "state": "closed",
+    "locked": true,
+    "comments": 61,
+    "assignees": "",
+    "title": "TypeScript support",
+    "url": "https://github.com/sveltejs/svelte/issues/1639"
+  },
+  {
+    "hId": "jlord/sheetsee-tables#24",
+    "usd": 100,
+    "state": "open",
+    "locked": false,
+    "comments": 16,
+    "assignees": "",
+    "title": "Step-by-step manual? Demo examples don't work",
+    "url": "https://github.com/jlord/sheetsee-tables/issues/24"
+  },
+  {
+    "hId": "OpenSword/OpenIsopix#1",
+    "usd": 100,
+    "state": "open",
+    "locked": false,
+    "comments": 9,
+    "assignees": "",
+    "title": "Implement the goals/requirements initial list",
+    "url": "https://github.com/OpenSword/OpenIsopix/issues/1"
+  },
+  {
+    "hId": "allure-framework/allure2#1108",
+    "usd": 100,
+    "state": "closed",
+    "locked": false,
+    "comments": 0,
+    "assignees": "",
+    "title": "Additional tabs with results grouped by tags",
+    "url": "https://github.com/allure-framework/allure2/issues/1108"
+  },
+  {
+    "hId": "Alexays/Waybar#3693",
+    "usd": 50,
+    "state": "open",
+    "locked": false,
+    "comments": 11,
+    "assignees": "",
+    "title": "(hyprland/language) [Feature request] Tooltip on the module",
+    "url": "https://github.com/Alexays/Waybar/issues/3693"
+  }
+]
