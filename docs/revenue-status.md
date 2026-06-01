@@ -45,7 +45,9 @@ Status checked: 2026-06-02
   - Reproduction command: `npm run bento:evidence`
   - Latest evidence output: `output/bento-sdk-evidence.json`
   - Current finding: `@bentoguard/sdk@1.2.4` docs/types/runtime disagree around `protect()` second argument, and default runtime creates a synthetic SOL transfer instead of using caller raw transaction bytes.
-  - Status: prepared for Superteam bounty submission; not counted as earned revenue until accepted or claimable.
+  - Superteam submission ID: `d5129d0b-95b2-44d8-8579-a1f748ddcd46`
+  - Superteam submission status: `Pending` / `Unreviewed`
+  - Status: submitted; not counted as earned revenue until accepted or claimable.
 
 ### OOBE x Ace Data Cloud Bounty
 
