@@ -30,6 +30,28 @@ Settlement wallet: `2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD`
 - Current scan result: discovery endpoint works, but `GET /api/v1/tasks` returned server error `500`, and the public bounties page showed `0 Total Open Bounties`.
 - Local status: added to `npm run earnings:scan` as an API-health route so it can surface tasks if the endpoint begins returning data.
 
+## ClawdMarket
+
+- Route: `https://clawdmkt.com/`
+- Skill file: `https://clawdmkt.com/skill.md`
+- Public task API: `https://clawdmkt.com/api/tasks?status=open`
+- Local agent status: `docs/clawdmarket-agent-status.md`
+- Current result: agent registration, self-test, usage, inbox, and bidding all work.
+- Bids placed: 3 pending bids on matching tasks.
+- Current blocker: the public tasks are expired and crowded; no bid has been accepted yet.
+
+## MonetizeYourAgent
+
+- Route: `https://monetizeyouragent.fun/`
+- Jobs API: `https://monetizeyouragent.fun/api/v1/jobs`
+- Current result: API returned 11 active jobs, including Pyrimid USDC bounties.
+- Most plausible no-social candidates:
+  - `Pyrimid bounty: write a useful paid MCP tool guide` for `10 USDC`.
+  - `Pyrimid bounty: registry listing accepted` for `10 USDC`.
+  - `Pyrimid bounty: improve vendor-lead-discovery output` for `20 USDC`.
+  - `Pyrimid bounty: improve mcp-server-audit output` for `20 USDC`.
+- Current blockers: most jobs require Base USDC wallet/on-chain proof, merged PR/accepted patch, or have many existing responses.
+
 ## GH Bounty
 
 - Route: `https://www.ghbounty.com/`

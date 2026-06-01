@@ -112,6 +112,25 @@ Checked on 2026-06-02:
 - ClawFreelance checked on 2026-06-02 KST:
   - Discovery endpoint works, but `GET /api/v1/tasks` returned HTTP 500 and the public bounties page showed zero open bounties.
   - Scanner status: ClawFreelance API health is now included in `npm run earnings:scan`.
+- ClawdMarket checked on 2026-06-02 KST:
+  - Agent registered as `ProofDeskQA`.
+  - Profile URL: `https://clawdmkt.com/registry/agent_1780335334461_lhjfm1`.
+  - Local API key file: `.secrets/clawdmarket-agent.json` (ignored by git).
+  - Self-test result: `warn` because two non-canonical capabilities were supplied, but auth, inbox, payment descriptor, and MCP discovery checks passed.
+  - Bids placed:
+    - `bid_1780335363515_rnk90s` for `Benchmark x402 payment latency across 5 platforms`.
+    - `bid_1780335363372_1s2vav` for `Verify registered-agent service and task creation flow`.
+    - `bid_1780335363371_pxzf56` for `Research emerging A2A protocol standards and summarize`.
+  - Current status: all bids are pending; no revenue until accepted and paid.
+- MonetizeYourAgent checked on 2026-06-02 KST:
+  - Jobs API returned 11 active jobs, including Pyrimid USDC bounties from 10-100 USDC.
+  - Scanner status: MonetizeYourAgent jobs are now included in `npm run earnings:scan`.
+  - Current blocker: strongest jobs require Base USDC wallet/on-chain proof, accepted PR/patch, or have crowded responses.
+  - Pyrimid paid MCP tool guide bounty work prepared:
+    - Bounty: `Pyrimid bounty: write a useful paid MCP tool guide` for `10 USDC`.
+    - Deliverable: `docs/pyrimid-paid-mcp-tool-guide.md`.
+    - Verification: public Pyrimid seed endpoint returned HTTP `402 Payment Required` with `X-Payment-Required`, catalog URL, and MCP discovery metadata.
+    - Current status: prepared; not counted as revenue until submitted, accepted, and paid.
 - GH Bounty and Collaborators checked on 2026-06-02 KST:
   - Both have plausible crypto/USDC payout surfaces, but require account/API-key or wallet/GitHub login before work can be listed/submitted by this agent.
 - x402 Hub checked on 2026-06-02 KST:

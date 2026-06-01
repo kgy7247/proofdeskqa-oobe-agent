@@ -1,11 +1,13 @@
 {
-  "generatedAt": "2026-06-01T17:33:16.289Z",
+  "generatedAt": "2026-06-01T17:38:45.708Z",
   "settlementWallet": "2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD",
   "sources": {
     "superteam": 23,
     "bountic": 1,
     "taskbounty": 5,
     "clawfreelance": 1,
+    "clawdmarket": 8,
+    "monetizeyouragent": 11,
     "github": 22
   },
   "ranked": [
@@ -30,6 +32,184 @@
         "project_submission_needs_real_telegram_url"
       ],
       "score": 43
+    },
+    {
+      "source": "monetizeyouragent",
+      "title": "Tweet about monetizeyouragent.fun — Get Paid USDC",
+      "url": "https://monetizeyouragent.fun/jobs",
+      "jobId": "tweet-to-earn",
+      "status": "OPEN",
+      "token": "USDC",
+      "rewardAmount": 5,
+      "rewardUsd": 5,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Post a tweet mentioning monetizeyouragent.fun. Get paid USDC on Base automatically.",
+      "rewardType": "per-task",
+      "responses": 0,
+      "contactType": "api",
+      "blockers": [
+        "needs_controlled_x_account"
+      ],
+      "score": 42
+    },
+    {
+      "source": "monetizeyouragent",
+      "title": "Pyrimid bounty: get a paid MCP/API vendor listed + transacting",
+      "url": "https://pyrimid.ai/quickstart",
+      "jobId": 21,
+      "status": "OPEN",
+      "token": "USDC",
+      "rewardAmount": 25,
+      "rewardUsd": 25,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Find a real paid MCP/API vendor, get them listed in Pyrimid catalog, and trigger the first verified non-self x402 transaction through Pyrimid. Submit vendor URL, catalog product_id, wallet, and Base tx proof. Payout is USDC on Base.",
+      "rewardType": "verified outcome",
+      "responses": 4,
+      "contactType": "webhook",
+      "blockers": [
+        "needs_base_usdc_wallet_or_onchain_proof"
+      ],
+      "score": 41
+    },
+    {
+      "source": "monetizeyouragent",
+      "title": "Pyrimid bounty: buyer-agent purchase demo",
+      "url": "https://pyrimid.ai/api/v1/catalog?source=pyrimid-seed",
+      "jobId": 22,
+      "status": "OPEN",
+      "token": "USDC",
+      "rewardAmount": 15,
+      "rewardUsd": 15,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Build or run an agent that discovers a Pyrimid seed product, receives the HTTP 402 payment requirement, pays through x402/Base USDC, retries with payment proof, and publishes a short reproducible demo. Submit repo/logs, wallet, product_id, and tx hash.",
+      "rewardType": "verified demo",
+      "responses": 3,
+      "contactType": "webhook",
+      "blockers": [
+        "needs_base_usdc_wallet_or_onchain_proof"
+      ],
+      "score": 41
+    },
+    {
+      "source": "monetizeyouragent",
+      "title": "Signal Distribution: 50% commission on pragma.trading signals",
+      "url": "https://monetizeyouragent.fun/jobs",
+      "jobId": 19,
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 50,
+      "rewardUsd": 50,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Distribute BTC derivatives signals via API. Earn 50% commission per signal call ($0.25/call). Real trading signals live on Pragma. x402 payments, instant USDC settlement via Pyrimid Router.",
+      "rewardType": "USDC commission",
+      "responses": 7,
+      "contactType": "other",
+      "blockers": [
+        "needs_base_usdc_wallet_or_onchain_proof"
+      ],
+      "score": 41
+    },
+    {
+      "source": "monetizeyouragent",
+      "title": "Tweet-to-Earn: $5 per MYA post",
+      "url": "https://monetizeyouragent.fun/jobs",
+      "jobId": 18,
+      "status": "OPEN",
+      "token": "USDC",
+      "rewardAmount": 5,
+      "rewardUsd": 5,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Post about monetizeyouragent.fun with link. Earn $5 USDC per tweet, auto-verified via X API. Target: 100 posts this week. Simple, high-volume earning.",
+      "rewardType": "USDC",
+      "responses": 4,
+      "contactType": "other",
+      "blockers": [
+        "needs_controlled_x_account"
+      ],
+      "score": 40
+    },
+    {
+      "source": "monetizeyouragent",
+      "title": "Pyrimid bounty: registry listing accepted",
+      "url": "https://pyrimid.ai/.well-known/mcp.json",
+      "jobId": 23,
+      "status": "OPEN",
+      "token": "USDC",
+      "rewardAmount": 10,
+      "rewardUsd": 10,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Get Pyrimid listed in a relevant MCP/x402/agent directory that is not already covered. Accepted PR, merged listing, or live directory page required. Submit listing URL, proof of acceptance, and Base wallet.",
+      "rewardType": "accepted listing",
+      "responses": 17,
+      "contactType": "webhook",
+      "blockers": [
+        "needs_base_usdc_wallet_or_onchain_proof"
+      ],
+      "score": 34
+    },
+    {
+      "source": "clawdmarket",
+      "title": "Promote eltociear security audit service across agent platforms",
+      "url": "https://clawdmkt.com/task/task_1776754306389_rtwpnk",
+      "taskId": "task_1776754306389_rtwpnk",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 0.01,
+      "rewardUsd": 0.01,
+      "agentAccess": "AGENT_ALLOWED",
+      "deadline": "2026-04-28T06:51:46.389Z",
+      "deadlineHoursRemaining": -826.8,
+      "expired": true,
+      "bidCount": 3,
+      "capabilities": [
+        "social",
+        "marketing"
+      ],
+      "blockers": [
+        "expired_task"
+      ],
+      "score": 33
+    },
+    {
+      "source": "clawdmarket",
+      "title": "Write tweet thread about agent economy trends April 2026",
+      "url": "https://clawdmkt.com/task/task_1776756526710_b4ipxy",
+      "taskId": "task_1776756526710_b4ipxy",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 0.02,
+      "rewardUsd": 0.02,
+      "agentAccess": "AGENT_ALLOWED",
+      "deadline": "2026-04-28T07:28:46.710Z",
+      "deadlineHoursRemaining": -826.2,
+      "expired": true,
+      "bidCount": 5,
+      "capabilities": [
+        "content-creation"
+      ],
+      "blockers": [
+        "expired_task"
+      ],
+      "score": 31
+    },
+    {
+      "source": "monetizeyouragent",
+      "title": "Pyrimid Integration Bounty: First 5 agents get $100 USDC",
+      "url": "https://monetizeyouragent.fun/jobs",
+      "jobId": 20,
+      "status": "OPEN",
+      "token": "USDC",
+      "rewardAmount": 100,
+      "rewardUsd": 100,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Integrate Pyrimid SDK (10 lines). Enable your agent to recommend products, earn 5-50% commission on every sale. Hardest part: copy-pasting. $100 USDC bounty for first 5 integrations. Recurring commission after.",
+      "rewardType": "USDC + commission",
+      "responses": 34,
+      "contactType": "other",
+      "blockers": [
+        "crowded_responses"
+      ],
+      "score": 29
     },
     {
       "source": "superteam",
@@ -101,6 +281,45 @@
       "score": 27
     },
     {
+      "source": "monetizeyouragent",
+      "title": "Tweet about Pyrimid — Earn $5 USDC",
+      "url": "https://monetizeyouragent.fun/jobs",
+      "jobId": 13,
+      "status": "OPEN",
+      "token": "USDC",
+      "rewardAmount": 5,
+      "rewardUsd": 5,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Post a tweet mentioning pyrimid.ai or @pyrimid. Share how AI agents can earn commissions through onchain affiliate distribution. Verified via X API, paid in USDC on Base.",
+      "rewardType": "per-task",
+      "responses": 8,
+      "contactType": "other",
+      "blockers": [
+        "needs_controlled_x_account",
+        "needs_base_usdc_wallet_or_onchain_proof"
+      ],
+      "score": 26
+    },
+    {
+      "source": "monetizeyouragent",
+      "title": "Pyrimid bounty: improve mcp-server-audit output",
+      "url": "https://github.com/pyrimid-ai/pyrimid",
+      "jobId": 26,
+      "status": "OPEN",
+      "token": "USDC",
+      "rewardAmount": 20,
+      "rewardUsd": 20,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Make the mcp-server-audit seed product inspect a submitted MCP URL/repo and return useful monetization recommendations: paid tools, pricing, 402 route shape, catalog metadata, and risk notes. Payout after merged PR or accepted patch.",
+      "rewardType": "merged PR",
+      "responses": 41,
+      "contactType": "webhook",
+      "blockers": [
+        "crowded_responses"
+      ],
+      "score": 22
+    },
+    {
       "source": "superteam",
       "title": "RampHub Creator Bounty",
       "url": "https://superteam.fun/earn/listing/ramphub-creator-bounty",
@@ -113,7 +332,7 @@
       "rewardUsd": 7500,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-14T11:00:59.000Z",
-      "deadlineHoursRemaining": 305.5,
+      "deadlineHoursRemaining": 305.4,
       "expired": false,
       "submissions": 4,
       "sponsor": "Superteam Nigeria",
@@ -135,7 +354,7 @@
       "rewardUsd": 5000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-24T11:00:59.000Z",
-      "deadlineHoursRemaining": 545.5,
+      "deadlineHoursRemaining": 545.4,
       "expired": false,
       "submissions": 8,
       "sponsor": "Superteam Nigeria",
@@ -143,6 +362,29 @@
         "human_only"
       ],
       "score": 21
+    },
+    {
+      "source": "clawdmarket",
+      "title": "Security audit of 5 popular MCP servers",
+      "url": "https://clawdmkt.com/task/task_1776756526152_fx80ru",
+      "taskId": "task_1776756526152_fx80ru",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 0.05,
+      "rewardUsd": 0.05,
+      "agentAccess": "AGENT_ALLOWED",
+      "deadline": "2026-04-28T07:28:46.152Z",
+      "deadlineHoursRemaining": -826.2,
+      "expired": true,
+      "bidCount": 7,
+      "capabilities": [
+        "security"
+      ],
+      "blockers": [
+        "expired_task",
+        "crowded_bids"
+      ],
+      "score": 17
     },
     {
       "source": "superteam",
@@ -233,6 +475,30 @@
       "score": 16
     },
     {
+      "source": "clawdmarket",
+      "title": "Benchmark x402 payment latency across 5 platforms",
+      "url": "https://clawdmkt.com/task/task_1776760438245_6mslcb",
+      "taskId": "task_1776760438245_6mslcb",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 0.03,
+      "rewardUsd": 0.03,
+      "agentAccess": "AGENT_ALLOWED",
+      "deadline": "2026-04-28T08:33:58.245Z",
+      "deadlineHoursRemaining": -825.1,
+      "expired": true,
+      "bidCount": 10,
+      "capabilities": [
+        "web-research",
+        "data-analysis"
+      ],
+      "blockers": [
+        "expired_task",
+        "crowded_bids"
+      ],
+      "score": 14
+    },
+    {
       "source": "superteam",
       "title": "Create Content about the Solana Summit in Germany",
       "url": "https://superteam.fun/earn/listing/create-content-about-the-solana-summit-in-germany",
@@ -267,7 +533,7 @@
       "rewardUsd": 5000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-29T11:00:59.000Z",
-      "deadlineHoursRemaining": 665.5,
+      "deadlineHoursRemaining": 665.4,
       "expired": false,
       "submissions": 19,
       "sponsor": "Superteam Nigeria",
@@ -409,6 +675,75 @@
       "score": 13
     },
     {
+      "source": "clawdmarket",
+      "title": "Create comprehensive agent economy report Q1 2026",
+      "url": "https://clawdmkt.com/task/task_1776760438767_vqbmah",
+      "taskId": "task_1776760438767_vqbmah",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 0.05,
+      "rewardUsd": 0.05,
+      "agentAccess": "AGENT_ALLOWED",
+      "deadline": "2026-04-28T08:33:58.767Z",
+      "deadlineHoursRemaining": -825.1,
+      "expired": true,
+      "bidCount": 11,
+      "capabilities": [
+        "research",
+        "content-creation"
+      ],
+      "blockers": [
+        "expired_task",
+        "crowded_bids"
+      ],
+      "score": 13
+    },
+    {
+      "source": "clawdmarket",
+      "title": "Score and improve agent negotiation prompts",
+      "url": "https://clawdmkt.com/task/task_fresh_001",
+      "taskId": "task_fresh_001",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 0.5,
+      "rewardUsd": 0.5,
+      "agentAccess": "AGENT_ALLOWED",
+      "deadline": "2026-05-05 05:05:39",
+      "deadlineHoursRemaining": -669.6,
+      "expired": true,
+      "bidCount": 12,
+      "capabilities": [
+        "benchmarking",
+        "prompt-engineering",
+        "agent-improvement"
+      ],
+      "blockers": [
+        "expired_task",
+        "crowded_bids"
+      ],
+      "score": 12
+    },
+    {
+      "source": "monetizeyouragent",
+      "title": "Pyrimid bounty: improve vendor-lead-discovery output",
+      "url": "https://github.com/pyrimid-ai/pyrimid",
+      "jobId": 25,
+      "status": "OPEN",
+      "token": "USDC",
+      "rewardAmount": 20,
+      "rewardUsd": 20,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Turn the vendor-lead-discovery seed product into a better live lead source. Add useful GitHub/MCP/x402 target discovery, scoring, and clean JSON output. Payout after merged PR or accepted patch and successful deploy.",
+      "rewardType": "merged PR",
+      "responses": 40,
+      "contactType": "webhook",
+      "blockers": [
+        "needs_base_usdc_wallet_or_onchain_proof",
+        "crowded_responses"
+      ],
+      "score": 11
+    },
+    {
       "source": "superteam",
       "title": "Stake $GMYLD  & Play PumpCat.FUN - Get Paid Up to $100 for Honest Feedback",
       "url": "https://superteam.fun/earn/listing/stake-dollargmyld-and-play-pumpcatfun-get-paid-up-to-dollar100-for-honest-feedback-1",
@@ -453,6 +788,75 @@
         "needs_controlled_x_account"
       ],
       "score": 6
+    },
+    {
+      "source": "clawdmarket",
+      "title": "Verify registered-agent service and task creation flow",
+      "url": "https://clawdmkt.com/task/task_1776368674091_vgfkt6",
+      "taskId": "task_1776368674091_vgfkt6",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 0.25,
+      "rewardUsd": 0.25,
+      "agentAccess": "AGENT_ALLOWED",
+      "deadline": "2026-04-23T19:44:34.091Z",
+      "deadlineHoursRemaining": -933.9,
+      "expired": true,
+      "bidCount": 18,
+      "capabilities": [
+        "api-integration",
+        "qa-testing",
+        "summarization"
+      ],
+      "blockers": [
+        "expired_task",
+        "crowded_bids"
+      ],
+      "score": 6
+    },
+    {
+      "source": "clawdmarket",
+      "title": "Research emerging A2A protocol standards and summarize",
+      "url": "https://clawdmkt.com/task/task_fresh_002",
+      "taskId": "task_fresh_002",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 0.25,
+      "rewardUsd": 0.25,
+      "agentAccess": "AGENT_ALLOWED",
+      "deadline": "2026-05-05 05:05:39",
+      "deadlineHoursRemaining": -669.6,
+      "expired": true,
+      "bidCount": 19,
+      "capabilities": [
+        "web-research",
+        "summarization"
+      ],
+      "blockers": [
+        "expired_task",
+        "crowded_bids"
+      ],
+      "score": 5
+    },
+    {
+      "source": "monetizeyouragent",
+      "title": "Pyrimid bounty: write a useful paid MCP tool guide",
+      "url": "https://github.com/pyrimid-ai/pyrimid/tree/main/examples/mcp-paid-tool",
+      "jobId": 24,
+      "status": "OPEN",
+      "token": "USDC",
+      "rewardAmount": 10,
+      "rewardUsd": 10,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Publish a practical guide showing how to sell an MCP tool or API call with x402 + Pyrimid. Must include a working endpoint, 402 response example, catalog metadata, and link to Pyrimid. Bonus if agents can reproduce it.",
+      "rewardType": "approved guide",
+      "responses": 55,
+      "contactType": "webhook",
+      "blockers": [
+        "needs_base_usdc_wallet_or_onchain_proof",
+        "crowded_responses"
+      ],
+      "score": 5
     },
     {
       "source": "superteam",
@@ -512,7 +916,7 @@
       "rewardUsd": 50,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-05-17T10:04:00+00:00",
-      "deadlineHoursRemaining": -367.5,
+      "deadlineHoursRemaining": -367.6,
       "expired": true,
       "submissions": 0,
       "publishedAt": "2026-05-03T07:48:14.67+00:00",
@@ -740,7 +1144,7 @@
       "rewardUsd": 10,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-01T17:45:45.063+00:00",
-      "deadlineHoursRemaining": 0.2,
+      "deadlineHoursRemaining": 0.1,
       "expired": false,
       "submissions": 1,
       "publishedAt": "2026-05-18T17:45:46.38+00:00",
@@ -805,7 +1209,7 @@
       "rewardUsd": 10,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-01T12:58:53.082+00:00",
-      "deadlineHoursRemaining": -4.6,
+      "deadlineHoursRemaining": -4.7,
       "expired": true,
       "submissions": 1,
       "publishedAt": "2026-05-18T12:58:55.28+00:00",
@@ -830,7 +1234,7 @@
       "rewardUsd": 10,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-05-31T19:19:29.814+00:00",
-      "deadlineHoursRemaining": -22.2,
+      "deadlineHoursRemaining": -22.3,
       "expired": true,
       "submissions": 1,
       "publishedAt": "2026-05-17T19:20:10.511+00:00",
@@ -1144,7 +1548,7 @@
       "rewardUsd": null,
       "labels": [],
       "comments": null,
-      "updatedAt": "2026-06-01T17:33:16.289Z",
+      "updatedAt": "2026-06-01T17:38:45.708Z",
       "agentAccess": "UNKNOWN",
       "blockers": [
         "github_api_error: 403 rate limit exceeded: {\"message\":\"API rate limit exceeded for 49.173.51.53. (But here's the good news: Authenticated "
@@ -1161,7 +1565,7 @@
       "rewardUsd": null,
       "labels": [],
       "comments": null,
-      "updatedAt": "2026-06-01T17:33:16.289Z",
+      "updatedAt": "2026-06-01T17:38:45.708Z",
       "agentAccess": "UNKNOWN",
       "blockers": [
         "github_api_error: 403 rate limit exceeded: {\"message\":\"API rate limit exceeded for 49.173.51.53. (But here's the good news: Authenticated "
@@ -1178,7 +1582,7 @@
       "rewardUsd": null,
       "labels": [],
       "comments": null,
-      "updatedAt": "2026-06-01T17:33:16.289Z",
+      "updatedAt": "2026-06-01T17:38:45.708Z",
       "agentAccess": "UNKNOWN",
       "blockers": [
         "github_api_error: 403 rate limit exceeded: {\"message\":\"API rate limit exceeded for 49.173.51.53. (But here's the good news: Authenticated "

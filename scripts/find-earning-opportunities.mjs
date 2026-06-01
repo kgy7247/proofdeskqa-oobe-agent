@@ -27,6 +27,11 @@ function parseReward(labels = [], fallbackAmount = null) {
   return price ? Number(price[1]) : fallbackAmount;
 }
 
+function parseRewardText(text = "") {
+  const match = String(text).match(/\$?\s*(\d+(?:\.\d+)?)\s*(USDC|USD|USDG)?/i);
+  return match ? Number(match[1]) : null;
+}
+
 function parseGithubIssueUrl(url) {
   const match = url.match(/github\.com\/([^/]+)\/([^/]+)\/issues\/(\d+)/);
   return match ? { owner: match[1], repo: match[2], number: match[3] } : null;
@@ -55,6 +60,15 @@ function classifyBlockers(item) {
     blockers.push("missing_taskbounty_api_key_for_access_and_submission");
   }
   if (item.source === "clawfreelance" && item.status === "ERROR") blockers.push("clawfreelance_tasks_api_unavailable");
+  if (item.source === "clawdmarket" && item.expired) blockers.push("expired_task");
+  if (item.source === "clawdmarket" && item.bidCount > 5) blockers.push("crowded_bids");
+  if (item.source === "monetizeyouragent") {
+    if (text.includes("twitter") || text.includes("tweet") || text.includes(" x api")) blockers.push("needs_controlled_x_account");
+    if (text.includes("base wallet") || text.includes("base usdc") || text.includes("onchain") || text.includes("x402")) {
+      blockers.push("needs_base_usdc_wallet_or_onchain_proof");
+    }
+    if (item.responses && item.responses > 20) blockers.push("crowded_responses");
+  }
   if (item.type === "project") blockers.push("project_submission_needs_real_telegram_url");
   if (text.includes("twitter") || text.includes("x thread") || text.includes("qrt") || text.includes("quote")) {
     blockers.push("needs_controlled_x_account");
@@ -76,6 +90,8 @@ function scoreOpportunity(item) {
   if (item.source === "superteam") score += 15;
   if (item.source === "taskbounty") score += 12;
   if (item.source === "clawfreelance") score += 12;
+  if (item.source === "monetizeyouragent") score += 14;
+  if (item.source === "clawdmarket") score += 8;
   if (item.source === "github") score += 10;
   if (item.source === "bountic") score += 8;
   if (item.agentAccess === "AGENT_ALLOWED" || item.agentAccess === "AGENT_ONLY") score += 40;
@@ -86,6 +102,8 @@ function scoreOpportunity(item) {
   score -= (item.blockers?.length ?? 0) * 12;
   if (item.blockers?.includes("human_only")) score -= 25;
   if (item.competitionPrs && item.competitionPrs > 0) score -= Math.min(35, item.competitionPrs * 7);
+  if (item.bidCount && item.bidCount > 0) score -= Math.min(25, item.bidCount);
+  if (item.responses && item.responses > 0) score -= Math.min(25, item.responses / 2);
   if (item.status !== "OPEN") score -= 50;
   return Math.round(score);
 }
@@ -216,6 +234,59 @@ async function fetchClawFreelance() {
   }
 }
 
+async function fetchClawdMarket() {
+  const data = await getJson("https://clawdmkt.com/api/tasks?status=open");
+  return (data.tasks ?? []).map((task) => {
+    const deadline = deadlineStatus(task.expires_at);
+    const item = {
+      source: "clawdmarket",
+      title: task.title,
+      url: `https://clawdmkt.com/task/${task.id}`,
+      taskId: task.id,
+      status: task.status?.toUpperCase?.() ?? "OPEN",
+      token: "USD",
+      rewardAmount: task.budget_usd ?? null,
+      rewardUsd: task.budget_usd ?? null,
+      agentAccess: "AGENT_ALLOWED",
+      deadline: task.expires_at,
+      deadlineHoursRemaining: deadline.hoursRemaining,
+      expired: deadline.expired || task.expires_in === "expired",
+      bidCount: task.bid_count ?? null,
+      capabilities: task.required_capabilities ?? [],
+      blockers: []
+    };
+    item.blockers = classifyBlockers(item);
+    item.score = scoreOpportunity(item);
+    return item;
+  });
+}
+
+async function fetchMonetizeYourAgentJobs() {
+  const data = await getJson("https://monetizeyouragent.fun/api/v1/jobs");
+  return (data.data ?? []).map((job) => {
+    const rewardUsd = parseRewardText(job.reward);
+    const item = {
+      source: "monetizeyouragent",
+      title: job.title,
+      url: job.contact_endpoint ?? `https://monetizeyouragent.fun/jobs`,
+      jobId: job.id,
+      status: job.status === "active" ? "OPEN" : job.status?.toUpperCase?.() ?? "OPEN",
+      token: String(job.reward ?? "").toUpperCase().includes("USDC") ? "USDC" : "USD",
+      rewardAmount: rewardUsd,
+      rewardUsd,
+      agentAccess: "AGENT_ALLOWED",
+      description: job.description,
+      rewardType: job.reward_type,
+      responses: job.responses_count ?? null,
+      contactType: job.contact_type ?? null,
+      blockers: []
+    };
+    item.blockers = classifyBlockers(item);
+    item.score = scoreOpportunity(item);
+    return item;
+  });
+}
+
 async function githubSearch(query, perPage = 10) {
   const url = `https://api.github.com/search/issues?q=${encodeURIComponent(query)}&per_page=${perPage}&sort=updated&order=desc`;
   const data = await getJson(url, {
@@ -326,6 +397,8 @@ ${rows}
 - Bento is agent-eligible and pays from a 200 USDC pool, but useful submission needs private beta access and product testing.
 - TaskBounty exposes an agent-friendly public API, but the latest API scan returned no open tasks.
 - ClawFreelance exposes a public task API, but the latest open-task API probe failed server-side.
+- MonetizeYourAgent exposes active USDC jobs, but most practical items require Base wallet/on-chain proof or have many existing responses.
+- ClawdMarket registration and bidding work, but the current public tasks are expired or heavily bid.
 - Bountic currently exposes only one small open bounty and it already has competing PRs.
 - Ubiquity/GitHub bounties can pay in USD equivalents, but the currently visible easy issues are either crowded or already have competing PRs.
 
@@ -338,15 +411,17 @@ This file is opportunity discovery, not revenue. Count progress only after a pay
 await mkdir("output", { recursive: true });
 await mkdir("docs", { recursive: true });
 
-const [superteam, bountic, taskbounty, clawfreelance, github] = await Promise.all([
+const [superteam, bountic, taskbounty, clawfreelance, clawdmarket, monetizeyouragent, github] = await Promise.all([
   fetchSuperteam(),
   fetchBountic(),
   fetchTaskBounty(),
   fetchClawFreelance(),
+  fetchClawdMarket(),
+  fetchMonetizeYourAgentJobs(),
   fetchGithubBounties()
 ]);
 
-const ranked = [...superteam, ...bountic, ...taskbounty, ...clawfreelance, ...github]
+const ranked = [...superteam, ...bountic, ...taskbounty, ...clawfreelance, ...clawdmarket, ...monetizeyouragent, ...github]
   .sort((a, b) => b.score - a.score);
 
 const report = {
@@ -357,6 +432,8 @@ const report = {
     bountic: bountic.length,
     taskbounty: taskbounty.length,
     clawfreelance: clawfreelance.length,
+    clawdmarket: clawdmarket.length,
+    monetizeyouragent: monetizeyouragent.length,
     github: github.length
   },
   ranked
