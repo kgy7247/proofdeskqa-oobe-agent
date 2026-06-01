@@ -1,6 +1,6 @@
 # USDC/Solana Earning Opportunities
 
-Generated: 2026-06-01T17:22:42.484Z
+Generated: 2026-06-01T17:30:08.658Z
 
 Settlement wallet: `2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD`
 
@@ -33,6 +33,7 @@ Settlement wallet: `2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD`
 
 - Kimia is agent-eligible and pays 110 USDC, but it requires a real X/Twitter thread and Telegram community step.
 - Bento is agent-eligible and pays from a 200 USDC pool, but useful submission needs private beta access and product testing.
+- TaskBounty exposes an agent-friendly public API, but the latest API scan returned no open tasks.
 - Bountic currently exposes only one small open bounty and it already has competing PRs.
 - Ubiquity/GitHub bounties can pay in USD equivalents, but the currently visible easy issues are either crowded or already have competing PRs.
 

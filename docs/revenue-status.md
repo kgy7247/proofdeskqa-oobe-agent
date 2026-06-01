@@ -97,6 +97,22 @@ Checked on 2026-06-02:
   - `ubiquity-os-marketplace/text-conversation-rewards#330` (`225 USD`) is not actionable by a normal external contributor; recent bot logs say the task requires core team or administrator access.
   - `ubiquity/ubiquibot#912` (`200 USD`) has no issue comments, but the repository is archived, so a normal PR route is not viable.
 
+### Agent Marketplace Route Checks
+
+- Route notes: `docs/agent-marketplace-routes.md`.
+- TaskBounty public API checked on 2026-06-02 KST:
+  - API: `https://www.task-bounty.com/api/v1/tasks`
+  - Result: 5 tasks returned; all were `AWARDED` or `CLOSED`, so no immediate PR bounty is open.
+  - Scanner status: TaskBounty is now included in `npm run earnings:scan`.
+  - Blocker for future submissions: `TASKBOUNTY_API_KEY` is required for task access and submission.
+- AgentJob checked on 2026-06-02 KST:
+  - Route: `https://agent-job.ai/skill.md`
+  - Potential earning mode: paid USDC chat replies.
+  - Current blocker: dashboard/API key setup is required; no `AGENTJOB_API_KEY` is present in this repo.
+- x402 Hub checked on 2026-06-02 KST:
+  - Route: `https://docs.x402hub.ai/docs/getting-started/for-agents`
+  - Current blocker: docs describe Base Sepolia/testnet status and a 20 USDC stake requirement before claiming runs, so it is not a no-capital route right now.
+
 ## Verification Commands
 
 ```powershell

@@ -38,6 +38,12 @@ function classifyBlockers(item) {
   const text = `${item.title ?? ""} ${item.description ?? ""}`.toLowerCase();
   const blockers = [];
   if (item.agentAccess === "HUMAN_ONLY") blockers.push("human_only");
+  if (item.source === "taskbounty" && item.status !== "OPEN") blockers.push(`taskbounty_status_${String(item.status).toLowerCase()}`);
+  if (item.source === "taskbounty" && item.expired) blockers.push("expired_deadline");
+  if (item.source === "taskbounty" && item.submissions > 0) blockers.push("existing_submissions");
+  if (item.source === "taskbounty" && item.status === "OPEN" && !process.env.TASKBOUNTY_API_KEY) {
+    blockers.push("missing_taskbounty_api_key_for_access_and_submission");
+  }
   if (item.type === "project") blockers.push("project_submission_needs_real_telegram_url");
   if (text.includes("twitter") || text.includes("x thread") || text.includes("qrt") || text.includes("quote")) {
     blockers.push("needs_controlled_x_account");
@@ -57,6 +63,7 @@ function classifyBlockers(item) {
 function scoreOpportunity(item) {
   let score = 0;
   if (item.source === "superteam") score += 15;
+  if (item.source === "taskbounty") score += 12;
   if (item.source === "github") score += 10;
   if (item.source === "bountic") score += 8;
   if (item.agentAccess === "AGENT_ALLOWED" || item.agentAccess === "AGENT_ONLY") score += 40;
@@ -118,6 +125,36 @@ async function fetchBountic() {
     item.score = scoreOpportunity(item);
     return item;
   }).filter((item) => item.status === "OPEN");
+}
+
+async function fetchTaskBounty() {
+  const data = await getJson("https://www.task-bounty.com/api/v1/tasks");
+  return (data.data ?? []).map((task) => {
+    const deadline = deadlineStatus(task.submission_deadline);
+    const rewardUsd = Number.isFinite(task.bounty_cents) ? task.bounty_cents / 100 : null;
+    const item = {
+      source: "taskbounty",
+      title: task.title,
+      url: "https://www.task-bounty.com/browse",
+      taskId: task.id,
+      slug: task.slug,
+      category: task.category,
+      description: task.short_summary,
+      status: task.status,
+      token: task.currency?.toUpperCase() ?? "USD",
+      rewardAmount: rewardUsd,
+      rewardUsd,
+      agentAccess: "AGENT_ALLOWED",
+      deadline: task.submission_deadline,
+      deadlineHoursRemaining: deadline.hoursRemaining,
+      expired: deadline.expired,
+      submissions: task.submission_count ?? null,
+      publishedAt: task.published_at
+    };
+    item.blockers = classifyBlockers(item);
+    item.score = scoreOpportunity(item);
+    return item;
+  });
 }
 
 async function githubSearch(query, perPage = 10) {
@@ -225,6 +262,7 @@ ${rows}
 
 - Kimia is agent-eligible and pays 110 USDC, but it requires a real X/Twitter thread and Telegram community step.
 - Bento is agent-eligible and pays from a 200 USDC pool, but useful submission needs private beta access and product testing.
+- TaskBounty exposes an agent-friendly public API, but the latest API scan returned no open tasks.
 - Bountic currently exposes only one small open bounty and it already has competing PRs.
 - Ubiquity/GitHub bounties can pay in USD equivalents, but the currently visible easy issues are either crowded or already have competing PRs.
 
@@ -237,13 +275,14 @@ This file is opportunity discovery, not revenue. Count progress only after a pay
 await mkdir("output", { recursive: true });
 await mkdir("docs", { recursive: true });
 
-const [superteam, bountic, github] = await Promise.all([
+const [superteam, bountic, taskbounty, github] = await Promise.all([
   fetchSuperteam(),
   fetchBountic(),
+  fetchTaskBounty(),
   fetchGithubBounties()
 ]);
 
-const ranked = [...superteam, ...bountic, ...github]
+const ranked = [...superteam, ...bountic, ...taskbounty, ...github]
   .sort((a, b) => b.score - a.score);
 
 const report = {
@@ -252,6 +291,7 @@ const report = {
   sources: {
     superteam: superteam.length,
     bountic: bountic.length,
+    taskbounty: taskbounty.length,
     github: github.length
   },
   ranked
