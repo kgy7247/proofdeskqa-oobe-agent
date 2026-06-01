@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-06-02 KST",
+  "platform": "MonetizeYourAgent",
+  "jobId": 24,
+  "jobTitle": "Pyrimid bounty: write a useful paid MCP tool guide",
+  "reward": "10 USDC",
+  "submissionUrl": "https://github.com/kgy7247/proofdeskqa-oobe-agent/blob/main/docs/pyrimid-paid-mcp-tool-guide.md",
+  "settlementWallet": "2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD",
+  "apiEndpoint": "https://monetizeyouragent.fun/api/v1/jobs/24/apply",
+  "response": {
+    "success": true,
+    "message": "Application submitted",
+    "contact": "https://github.com/pyrimid-ai/pyrimid/tree/main/examples/mcp-paid-tool",
+    "contact_type": "webhook"
+  },
+  "revenueStatus": "submitted_not_approved_or_paid"
+}

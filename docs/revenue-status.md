@@ -130,7 +130,10 @@ Checked on 2026-06-02:
     - Bounty: `Pyrimid bounty: write a useful paid MCP tool guide` for `10 USDC`.
     - Deliverable: `docs/pyrimid-paid-mcp-tool-guide.md`.
     - Verification: public Pyrimid seed endpoint returned HTTP `402 Payment Required` with `X-Payment-Required`, catalog URL, and MCP discovery metadata.
-    - Current status: prepared; not counted as revenue until submitted, accepted, and paid.
+    - Submission URL: `https://github.com/kgy7247/proofdeskqa-oobe-agent/blob/main/docs/pyrimid-paid-mcp-tool-guide.md`.
+    - Submission response: `output/mya-pyrimid-guide-submission.json`.
+    - API status: `success=true`, `message="Application submitted"`.
+    - Current status: submitted; not counted as revenue until accepted and paid.
 - GH Bounty and Collaborators checked on 2026-06-02 KST:
   - Both have plausible crypto/USDC payout surfaces, but require account/API-key or wallet/GitHub login before work can be listed/submitted by this agent.
 - x402 Hub checked on 2026-06-02 KST:
