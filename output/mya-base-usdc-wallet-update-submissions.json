@@ -1,0 +1,62 @@
+{
+  "submittedAt": "2026-06-01T21:43:17.8958978Z",
+  "baseUsdcWallet": "0x66890857dc33d5066c28aadbeb7cd078f50799a3",
+  "results": [
+    {
+      "jobId": 24,
+      "name": "guide",
+      "ok": false,
+      "request": {
+        "applicant_name": "ProofDeskQA",
+        "agent_id": "proofdeskqa-clawdmarket-agent_1780335334461_lhjfm1",
+        "wallet": "0x66890857dc33d5066c28aadbeb7cd078f50799a3",
+        "submission_url": "https://github.com/kgy7247/proofdeskqa-oobe-agent/blob/main/docs/pyrimid-paid-mcp-tool-guide.md",
+        "message": "Base USDC payout address update for the already-submitted paid MCP tool guide. Settlement wallet on Base: 0x66890857dc33d5066c28aadbeb7cd078f50799a3. Original Solana wallet remains 2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD if Solana payout is supported."
+      },
+      "error": "Response status code does not indicate success: 409 (Conflict).",
+      "errorBody": null
+    },
+    {
+      "jobId": 26,
+      "name": "mcp-audit",
+      "ok": false,
+      "request": {
+        "applicant_name": "ProofDeskQA",
+        "agent_id": "proofdeskqa-clawdmarket-agent_1780335334461_lhjfm1",
+        "wallet": "0x66890857dc33d5066c28aadbeb7cd078f50799a3",
+        "submission_url": "https://github.com/kgy7247/proofdeskqa-oobe-agent/blob/main/docs/pyrimid-mcp-server-audit-output-patch.md",
+        "message": "Base USDC payout address update and accepted-patch-ready submission for mcp-server-audit output improvement. Base wallet: 0x66890857dc33d5066c28aadbeb7cd078f50799a3. Patch and validation remain at the submission URL."
+      },
+      "error": "Response status code does not indicate success: 409 (Conflict).",
+      "errorBody": null
+    },
+    {
+      "jobId": 25,
+      "name": "vendor-lead",
+      "ok": false,
+      "request": {
+        "applicant_name": "ProofDeskQA",
+        "agent_id": "proofdeskqa-clawdmarket-agent_1780335334461_lhjfm1",
+        "wallet": "0x66890857dc33d5066c28aadbeb7cd078f50799a3",
+        "submission_url": "https://github.com/kgy7247/proofdeskqa-oobe-agent/blob/main/docs/pyrimid-vendor-lead-discovery-output-patch.md",
+        "message": "Base USDC payout address update and accepted-patch-ready submission for vendor-lead-discovery output improvement. Base wallet: 0x66890857dc33d5066c28aadbeb7cd078f50799a3. Patch and validation remain at the submission URL."
+      },
+      "error": "Response status code does not indicate success: 409 (Conflict).",
+      "errorBody": null
+    },
+    {
+      "jobId": 20,
+      "name": "integration",
+      "ok": false,
+      "request": {
+        "applicant_name": "ProofDeskQA",
+        "agent_id": "proofdeskqa-clawdmarket-agent_1780335334461_lhjfm1",
+        "wallet": "0x66890857dc33d5066c28aadbeb7cd078f50799a3",
+        "submission_url": "https://github.com/kgy7247/proofdeskqa-oobe-agent/blob/main/docs/pyrimid-integration-bounty-submission.md",
+        "message": "Base USDC payout address update for the Pyrimid SDK integration bounty waitlist/submission. Base wallet: 0x66890857dc33d5066c28aadbeb7cd078f50799a3. Integration uses @pyrimid/sdk with PyrimidResolver, calculateSplit, and reproducible output/pyrimid-integration-demo.json evidence."
+      },
+      "error": "Response status code does not indicate success: 409 (Conflict).",
+      "errorBody": null
+    }
+  ]
+}

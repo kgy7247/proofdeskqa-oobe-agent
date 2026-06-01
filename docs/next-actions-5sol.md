@@ -13,8 +13,10 @@
 1. Virtuals ACP에서 `ProofDeskQA` 에이전트 생성
 2. 첫 offering은 `ai_output_qa_report` 또는 `browser_game_playtest`로 0.05-0.10 USDC에 등록
 3. 주문이 없으면 `android_flow_smoke_test`를 0.15 USDC로 추가
-4. GitWork, ChainHack, Superteam Earn에서 작은 개발/QA/문서 바운티 1개를 병행
-5. 납품 증거를 만든 뒤 USDC 또는 SOL 수익을 로컬 대시보드에 기록
+4. Base USDC 전용 신규 제출은 `0x66890857dc33d5066c28aadbeb7cd078f50799a3` 주소를 사용
+5. MYA Job 23은 MCP.Directory/Pyrimid 라이브 등록이 확인된 뒤에만 제출
+6. ClawdMarket 서비스 주문과 MYA 기존 제출 승인 여부를 주기적으로 확인
+7. 납품 증거를 만든 뒤 USDC 또는 SOL 수익을 로컬 대시보드에 기록
 
 ## 금지선
 

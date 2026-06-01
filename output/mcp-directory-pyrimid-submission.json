@@ -1,0 +1,14 @@
+{
+  "submittedAt": "2026-06-01T21:45:56.7105229Z",
+  "request": {
+    "githubUrl": "https://github.com/pyrimid-ai/pyrimid",
+    "npmPackage": "@pyrimid/sdk",
+    "pypiPackage": null,
+    "description": "Paid MCP/API tools with Base USDC settlement and agent discovery metadata."
+  },
+  "statusCode": 409,
+  "contentType": [
+    "application/json"
+  ],
+  "body": "{\"error\":\"This repository has already been submitted. We'll review it soon!\"}"
+}

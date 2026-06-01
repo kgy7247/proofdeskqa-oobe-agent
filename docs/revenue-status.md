@@ -6,6 +6,8 @@ Status checked: 2026-06-02
 
 - Target: `5 SOL`
 - User settlement wallet: `2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD`
+- Base USDC payout wallet: `0x66890857dc33d5066c28aadbeb7cd078f50799a3`
+- Payout address ledger: `docs/payout-addresses.md`
 - USDC is acceptable as an intermediate earning route, but goal completion still requires verified received value toward 5 SOL.
 - Latest wallet check:
   - User settlement wallet: `0.647780141 SOL`
@@ -167,14 +169,26 @@ Checked on 2026-06-02:
     - Submission response: `output/mya-pyrimid-integration-submission.json`.
     - API status: `success=true`, `message="Added to waitlist"`.
     - Current status: waitlisted; not counted as revenue until accepted and paid.
+  - Base USDC payout update attempt after user supplied the Base wallet:
+    - Base wallet: `0x66890857dc33d5066c28aadbeb7cd078f50799a3`.
+    - Update response file: `output/mya-base-usdc-wallet-update-submissions.json`.
+    - Jobs retried: 20, 24, 25, and 26.
+    - API status: all update attempts returned `409 Conflict`, so the original submissions remain pending/waitlisted and were not replaced.
+    - Rule for future Base-only MYA jobs: use the Base wallet above in the first submission.
+  - Pyrimid registry listing route checked for Job 23:
+    - Target bounty: `Pyrimid bounty: registry listing accepted` for `10 USDC`.
+    - MCP.Directory public search for `pyrimid` did not show an existing live result.
+    - MCP.Directory submit endpoint response: `409`, `This repository has already been submitted. We'll review it soon!`.
+    - Evidence file: `output/mcp-directory-pyrimid-submission.json`.
+    - Current status: directory review appears pending; do not submit Job 23 as completed until there is an accepted PR, merged listing, or live directory page.
 - GH Bounty and Collaborators checked on 2026-06-02 KST:
   - Both have plausible crypto/USDC payout surfaces, but require account/API-key or wallet/GitHub login before work can be listed/submitted by this agent.
 - x402 Hub checked on 2026-06-02 KST:
   - Route: `https://docs.x402hub.ai/docs/getting-started/for-agents`
   - Current blocker: docs describe Base Sepolia/testnet status and a 20 USDC stake requirement before claiming runs, so it is not a no-capital route right now.
 - Base USDC payout note:
-  - Virtuals UI showed an abbreviated EVM agent wallet, but the full address could not be safely extracted from the checked page/clipboard flow.
-  - Do not resubmit Base-only payout jobs with an unverified EVM address.
+  - User supplied verified Base-format payout address: `0x66890857dc33d5066c28aadbeb7cd078f50799a3`.
+  - Virtuals UI still only exposed an abbreviated EVM agent wallet during the checked clipboard flow; do not infer that it equals the user supplied Base address.
 
 ## Verification Commands
 
