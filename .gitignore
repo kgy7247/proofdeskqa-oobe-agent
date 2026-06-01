@@ -7,3 +7,12 @@ vite-dev*.log
 *.local
 output/*.zip
 *.tgz
+.codex-remote-attachments/
+work/
+output/gibwork-js/
+output/gibwork-devserver.*
+output/github-auth-device-flow.*
+output/gibwork-network-probe-*.json
+output/gibwork-landing-desktop-20260602.png
+output/gibwork-landing-mobile-20260602.png
+output/gibwork-landing-dom-*.html

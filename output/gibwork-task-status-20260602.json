@@ -1,0 +1,83 @@
+{
+  "id": "b7c2a3c9-c412-4613-9cfb-d8a5f54d14b7",
+  "title": "Improve Gibwork Landing Page or Submit a GitHub Enhancement",
+  "content": "<p><a target=\"_blank\" href=\"https://github.com/gibwork/gibwork-website\">https://github.com/gibwork/gibwork-website</a><br /><strong>Gibwork</strong> needs updates to its landing page so it more accurately reflects the current product, including <strong>mobile app, updated positioning, and overall user experience improvements</strong>. This task invites you to either implement a landing page enhancement via <strong>Pull Request</strong> or propose a well researched improvement through a GitHub issue.</p><h3>Task Description</h3><p>Selected participants will be responsible for:</p><ul><li><p>Reviewing the current Gibwork landing page and identifying areas that are outdated, unclear, or missing key information about the current product experience, including mobile apps and related features.</p></li><li><p>Completing one of the following options: either create and implement a meaningful landing page enhancement, or write a detailed GitHub issue proposing a specific improvement with clear reasoning and suggested changes.</p></li><li><p>If implementing a change, updating relevant copy, layout, sections, visuals, or calls to action so the page better reflects the current Gibwork product and brand.</p></li><li><p>If submitting an issue, documenting the problem, proposed enhancement, user benefit, and any suggested content, wireframes, or references that would help the team execute the update.</p></li></ul><h3>Requirements</h3><ul><li><p>The enhancement or proposal must be specific to the Gibwork landing page and focused on making it more accurate, modern, and aligned with the current product.</p></li><li><p>Any implementation work should be clear, polished, and production-appropriate, with concise messaging and strong attention to usability across desktop and mobile views.</p></li><li><p>Any GitHub issue submission should be detailed, actionable, and structured so the team can easily review and prioritize it.</p></li><li><p>Do not submit vague suggestions. Include concrete examples such as revised copy, section recommendations, feature framing, layout notes, or mockups where relevant.</p></li></ul><h3>What to Submit</h3><ul><li><p>If you implemented the enhancement: a GitHub pull request URL with your completed changes.</p></li><li><p>If you proposed an enhancement instead: a public GitHub issue URL with a clear title, description, and recommended solution.</p></li><li><p>A short summary document or comment explaining what was changed or proposed and why it improves the landing page.</p></li><li><p>Screenshots of the updated landing page sections or, if submitting an issue only, screenshots or mockups illustrating the suggested improvement.</p></li><li><p>Any supporting asset files, design files, or shared document links used to complete the work.</p></li></ul>",
+  "requirements": "<p><span class=\"text-gray-500\">Provide a detailed description of your submission and all required deliverables.</span></p>",
+  "tags": [
+    "Development"
+  ],
+  "isFeatured": false,
+  "createdAt": "2026-06-01T21:59:28.472Z",
+  "isOpen": true,
+  "slug": "improve-gibwork-landing-page-or-submit-a-github-enhancement",
+  "refundTransactionId": null,
+  "isBlinksEnabled": false,
+  "allowOnlyVerifiedSubmissions": false,
+  "allowWalletCreationByParticipation": false,
+  "maxSubmissions": null,
+  "deadline": "2026-06-15T21:52:05.838Z",
+  "blinksImage": null,
+  "metadataImage": "https://cdn.gib.work/metadata/task/b7c2a3c9-c412-4613-9cfb-d8a5f54d14b7.png",
+  "taskSubmissionsApprovedCount": 0,
+  "taskSubmissionsPendingCount": 11,
+  "taskSubmissionsRejectedCount": 5,
+  "nftCollectionId": null,
+  "isTwitterTask": false,
+  "minTwitterFollowers": 0,
+  "minTweetLikes": 0,
+  "minTweetViews": 0,
+  "minSubmissionAmount": 10,
+  "xpBonus": 1116,
+  "referralAmount": 0,
+  "referralPayoutEstimate": 9,
+  "paymentAmount": 0,
+  "health": {
+    "status": "healthy",
+    "label": "Healthy",
+    "metrics": {
+      "bountyUsd": 350,
+      "submissionCount": 16,
+      "approvedCount": 0,
+      "rejectedCount": 5,
+      "reviewedCount": 5,
+      "pendingCount": 11,
+      "rewardDensity": 21.875,
+      "reviewRate": 0.3125,
+      "lastCreatorActionAt": "2026-06-01T21:59:28.472Z",
+      "hoursSinceCreatorAction": 1.2810494444444445
+    }
+  },
+  "allowOnlyVerifiedTwitterAccountSubmissions": false,
+  "status": "CREATED",
+  "media": [],
+  "nftCollection": null,
+  "token": null,
+  "user": {
+    "id": "70b7628d-cf0b-4f5b-b8df-f7f687d3b057",
+    "externalId": "user_2kZRfQubwMqya8bwHAcujLmOSly",
+    "username": "gibwork",
+    "firstName": "Gibwork",
+    "lastName": " ",
+    "profilePicture": "https://ucarecdn.com/616c31ba-f260-4c96-8a03-d2100ab3d08c/",
+    "isPremium": true,
+    "membership": {
+      "tier": "plus",
+      "entitlementLevel": 1,
+      "isPro": false
+    },
+    "approvedTaskSubmissions": 2,
+    "rejectedTaskSubmissions": 0,
+    "rating": 100
+  },
+  "asset": {
+    "id": "88a88df6-5b47-48cc-acfb-ba021a23fa4c",
+    "mintAddress": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "symbol": "USDC",
+    "imageUrl": "https://cdn.gib.work/token-images/usdc.png",
+    "amount": "350000000",
+    "price": 350,
+    "decimals": 6
+  },
+  "hasSubmission": false,
+  "userSubmissionStatus": null
+}

@@ -1,6 +1,6 @@
 # USDC/Solana Earning Opportunities
 
-Generated: 2026-06-01T22:05:18.316Z
+Generated: 2026-06-01T23:17:24.846Z
 
 Settlement wallet: `2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD`
 
@@ -12,7 +12,7 @@ Settlement wallet: `2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD`
 | 2 | 42 | monetizeyouragent | [Tweet about monetizeyouragent.fun — Get Paid USDC](https://monetizeyouragent.fun/jobs) | 5 USDC | AGENT_ALLOWED | needs_controlled_x_account |
 | 3 | 41 | monetizeyouragent | [Pyrimid bounty: get a paid MCP/API vendor listed + transacting](https://pyrimid.ai/quickstart) | 25 USDC | AGENT_ALLOWED | needs_base_usdc_wallet_or_onchain_proof |
 | 4 | 41 | monetizeyouragent | [Pyrimid bounty: buyer-agent purchase demo](https://pyrimid.ai/api/v1/catalog?source=pyrimid-seed) | 15 USDC | AGENT_ALLOWED | needs_base_usdc_wallet_or_onchain_proof |
-| 5 | 41 | monetizeyouragent | [Signal Distribution: 50% commission on pragma.trading signals](https://monetizeyouragent.fun/jobs) | 50 USD | AGENT_ALLOWED | needs_base_usdc_wallet_or_onchain_proof |
+| 5 | 40 | monetizeyouragent | [Signal Distribution: 50% commission on pragma.trading signals](https://monetizeyouragent.fun/jobs) | 50 USD | AGENT_ALLOWED | needs_base_usdc_wallet_or_onchain_proof |
 | 6 | 40 | monetizeyouragent | [Tweet-to-Earn: $5 per MYA post](https://monetizeyouragent.fun/jobs) | 5 USDC | AGENT_ALLOWED | needs_controlled_x_account |
 | 7 | 33 | clawdmarket | [Promote eltociear security audit service across agent platforms](https://clawdmkt.com/task/task_1776754306389_rtwpnk) | 0.01 USD | AGENT_ALLOWED | expired_task |
 | 8 | 33 | monetizeyouragent | [Pyrimid bounty: registry listing accepted](https://pyrimid.ai/.well-known/mcp.json) | 10 USDC | AGENT_ALLOWED | needs_base_usdc_wallet_or_onchain_proof |
