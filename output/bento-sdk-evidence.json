@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-01T17:20:32.373Z",
+  "generatedAt": "2026-06-01T23:40:27.766Z",
   "sdk": {
     "package": "@bentoguard/sdk",
     "version": "1.2.4",
     "description": "Bento Guard SDK - AI-powered security infrastructure for autonomous agents"
   },
   "safety": {
-    "burnerAgentAddress": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
+    "burnerAgentAddress": "GDhzbBkdikWDfmC34B4Q6nJEM1Ac9xrxyr5fVahzZWZg",
     "privateKeyPersisted": false,
     "userWalletTouched": false,
     "realFundsMoved": false
@@ -107,7 +107,7 @@
       "data": {
         "data": {
           "registered": false,
-          "agent_public_addr": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3"
+          "agent_public_addr": "GDhzbBkdikWDfmC34B4Q6nJEM1Ac9xrxyr5fVahzZWZg"
         },
         "statusCode": 200,
         "message": "Success"
@@ -119,27 +119,27 @@
       "instruction": "Swap 1 USDC for SOL on Jupiter.",
       "serializedBase64Prefix": "AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "accountKeys": [
-        "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
+        "GDhzbBkdikWDfmC34B4Q6nJEM1Ac9xrxyr5fVahzZWZg",
         "11111111111111111111111111111111"
       ],
       "decodedTransfer": {
-        "from": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
-        "to": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
+        "from": "GDhzbBkdikWDfmC34B4Q6nJEM1Ac9xrxyr5fVahzZWZg",
+        "to": "GDhzbBkdikWDfmC34B4Q6nJEM1Ac9xrxyr5fVahzZWZg",
         "lamports": 1000000,
         "sol": 0.001
       }
     },
     {
-      "instruction": "Send 2 SOL to 6jnTC3J5d34uNJZiLLQJ85rNWLMZwyQ3GE5ACagpATpQ",
+      "instruction": "Send 2 SOL to 51kZW6tJteTKFM19NRRG8CipXaG2xCQ3Uj3EAqaXTpHJ",
       "serializedBase64Prefix": "AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "accountKeys": [
-        "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
-        "6jnTC3J5d34uNJZiLLQJ85rNWLMZwyQ3GE5ACagpATpQ",
+        "GDhzbBkdikWDfmC34B4Q6nJEM1Ac9xrxyr5fVahzZWZg",
+        "51kZW6tJteTKFM19NRRG8CipXaG2xCQ3Uj3EAqaXTpHJ",
         "11111111111111111111111111111111"
       ],
       "decodedTransfer": {
-        "from": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
-        "to": "6jnTC3J5d34uNJZiLLQJ85rNWLMZwyQ3GE5ACagpATpQ",
+        "from": "GDhzbBkdikWDfmC34B4Q6nJEM1Ac9xrxyr5fVahzZWZg",
+        "to": "51kZW6tJteTKFM19NRRG8CipXaG2xCQ3Uj3EAqaXTpHJ",
         "lamports": 2000000000,
         "sol": 2
       }
@@ -157,20 +157,20 @@
     ],
     "capturedPostTransactions": [
       {
-        "agentAddress": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
+        "agentAddress": "GDhzbBkdikWDfmC34B4Q6nJEM1Ac9xrxyr5fVahzZWZg",
         "network": "testnet",
-        "base64TxSha256": "df13cc93fde500a9f51a114af7782c7aaa457901a01369047b44ed02c85e5eba",
-        "base64TxPrefix": "AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-        "encryptedPayloadLength": 380,
-        "signatureLength": 87
-      },
-      {
-        "agentAddress": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
-        "network": "testnet",
-        "base64TxSha256": "df13cc93fde500a9f51a114af7782c7aaa457901a01369047b44ed02c85e5eba",
+        "base64TxSha256": "a7ec4a091371a232853aeff8222ff400ffd44b97e46ad7ec275a66358bffbb39",
         "base64TxPrefix": "AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
         "encryptedPayloadLength": 380,
         "signatureLength": 88
+      },
+      {
+        "agentAddress": "GDhzbBkdikWDfmC34B4Q6nJEM1Ac9xrxyr5fVahzZWZg",
+        "network": "testnet",
+        "base64TxSha256": "a7ec4a091371a232853aeff8222ff400ffd44b97e46ad7ec275a66358bffbb39",
+        "base64TxPrefix": "AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "encryptedPayloadLength": 380,
+        "signatureLength": 87
       }
     ],
     "sameGeneratedBase64Tx": true,

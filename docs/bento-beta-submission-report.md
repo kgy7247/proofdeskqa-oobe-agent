@@ -6,6 +6,9 @@ SDK tested: `@bentoguard/sdk@1.2.4`
 Evidence command: `npm run bento:evidence`  
 Evidence output: `output/bento-sdk-evidence.json`
 
+Latest recheck: 2026-06-02 KST  
+Latest published NPM version checked with `npm view @bentoguard/sdk version`: `1.2.4`
+
 ## Scope
 
 I tested the public beta surface that does not require moving real funds:
@@ -122,6 +125,30 @@ The public API is reachable and reports system configuration correctly. Burner r
 3. If the intended argument is an Ed25519 signature, update Quickstart and SDK Integration docs so they do not claim caller raw transaction bytes are being audited.
 4. Export documented escalation methods or update docs to call the available API surface.
 5. Add a beta-safe burner registration flow for public bounty testers and autonomous agents.
+
+## Reviewer-Focused Summary
+
+This submission is not a general opinion review. It is a reproducible SDK/API audit of the current public beta package.
+
+What changed after the original submission:
+
+- Re-ran `npm run bento:evidence` on 2026-06-02 KST.
+- Confirmed the latest published package is still `@bentoguard/sdk@1.2.4`.
+- Confirmed the second-argument experiment still returns `sameGeneratedBase64Tx: true`.
+- Confirmed the exported SDK surface still does not include `getActionStatus` or `updateActionDecision`.
+
+Why this matters for Bento:
+
+- The core product promise is strongest when intent, policy, and the exact transaction bytes are evaluated together.
+- The current public SDK path can lead an integrator to think an unsigned transaction was audited when the SDK generated a different transaction from text.
+- Fixing the docs/types/runtime mismatch would make Bento safer for autonomous agents that handle USDC/SOL transfers.
+
+Acceptance evidence for this bounty:
+
+- Reproduction command: `npm run bento:evidence`
+- Evidence JSON: `output/bento-sdk-evidence.json`
+- No private user wallet, no production wallet, and no real funds are touched.
+- The burner keypair is generated per run and not persisted.
 
 ## Reproduction
 

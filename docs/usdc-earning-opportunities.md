@@ -1,6 +1,6 @@
 # USDC/Solana Earning Opportunities
 
-Generated: 2026-06-01T23:17:24.846Z
+Generated: 2026-06-01T23:34:53.626Z
 
 Settlement wallet: `2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD`
 

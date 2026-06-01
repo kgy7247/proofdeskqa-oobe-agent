@@ -50,6 +50,7 @@ Status checked: 2026-06-02
   - Current finding: `@bentoguard/sdk@1.2.4` docs/types/runtime disagree around `protect()` second argument, and default runtime creates a synthetic SOL transfer instead of using caller raw transaction bytes.
   - Superteam submission ID: `d5129d0b-95b2-44d8-8579-a1f748ddcd46`
   - Superteam submission status: `Pending` / `Unreviewed`
+  - Follow-up improvement on 2026-06-02 KST: the report was updated with a reviewer-focused summary after rechecking that the latest published `@bentoguard/sdk` version is still `1.2.4` and the reproduction still shows `sameGeneratedBase64Tx=true`.
   - Status: submitted; not counted as earned revenue until accepted or claimable.
 
 ### OOBE x Ace Data Cloud Bounty
