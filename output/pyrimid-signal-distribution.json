@@ -1,0 +1,126 @@
+{
+  "generatedAt": "2026-06-01T22:06:31.876Z",
+  "distributor": "ProofDeskQA",
+  "baseUsdcWallet": "0x66890857dc33d5066c28aadbeb7cd078f50799a3",
+  "catalogUrl": "https://pyrimid.ai/api/v1/catalog?source=pyrimid-seed",
+  "catalogUpdatedAt": "2026-06-01T22:02:57.622Z",
+  "totalCatalogProducts": 115,
+  "signalProductsFound": 4,
+  "recommended": {
+    "vendor_id": "0x03151ef1da0ab3edeb941a890e6cbc75",
+    "vendor_name": "pragma.trading",
+    "product_id": "onchain_0x03151e_2",
+    "endpoint": "https://pragma.trading/api/v1/signals/enterprise",
+    "method": "GET",
+    "category": "trading",
+    "price_usdc": 0.5,
+    "price_display": "$0.50",
+    "affiliate_bps": 5000,
+    "estimated_commission_usdc": 0.25,
+    "network": "base",
+    "asset": "USDC",
+    "source": "onchain",
+    "tags": [
+      "api",
+      "trading"
+    ]
+  },
+  "products": [
+    {
+      "vendor_id": "0x03151ef1da0ab3edeb941a890e6cbc75",
+      "vendor_name": "pragma.trading",
+      "product_id": "onchain_0x03151e_2",
+      "endpoint": "https://pragma.trading/api/v1/signals/enterprise",
+      "method": "GET",
+      "category": "trading",
+      "price_usdc": 0.5,
+      "price_display": "$0.50",
+      "affiliate_bps": 5000,
+      "estimated_commission_usdc": 0.25,
+      "network": "base",
+      "asset": "USDC",
+      "source": "onchain",
+      "tags": [
+        "api",
+        "trading"
+      ]
+    },
+    {
+      "vendor_id": "pragma-trading",
+      "vendor_name": "pragma.trading",
+      "product_id": "pragma-signal-snapshot",
+      "endpoint": "https://pyrimid.ai/api/v1/paid/signals",
+      "method": "GET",
+      "category": "trading-data",
+      "price_usdc": 0.25,
+      "price_display": "$0.25",
+      "affiliate_bps": 5000,
+      "estimated_commission_usdc": 0.125,
+      "network": "base",
+      "asset": "USDC",
+      "source": "pyrimid-seed",
+      "tags": [
+        "btc",
+        "perps",
+        "signals",
+        "x402",
+        "base",
+        "agent-api"
+      ]
+    },
+    {
+      "vendor_id": "0x03151ef1da0ab3edeb941a890e6cbc75",
+      "vendor_name": "pragma.trading",
+      "product_id": "onchain_0x03151e_1",
+      "endpoint": "https://pragma.trading/api/v1/signals/pro",
+      "method": "GET",
+      "category": "trading",
+      "price_usdc": 0.25,
+      "price_display": "$0.25",
+      "affiliate_bps": 5000,
+      "estimated_commission_usdc": 0.125,
+      "network": "base",
+      "asset": "USDC",
+      "source": "onchain",
+      "tags": [
+        "api",
+        "trading"
+      ]
+    },
+    {
+      "vendor_id": "0x034604e25078e293d7b181fa23b3f2f6",
+      "vendor_name": "CoinOpAI",
+      "product_id": "onchain_0x034604_1",
+      "endpoint": "https://x402.coinopai.com/api/kronos/signals",
+      "method": "GET",
+      "category": "trading",
+      "price_usdc": 0.05,
+      "price_display": "$0.05",
+      "affiliate_bps": 2000,
+      "estimated_commission_usdc": 0.01,
+      "network": "base",
+      "asset": "USDC",
+      "source": "onchain",
+      "tags": [
+        "api",
+        "ai"
+      ]
+    }
+  ],
+  "distributionPlan": {
+    "buyerFlow": [
+      "Fetch Pyrimid catalog.",
+      "Select the highest-fit trading signal product.",
+      "Request the endpoint and receive HTTP 402 payment requirements.",
+      "Buyer agent pays through Pyrimid Router on Base USDC.",
+      "Pyrimid routes affiliate commission to the distributor wallet when configured by the buyer/payment path."
+    ],
+    "targetBuyerAgents": [
+      "trading research agents",
+      "portfolio risk agents",
+      "market briefing agents",
+      "x402 buyer-agent demos"
+    ],
+    "disclosure": "This distributor does not trade, provide financial advice, or self-purchase. Revenue only counts after a real non-self routed payment is received or claimable."
+  }
+}

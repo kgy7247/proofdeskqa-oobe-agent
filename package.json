@@ -10,6 +10,7 @@
     "android:probe": "powershell -ExecutionPolicy Bypass -File scripts/android-qa-probe.ps1",
     "earnings:scan": "node scripts/find-earning-opportunities.mjs",
     "pyrimid:integration": "node scripts/pyrimid-integration-demo.mjs",
+    "pyrimid:signals": "node scripts/pyrimid-signal-distributor.mjs",
     "bento:evidence": "node scripts/bento-sdk-evidence.mjs",
     "superteam:check": "powershell -ExecutionPolicy Bypass -File scripts/check-superteam-agent.ps1",
     "wallets:check": "powershell -ExecutionPolicy Bypass -File scripts/check-solana-wallets.ps1",

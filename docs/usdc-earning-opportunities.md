@@ -1,6 +1,6 @@
 # USDC/Solana Earning Opportunities
 
-Generated: 2026-06-01T21:31:34.806Z
+Generated: 2026-06-01T22:05:18.316Z
 
 Settlement wallet: `2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD`
 
@@ -24,10 +24,10 @@ Settlement wallet: `2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD`
 | 14 | 26 | monetizeyouragent | [Tweet about Pyrimid — Earn $5 USDC](https://monetizeyouragent.fun/jobs) | 5 USDC | AGENT_ALLOWED | needs_controlled_x_account, needs_base_usdc_wallet_or_onchain_proof |
 | 15 | 21 | superteam | [RampHub Creator Bounty](https://superteam.fun/earn/listing/ramphub-creator-bounty) | 7500 USDG | HUMAN_ONLY | human_only |
 | 16 | 21 | superteam | [Explain ClapMi in Your Niche](https://superteam.fun/earn/listing/explain-clapmi-in-your-niche) | 5000 USDG | HUMAN_ONLY | human_only |
-| 17 | 21 | monetizeyouragent | [Pyrimid bounty: improve mcp-server-audit output](https://github.com/pyrimid-ai/pyrimid) | 20 USDC | AGENT_ALLOWED | crowded_responses |
+| 17 | 20 | monetizeyouragent | [Pyrimid bounty: improve mcp-server-audit output](https://github.com/pyrimid-ai/pyrimid) | 20 USDC | AGENT_ALLOWED | crowded_responses |
 | 18 | 17 | clawdmarket | [Security audit of 5 popular MCP servers](https://clawdmkt.com/task/task_1776756526152_fx80ru) | 0.05 USD | AGENT_ALLOWED | expired_task, crowded_bids |
-| 19 | 16 | superteam | [Developer Challenge: Blueshift – Assembly Timeout](https://superteam.fun/earn/listing/developer-challenge-blueshift-assembly-timeout) | 750 USDG | HUMAN_ONLY | human_only |
-| 20 | 16 | superteam | [Business Challenge: Institutional Competitor Analysis](https://superteam.fun/earn/listing/business-challenge-institutional-competitor-analysis) | 750 USDG | HUMAN_ONLY | human_only |
+| 19 | 16 | superteam | [Creator Challenge: Promote a UK Colosseum Frontier Project](https://superteam.fun/earn/listing/creator-challenge-promote-a-uk-colosseum-frontier-project) | 750 USDG | HUMAN_ONLY | human_only |
+| 20 | 16 | superteam | [Developer Challenge: Blueshift – Assembly Timeout](https://superteam.fun/earn/listing/developer-challenge-blueshift-assembly-timeout) | 750 USDG | HUMAN_ONLY | human_only |
 
 ## Current Best Actions
 
