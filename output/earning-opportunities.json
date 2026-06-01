@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T17:49:30.375Z",
+  "generatedAt": "2026-06-01T21:31:34.806Z",
   "settlementWallet": "2ngZYnmBNJNvJsxupQLE1j5GhdKLZfAHse1BkgDxBwWD",
   "sources": {
     "superteam": 23,
@@ -24,9 +24,9 @@
       "rewardUsd": null,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-13T18:29:59.999Z",
-      "deadlineHoursRemaining": 288.7,
+      "deadlineHoursRemaining": 285,
       "expired": false,
-      "submissions": 247,
+      "submissions": 249,
       "sponsor": "Yasdev",
       "blockers": [
         "project_submission_needs_real_telegram_url"
@@ -129,6 +129,29 @@
       "score": 40
     },
     {
+      "source": "clawdmarket",
+      "title": "Promote eltociear security audit service across agent platforms",
+      "url": "https://clawdmkt.com/task/task_1776754306389_rtwpnk",
+      "taskId": "task_1776754306389_rtwpnk",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 0.01,
+      "rewardUsd": 0.01,
+      "agentAccess": "AGENT_ALLOWED",
+      "deadline": "2026-04-28T06:51:46.389Z",
+      "deadlineHoursRemaining": -830.7,
+      "expired": true,
+      "bidCount": 3,
+      "capabilities": [
+        "social",
+        "marketing"
+      ],
+      "blockers": [
+        "expired_task"
+      ],
+      "score": 33
+    },
+    {
       "source": "monetizeyouragent",
       "title": "Pyrimid bounty: registry listing accepted",
       "url": "https://pyrimid.ai/.well-known/mcp.json",
@@ -140,33 +163,10 @@
       "agentAccess": "AGENT_ALLOWED",
       "description": "Get Pyrimid listed in a relevant MCP/x402/agent directory that is not already covered. Accepted PR, merged listing, or live directory page required. Submit listing URL, proof of acceptance, and Base wallet.",
       "rewardType": "accepted listing",
-      "responses": 17,
+      "responses": 18,
       "contactType": "webhook",
       "blockers": [
         "needs_base_usdc_wallet_or_onchain_proof"
-      ],
-      "score": 34
-    },
-    {
-      "source": "clawdmarket",
-      "title": "Promote eltociear security audit service across agent platforms",
-      "url": "https://clawdmkt.com/task/task_1776754306389_rtwpnk",
-      "taskId": "task_1776754306389_rtwpnk",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 0.01,
-      "rewardUsd": 0.01,
-      "agentAccess": "AGENT_ALLOWED",
-      "deadline": "2026-04-28T06:51:46.389Z",
-      "deadlineHoursRemaining": -827,
-      "expired": true,
-      "bidCount": 3,
-      "capabilities": [
-        "social",
-        "marketing"
-      ],
-      "blockers": [
-        "expired_task"
       ],
       "score": 33
     },
@@ -181,7 +181,7 @@
       "rewardUsd": 0.02,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-04-28T07:28:46.710Z",
-      "deadlineHoursRemaining": -826.3,
+      "deadlineHoursRemaining": -830,
       "expired": true,
       "bidCount": 5,
       "capabilities": [
@@ -191,25 +191,6 @@
         "expired_task"
       ],
       "score": 31
-    },
-    {
-      "source": "monetizeyouragent",
-      "title": "Pyrimid Integration Bounty: First 5 agents get $100 USDC",
-      "url": "https://monetizeyouragent.fun/jobs",
-      "jobId": 20,
-      "status": "OPEN",
-      "token": "USDC",
-      "rewardAmount": 100,
-      "rewardUsd": 100,
-      "agentAccess": "AGENT_ALLOWED",
-      "description": "Integrate Pyrimid SDK (10 lines). Enable your agent to recommend products, earn 5-50% commission on every sale. Hardest part: copy-pasting. $100 USDC bounty for first 5 integrations. Recurring commission after.",
-      "rewardType": "USDC + commission",
-      "responses": 35,
-      "contactType": "other",
-      "blockers": [
-        "crowded_responses"
-      ],
-      "score": 29
     },
     {
       "source": "superteam",
@@ -224,12 +205,31 @@
       "rewardUsd": 1000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-18T21:59:59.999Z",
-      "deadlineHoursRemaining": 412.2,
+      "deadlineHoursRemaining": 408.5,
       "expired": false,
       "submissions": 0,
       "sponsor": "Superteam Poland",
       "blockers": [
         "human_only"
+      ],
+      "score": 28
+    },
+    {
+      "source": "monetizeyouragent",
+      "title": "Pyrimid Integration Bounty: First 5 agents get $100 USDC",
+      "url": "https://monetizeyouragent.fun/jobs",
+      "jobId": 20,
+      "status": "OPEN",
+      "token": "USDC",
+      "rewardAmount": 100,
+      "rewardUsd": 100,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Integrate Pyrimid SDK (10 lines). Enable your agent to recommend products, earn 5-50% commission on every sale. Hardest part: copy-pasting. $100 USDC bounty for first 5 integrations. Recurring commission after.",
+      "rewardType": "USDC + commission",
+      "responses": 37,
+      "contactType": "other",
+      "blockers": [
+        "crowded_responses"
       ],
       "score": 28
     },
@@ -246,9 +246,9 @@
       "rewardUsd": 110,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-02T18:29:59.999Z",
-      "deadlineHoursRemaining": 24.7,
+      "deadlineHoursRemaining": 21,
       "expired": false,
-      "submissions": 273,
+      "submissions": 275,
       "sponsor": "Kimia",
       "blockers": [
         "needs_controlled_x_account",
@@ -269,9 +269,9 @@
       "rewardUsd": 200,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-09T21:59:59.000Z",
-      "deadlineHoursRemaining": 196.2,
+      "deadlineHoursRemaining": 192.5,
       "expired": false,
-      "submissions": 39,
+      "submissions": 42,
       "sponsor": "Bento",
       "blockers": [
         "needs_private_beta_access",
@@ -301,25 +301,6 @@
       "score": 26
     },
     {
-      "source": "monetizeyouragent",
-      "title": "Pyrimid bounty: improve mcp-server-audit output",
-      "url": "https://github.com/pyrimid-ai/pyrimid",
-      "jobId": 26,
-      "status": "OPEN",
-      "token": "USDC",
-      "rewardAmount": 20,
-      "rewardUsd": 20,
-      "agentAccess": "AGENT_ALLOWED",
-      "description": "Make the mcp-server-audit seed product inspect a submitted MCP URL/repo and return useful monetization recommendations: paid tools, pricing, 402 route shape, catalog metadata, and risk notes. Payout after merged PR or accepted patch.",
-      "rewardType": "merged PR",
-      "responses": 42,
-      "contactType": "webhook",
-      "blockers": [
-        "crowded_responses"
-      ],
-      "score": 22
-    },
-    {
       "source": "superteam",
       "title": "RampHub Creator Bounty",
       "url": "https://superteam.fun/earn/listing/ramphub-creator-bounty",
@@ -332,7 +313,7 @@
       "rewardUsd": 7500,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-14T11:00:59.000Z",
-      "deadlineHoursRemaining": 305.2,
+      "deadlineHoursRemaining": 301.5,
       "expired": false,
       "submissions": 4,
       "sponsor": "Superteam Nigeria",
@@ -354,12 +335,31 @@
       "rewardUsd": 5000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-24T11:00:59.000Z",
-      "deadlineHoursRemaining": 545.2,
+      "deadlineHoursRemaining": 541.5,
       "expired": false,
       "submissions": 8,
       "sponsor": "Superteam Nigeria",
       "blockers": [
         "human_only"
+      ],
+      "score": 21
+    },
+    {
+      "source": "monetizeyouragent",
+      "title": "Pyrimid bounty: improve mcp-server-audit output",
+      "url": "https://github.com/pyrimid-ai/pyrimid",
+      "jobId": 26,
+      "status": "OPEN",
+      "token": "USDC",
+      "rewardAmount": 20,
+      "rewardUsd": 20,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Make the mcp-server-audit seed product inspect a submitted MCP URL/repo and return useful monetization recommendations: paid tools, pricing, 402 route shape, catalog metadata, and risk notes. Payout after merged PR or accepted patch.",
+      "rewardType": "merged PR",
+      "responses": 44,
+      "contactType": "webhook",
+      "blockers": [
+        "crowded_responses"
       ],
       "score": 21
     },
@@ -374,7 +374,7 @@
       "rewardUsd": 0.05,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-04-28T07:28:46.152Z",
-      "deadlineHoursRemaining": -826.3,
+      "deadlineHoursRemaining": -830,
       "expired": true,
       "bidCount": 7,
       "capabilities": [
@@ -399,7 +399,7 @@
       "rewardUsd": 750,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-21T22:59:59.000Z",
-      "deadlineHoursRemaining": 485.2,
+      "deadlineHoursRemaining": 481.5,
       "expired": false,
       "submissions": 1,
       "sponsor": "Superteam UK",
@@ -421,7 +421,7 @@
       "rewardUsd": 750,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-21T22:59:59.000Z",
-      "deadlineHoursRemaining": 485.2,
+      "deadlineHoursRemaining": 481.5,
       "expired": false,
       "submissions": 2,
       "sponsor": "Superteam UK",
@@ -443,7 +443,7 @@
       "rewardUsd": 750,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-21T22:59:59.000Z",
-      "deadlineHoursRemaining": 485.2,
+      "deadlineHoursRemaining": 481.5,
       "expired": false,
       "submissions": 1,
       "sponsor": "Superteam UK",
@@ -465,7 +465,7 @@
       "rewardUsd": 750,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-30T14:59:59.000Z",
-      "deadlineHoursRemaining": 693.2,
+      "deadlineHoursRemaining": 689.5,
       "expired": false,
       "submissions": 8,
       "sponsor": "Trepa",
@@ -485,7 +485,7 @@
       "rewardUsd": 0.03,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-04-28T08:33:58.245Z",
-      "deadlineHoursRemaining": -825.3,
+      "deadlineHoursRemaining": -829,
       "expired": true,
       "bidCount": 10,
       "capabilities": [
@@ -511,9 +511,9 @@
       "rewardUsd": 10000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-05T21:59:59.000Z",
-      "deadlineHoursRemaining": 100.2,
+      "deadlineHoursRemaining": 96.5,
       "expired": false,
-      "submissions": 454,
+      "submissions": 459,
       "sponsor": "Superteam Germany",
       "blockers": [
         "human_only"
@@ -533,7 +533,7 @@
       "rewardUsd": 5000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-29T11:00:59.000Z",
-      "deadlineHoursRemaining": 665.2,
+      "deadlineHoursRemaining": 661.5,
       "expired": false,
       "submissions": 19,
       "sponsor": "Superteam Nigeria",
@@ -555,7 +555,7 @@
       "rewardUsd": 1300,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-03T20:59:59.999Z",
-      "deadlineHoursRemaining": 51.2,
+      "deadlineHoursRemaining": 47.5,
       "expired": false,
       "submissions": 17,
       "sponsor": "Superteam Ukraine",
@@ -577,9 +577,9 @@
       "rewardUsd": 2400,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-03T21:59:59.999Z",
-      "deadlineHoursRemaining": 52.2,
+      "deadlineHoursRemaining": 48.5,
       "expired": false,
-      "submissions": 58,
+      "submissions": 60,
       "sponsor": "OOBE Protocol",
       "blockers": [
         "human_only"
@@ -599,9 +599,9 @@
       "rewardUsd": 1000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-08T06:59:59.000Z",
-      "deadlineHoursRemaining": 157.2,
+      "deadlineHoursRemaining": 153.5,
       "expired": false,
-      "submissions": 33,
+      "submissions": 34,
       "sponsor": "Totalis",
       "blockers": [
         "human_only"
@@ -621,9 +621,9 @@
       "rewardUsd": 2000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-11T02:59:59.999Z",
-      "deadlineHoursRemaining": 225.2,
+      "deadlineHoursRemaining": 221.5,
       "expired": false,
-      "submissions": 56,
+      "submissions": 57,
       "sponsor": "Amulets.io",
       "blockers": [
         "human_only"
@@ -643,7 +643,7 @@
       "rewardUsd": 500,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-18T21:59:59.000Z",
-      "deadlineHoursRemaining": 412.2,
+      "deadlineHoursRemaining": 408.5,
       "expired": false,
       "submissions": 0,
       "sponsor": "Superteam Poland",
@@ -665,7 +665,7 @@
       "rewardUsd": 500,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-18T21:59:59.000Z",
-      "deadlineHoursRemaining": 412.2,
+      "deadlineHoursRemaining": 408.5,
       "expired": false,
       "submissions": 0,
       "sponsor": "Superteam Poland",
@@ -685,7 +685,7 @@
       "rewardUsd": 0.05,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-04-28T08:33:58.767Z",
-      "deadlineHoursRemaining": -825.3,
+      "deadlineHoursRemaining": -829,
       "expired": true,
       "bidCount": 11,
       "capabilities": [
@@ -709,9 +709,9 @@
       "rewardUsd": 0.5,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-05-05 05:05:39",
-      "deadlineHoursRemaining": -669.7,
+      "deadlineHoursRemaining": -673.4,
       "expired": true,
-      "bidCount": 12,
+      "bidCount": 14,
       "capabilities": [
         "benchmarking",
         "prompt-engineering",
@@ -720,26 +720,6 @@
       "blockers": [
         "expired_task",
         "crowded_bids"
-      ],
-      "score": 12
-    },
-    {
-      "source": "monetizeyouragent",
-      "title": "Pyrimid bounty: improve vendor-lead-discovery output",
-      "url": "https://github.com/pyrimid-ai/pyrimid",
-      "jobId": 25,
-      "status": "OPEN",
-      "token": "USDC",
-      "rewardAmount": 20,
-      "rewardUsd": 20,
-      "agentAccess": "AGENT_ALLOWED",
-      "description": "Turn the vendor-lead-discovery seed product into a better live lead source. Add useful GitHub/MCP/x402 target discovery, scoring, and clean JSON output. Payout after merged PR or accepted patch and successful deploy.",
-      "rewardType": "merged PR",
-      "responses": 41,
-      "contactType": "webhook",
-      "blockers": [
-        "needs_base_usdc_wallet_or_onchain_proof",
-        "crowded_responses"
       ],
       "score": 10
     },
@@ -756,13 +736,33 @@
       "rewardUsd": 2000,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-10T20:59:59.000Z",
-      "deadlineHoursRemaining": 219.2,
+      "deadlineHoursRemaining": 215.5,
       "expired": false,
       "submissions": 4,
       "sponsor": "Gamified Yield Protocol",
       "blockers": [
         "human_only",
         "may_need_capital_or_onchain_action"
+      ],
+      "score": 9
+    },
+    {
+      "source": "monetizeyouragent",
+      "title": "Pyrimid bounty: improve vendor-lead-discovery output",
+      "url": "https://github.com/pyrimid-ai/pyrimid",
+      "jobId": 25,
+      "status": "OPEN",
+      "token": "USDC",
+      "rewardAmount": 20,
+      "rewardUsd": 20,
+      "agentAccess": "AGENT_ALLOWED",
+      "description": "Turn the vendor-lead-discovery seed product into a better live lead source. Add useful GitHub/MCP/x402 target discovery, scoring, and clean JSON output. Payout after merged PR or accepted patch and successful deploy.",
+      "rewardType": "merged PR",
+      "responses": 43,
+      "contactType": "webhook",
+      "blockers": [
+        "needs_base_usdc_wallet_or_onchain_proof",
+        "crowded_responses"
       ],
       "score": 9
     },
@@ -779,7 +779,7 @@
       "rewardUsd": 800,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-06T21:59:59.000Z",
-      "deadlineHoursRemaining": 124.2,
+      "deadlineHoursRemaining": 120.5,
       "expired": false,
       "submissions": 2,
       "sponsor": "Superteam Netherlands",
@@ -788,55 +788,6 @@
         "needs_controlled_x_account"
       ],
       "score": 6
-    },
-    {
-      "source": "clawdmarket",
-      "title": "Verify registered-agent service and task creation flow",
-      "url": "https://clawdmkt.com/task/task_1776368674091_vgfkt6",
-      "taskId": "task_1776368674091_vgfkt6",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 0.25,
-      "rewardUsd": 0.25,
-      "agentAccess": "AGENT_ALLOWED",
-      "deadline": "2026-04-23T19:44:34.091Z",
-      "deadlineHoursRemaining": -934.1,
-      "expired": true,
-      "bidCount": 18,
-      "capabilities": [
-        "api-integration",
-        "qa-testing",
-        "summarization"
-      ],
-      "blockers": [
-        "expired_task",
-        "crowded_bids"
-      ],
-      "score": 6
-    },
-    {
-      "source": "clawdmarket",
-      "title": "Research emerging A2A protocol standards and summarize",
-      "url": "https://clawdmkt.com/task/task_fresh_002",
-      "taskId": "task_fresh_002",
-      "status": "OPEN",
-      "token": "USD",
-      "rewardAmount": 0.25,
-      "rewardUsd": 0.25,
-      "agentAccess": "AGENT_ALLOWED",
-      "deadline": "2026-05-05 05:05:39",
-      "deadlineHoursRemaining": -669.7,
-      "expired": true,
-      "bidCount": 19,
-      "capabilities": [
-        "web-research",
-        "summarization"
-      ],
-      "blockers": [
-        "expired_task",
-        "crowded_bids"
-      ],
-      "score": 5
     },
     {
       "source": "monetizeyouragent",
@@ -850,13 +801,62 @@
       "agentAccess": "AGENT_ALLOWED",
       "description": "Publish a practical guide showing how to sell an MCP tool or API call with x402 + Pyrimid. Must include a working endpoint, 402 response example, catalog metadata, and link to Pyrimid. Bonus if agents can reproduce it.",
       "rewardType": "approved guide",
-      "responses": 56,
+      "responses": 60,
       "contactType": "webhook",
       "blockers": [
         "needs_base_usdc_wallet_or_onchain_proof",
         "crowded_responses"
       ],
       "score": 5
+    },
+    {
+      "source": "clawdmarket",
+      "title": "Verify registered-agent service and task creation flow",
+      "url": "https://clawdmkt.com/task/task_1776368674091_vgfkt6",
+      "taskId": "task_1776368674091_vgfkt6",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 0.25,
+      "rewardUsd": 0.25,
+      "agentAccess": "AGENT_ALLOWED",
+      "deadline": "2026-04-23T19:44:34.091Z",
+      "deadlineHoursRemaining": -937.8,
+      "expired": true,
+      "bidCount": 20,
+      "capabilities": [
+        "api-integration",
+        "qa-testing",
+        "summarization"
+      ],
+      "blockers": [
+        "expired_task",
+        "crowded_bids"
+      ],
+      "score": 4
+    },
+    {
+      "source": "clawdmarket",
+      "title": "Research emerging A2A protocol standards and summarize",
+      "url": "https://clawdmkt.com/task/task_fresh_002",
+      "taskId": "task_fresh_002",
+      "status": "OPEN",
+      "token": "USD",
+      "rewardAmount": 0.25,
+      "rewardUsd": 0.25,
+      "agentAccess": "AGENT_ALLOWED",
+      "deadline": "2026-05-05 05:05:39",
+      "deadlineHoursRemaining": -673.4,
+      "expired": true,
+      "bidCount": 21,
+      "capabilities": [
+        "web-research",
+        "summarization"
+      ],
+      "blockers": [
+        "expired_task",
+        "crowded_bids"
+      ],
+      "score": 3
     },
     {
       "source": "superteam",
@@ -871,7 +871,7 @@
       "rewardUsd": 500,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-17T18:29:59.000Z",
-      "deadlineHoursRemaining": 384.7,
+      "deadlineHoursRemaining": 381,
       "expired": false,
       "submissions": 11,
       "sponsor": "Archer Exchange",
@@ -893,9 +893,9 @@
       "rewardUsd": 220,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-13T18:59:59.000Z",
-      "deadlineHoursRemaining": 289.2,
+      "deadlineHoursRemaining": 285.5,
       "expired": false,
-      "submissions": 6,
+      "submissions": 7,
       "sponsor": "SolPoint",
       "blockers": [
         "human_only"
@@ -916,7 +916,7 @@
       "rewardUsd": 50,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-05-17T10:04:00+00:00",
-      "deadlineHoursRemaining": -367.8,
+      "deadlineHoursRemaining": -371.5,
       "expired": true,
       "submissions": 0,
       "publishedAt": "2026-05-03T07:48:14.67+00:00",
@@ -1161,7 +1161,7 @@
       "rewardUsd": 10,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-01T17:47:57.339+00:00",
-      "deadlineHoursRemaining": 0,
+      "deadlineHoursRemaining": -3.7,
       "expired": true,
       "submissions": 1,
       "publishedAt": "2026-05-18T17:47:58.623+00:00",
@@ -1186,7 +1186,7 @@
       "rewardUsd": 10,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-01T17:45:45.063+00:00",
-      "deadlineHoursRemaining": -0.1,
+      "deadlineHoursRemaining": -3.8,
       "expired": true,
       "submissions": 1,
       "publishedAt": "2026-05-18T17:45:46.38+00:00",
@@ -1211,7 +1211,7 @@
       "rewardUsd": 10,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-06-01T12:58:53.082+00:00",
-      "deadlineHoursRemaining": -4.8,
+      "deadlineHoursRemaining": -8.5,
       "expired": true,
       "submissions": 1,
       "publishedAt": "2026-05-18T12:58:55.28+00:00",
@@ -1236,7 +1236,7 @@
       "rewardUsd": 10,
       "agentAccess": "AGENT_ALLOWED",
       "deadline": "2026-05-31T19:19:29.814+00:00",
-      "deadlineHoursRemaining": -22.5,
+      "deadlineHoursRemaining": -26.2,
       "expired": true,
       "submissions": 1,
       "publishedAt": "2026-05-17T19:20:10.511+00:00",
@@ -1459,9 +1459,9 @@
       "rewardUsd": 120,
       "agentAccess": "HUMAN_ONLY",
       "deadline": "2026-06-01T21:59:59.999Z",
-      "deadlineHoursRemaining": 4.2,
+      "deadlineHoursRemaining": 0.5,
       "expired": false,
-      "submissions": 70,
+      "submissions": 77,
       "sponsor": "Exploring Solana Series",
       "blockers": [
         "human_only",
@@ -1550,7 +1550,7 @@
       "rewardUsd": null,
       "labels": [],
       "comments": null,
-      "updatedAt": "2026-06-01T17:49:30.375Z",
+      "updatedAt": "2026-06-01T21:31:34.806Z",
       "agentAccess": "UNKNOWN",
       "blockers": [
         "github_api_error: 403 rate limit exceeded: {\"message\":\"API rate limit exceeded for 49.173.51.53. (But here's the good news: Authenticated "
@@ -1567,7 +1567,7 @@
       "rewardUsd": null,
       "labels": [],
       "comments": null,
-      "updatedAt": "2026-06-01T17:49:30.375Z",
+      "updatedAt": "2026-06-01T21:31:34.806Z",
       "agentAccess": "UNKNOWN",
       "blockers": [
         "github_api_error: 403 rate limit exceeded: {\"message\":\"API rate limit exceeded for 49.173.51.53. (But here's the good news: Authenticated "
@@ -1584,7 +1584,7 @@
       "rewardUsd": null,
       "labels": [],
       "comments": null,
-      "updatedAt": "2026-06-01T17:49:30.375Z",
+      "updatedAt": "2026-06-01T21:31:34.806Z",
       "agentAccess": "UNKNOWN",
       "blockers": [
         "github_api_error: 403 rate limit exceeded: {\"message\":\"API rate limit exceeded for 49.173.51.53. (But here's the good news: Authenticated "

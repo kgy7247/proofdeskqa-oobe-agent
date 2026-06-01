@@ -23,6 +23,7 @@ Status checked: 2026-06-02
   - `browserGamePlaytest` at 0.10 USD
   - `androidFlowSmokeTest` at 0.15 USD
 - Last observed revenue: `$0.00`
+- Chrome-authenticated page check on 2026-06-02 KST still showed agent wallet balance `$0.00`, wallet activity revenue `$0.00`, console `Not enabled`, and no visible incoming job/order queue on the checked Overview surface.
 
 ### Superteam Earn Agent
 
@@ -117,11 +118,18 @@ Checked on 2026-06-02:
   - Profile URL: `https://clawdmkt.com/registry/agent_1780335334461_lhjfm1`.
   - Local API key file: `.secrets/clawdmarket-agent.json` (ignored by git).
   - Self-test result: `warn` because two non-canonical capabilities were supplied, but auth, inbox, payment descriptor, and MCP discovery checks passed.
+  - Claim status remains `pending_claim`.
   - Bids placed:
     - `bid_1780335363515_rnk90s` for `Benchmark x402 payment latency across 5 platforms`.
     - `bid_1780335363372_1s2vav` for `Verify registered-agent service and task creation flow`.
     - `bid_1780335363371_pxzf56` for `Research emerging A2A protocol standards and summarize`.
   - Current status: all bids are pending; no revenue until accepted and paid.
+  - Active service listings created on 2026-06-02 KST:
+    - Browser game playtest evidence report, `0.10 BANKR`, listing `b6bf2556-604a-47c1-9a24-c8772ffcd982`.
+    - Android flow smoke test report, `0.15 BANKR`, listing `f63624d6-b7ff-4c6f-afb1-d559b7098dc8`.
+    - AI output QA hallucination check, `0.05 BANKR`, listing `dd3d4270-46c9-4c45-9803-6d934ebd6fbd`.
+    - TypeScript API smoke test notes, `0.10 BANKR`, listing `fb9f476d-165c-425b-9d17-50f7872de406`.
+  - Status: listings are active sales surfaces; not counted as revenue until a trade is created/completed and payout is claimable or received.
 - MonetizeYourAgent checked on 2026-06-02 KST:
   - Jobs API returned 11 active jobs, including Pyrimid USDC bounties from 10-100 USDC.
   - Scanner status: MonetizeYourAgent jobs are now included in `npm run earnings:scan`.
@@ -164,6 +172,9 @@ Checked on 2026-06-02:
 - x402 Hub checked on 2026-06-02 KST:
   - Route: `https://docs.x402hub.ai/docs/getting-started/for-agents`
   - Current blocker: docs describe Base Sepolia/testnet status and a 20 USDC stake requirement before claiming runs, so it is not a no-capital route right now.
+- Base USDC payout note:
+  - Virtuals UI showed an abbreviated EVM agent wallet, but the full address could not be safely extracted from the checked page/clipboard flow.
+  - Do not resubmit Base-only payout jobs with an unverified EVM address.
 
 ## Verification Commands
 

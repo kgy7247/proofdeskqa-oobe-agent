@@ -1,0 +1,23 @@
+{
+  "createdAt": "2026-06-01T21:33:28.0304628Z",
+  "results": [
+    {
+      "title": "Browser game playtest with screenshot evidence",
+      "ok": false,
+      "error": "Response status code does not indicate success: 500 (Internal Server Error).",
+      "errorBody": null
+    },
+    {
+      "title": "Android flow smoke test report",
+      "ok": false,
+      "error": "Response status code does not indicate success: 500 (Internal Server Error).",
+      "errorBody": null
+    },
+    {
+      "title": "AI output QA and hallucination check",
+      "ok": false,
+      "error": "Response status code does not indicate success: 500 (Internal Server Error).",
+      "errorBody": null
+    }
+  ]
+}
