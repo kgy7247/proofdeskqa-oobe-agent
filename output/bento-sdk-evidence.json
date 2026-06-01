@@ -1,0 +1,179 @@
+{
+  "generatedAt": "2026-06-01T17:20:32.373Z",
+  "sdk": {
+    "package": "@bentoguard/sdk",
+    "version": "1.2.4",
+    "description": "Bento Guard SDK - AI-powered security infrastructure for autonomous agents"
+  },
+  "safety": {
+    "burnerAgentAddress": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
+    "privateKeyPersisted": false,
+    "userWalletTouched": false,
+    "realFundsMoved": false
+  },
+  "docsChecked": [
+    "https://bento-1.gitbook.io/bento-docs/getting-started/quickstart.md",
+    "https://bento-1.gitbook.io/bento-docs/getting-started/sdk-integration.md",
+    "https://bento-1.gitbook.io/bento-docs/getting-started/sample-bento-test.md",
+    "https://bento-1.gitbook.io/bento-docs/overview/system/protect-flow.md"
+  ],
+  "sdkSurface": {
+    "prototypeMethods": [
+      "getAgentAddress",
+      "getAgentKeypair",
+      "loadConfigFromEnv",
+      "parseInstruction",
+      "protect",
+      "verifyRegistration"
+    ],
+    "hasGetActionStatus": false,
+    "hasUpdateActionDecision": false,
+    "note": "Docs and sample code reference client.getActionStatus/updateActionDecision, but these methods are not present on the exported BentoClient instance in this package version."
+  },
+  "registrationViaSdk": false,
+  "api": {
+    "relayer": {
+      "ok": true,
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "data": {
+        "data": {
+          "program_id": "A5vQdPeJH2Yn72RmXHyrFjErUTqPwX83e6of4LBchEbG",
+          "config_pda": "BVJbeDAtUG3WHujfMBYMX51yrMHmiraJ4So46pq6o5np",
+          "relayer_pubkey": "Aq7sQfpXbMj1BS8WVCU9pu1Fat7V63GqZ5vcwrEfnUcD"
+        },
+        "statusCode": 200,
+        "message": "Success"
+      }
+    },
+    "config": {
+      "ok": true,
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "data": {
+        "data": {
+          "operator": "4i6CwseKjiSy58fUtzkQAVk2tQLUm6cWuR1FpuwPYqAL",
+          "relayer": "Aq7sQfpXbMj1BS8WVCU9pu1Fat7V63GqZ5vcwrEfnUcD",
+          "relayer_encryption_key": [
+            176,
+            56,
+            153,
+            250,
+            162,
+            177,
+            218,
+            176,
+            211,
+            183,
+            28,
+            232,
+            55,
+            178,
+            171,
+            171,
+            83,
+            205,
+            206,
+            105,
+            229,
+            239,
+            207,
+            52,
+            37,
+            20,
+            141,
+            212,
+            203,
+            136,
+            31,
+            119
+          ],
+          "escalate_threshold": 40000,
+          "block_threshold": 70000,
+          "max_strikes": 5,
+          "ema_alpha": 700,
+          "ema_scale": 1000,
+          "total_agents": "61",
+          "maintenance": false
+        },
+        "statusCode": 200,
+        "message": "Success"
+      }
+    },
+    "checkRegistration": {
+      "ok": true,
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "data": {
+        "data": {
+          "registered": false,
+          "agent_public_addr": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3"
+        },
+        "statusCode": 200,
+        "message": "Success"
+      }
+    }
+  },
+  "parsedInstructions": [
+    {
+      "instruction": "Swap 1 USDC for SOL on Jupiter.",
+      "serializedBase64Prefix": "AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "accountKeys": [
+        "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
+        "11111111111111111111111111111111"
+      ],
+      "decodedTransfer": {
+        "from": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
+        "to": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
+        "lamports": 1000000,
+        "sol": 0.001
+      }
+    },
+    {
+      "instruction": "Send 2 SOL to 6jnTC3J5d34uNJZiLLQJ85rNWLMZwyQ3GE5ACagpATpQ",
+      "serializedBase64Prefix": "AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "accountKeys": [
+        "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
+        "6jnTC3J5d34uNJZiLLQJ85rNWLMZwyQ3GE5ACagpATpQ",
+        "11111111111111111111111111111111"
+      ],
+      "decodedTransfer": {
+        "from": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
+        "to": "6jnTC3J5d34uNJZiLLQJ85rNWLMZwyQ3GE5ACagpATpQ",
+        "lamports": 2000000000,
+        "sol": 2
+      }
+    }
+  ],
+  "secondArgumentExperiment": {
+    "purpose": "Detect whether protect() uses its second argument as caller-provided transaction/signature input.",
+    "inputs": [
+      {
+        "secondArgumentKind": "valid Ed25519 signature over instruction"
+      },
+      {
+        "secondArgumentKind": "fake raw unsigned tx base64"
+      }
+    ],
+    "capturedPostTransactions": [
+      {
+        "agentAddress": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
+        "network": "testnet",
+        "base64TxSha256": "df13cc93fde500a9f51a114af7782c7aaa457901a01369047b44ed02c85e5eba",
+        "base64TxPrefix": "AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "encryptedPayloadLength": 380,
+        "signatureLength": 87
+      },
+      {
+        "agentAddress": "2JA5kxKXfS7NWTDuEfrpJQo8eStoNLtAQVyvs4EY5cr3",
+        "network": "testnet",
+        "base64TxSha256": "df13cc93fde500a9f51a114af7782c7aaa457901a01369047b44ed02c85e5eba",
+        "base64TxPrefix": "AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "encryptedPayloadLength": 380,
+        "signatureLength": 88
+      }
+    ],
+    "sameGeneratedBase64Tx": true,
+    "conclusion": "The SDK generated the same base64_tx for both second arguments, so the caller-supplied second argument was not the transaction audited in this path."
+  }
+}

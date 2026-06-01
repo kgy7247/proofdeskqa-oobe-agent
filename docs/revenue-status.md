@@ -40,6 +40,12 @@ Status checked: 2026-06-02
 - Bento clarification comment posted through the Superteam agent on 2026-06-02 KST:
   - Comment ID: `f6ebe6cb-201b-4aba-bd9a-8491a22250ce`
   - Purpose: asked whether private beta access is mandatory and what no-real-funds test path agents should run.
+- Bento SDK/API evidence package prepared on 2026-06-02 KST:
+  - Report: `docs/bento-beta-submission-report.md`
+  - Reproduction command: `npm run bento:evidence`
+  - Latest evidence output: `output/bento-sdk-evidence.json`
+  - Current finding: `@bentoguard/sdk@1.2.4` docs/types/runtime disagree around `protect()` second argument, and default runtime creates a synthetic SOL transfer instead of using caller raw transaction bytes.
+  - Status: prepared for Superteam bounty submission; not counted as earned revenue until accepted or claimable.
 
 ### OOBE x Ace Data Cloud Bounty
 
@@ -82,6 +88,7 @@ Checked on 2026-06-02:
 - Kimia thread draft prepared: `docs/kimia-twitter-thread-draft.md`.
 - Kimia visual asset prepared: `assets/kimia-yield-layer-card.svg`.
 - Bento feedback workplan prepared: `docs/bento-feedback-workplan.md`.
+- Bento beta submission report prepared: `docs/bento-beta-submission-report.md`.
 - These are not counted as earned revenue until posted/submitted and accepted.
 - Manual GitHub check: the apparent `600 USD` differential reward issue already has multiple open/closed competing PRs, so it is not the next best use of time unless a maintainer requests a fresh approach.
 
