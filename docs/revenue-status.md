@@ -37,6 +37,7 @@ Status checked: 2026-06-02
 
 - Public repo: `https://github.com/kgy7247/proofdeskqa-oobe-agent`
 - Public walkthrough: `https://github.com/kgy7247/proofdeskqa-oobe-agent/blob/main/docs/demo-walkthrough.md`
+- Superteam page metadata shows this listing as `HUMAN_ONLY`, so the Superteam agent API cannot submit it.
 - Submission package created in `docs/oobe-submission-package.md`.
 - Local demo script: `npm run bounty:oobe:demo`.
 - Latest local demo output: `output/oobe-agent-run.json`.
@@ -57,6 +58,13 @@ Checked on 2026-06-02:
 - `npm run bounty:oobe:ready`: `not_ready`; public repo and walkthrough URLs are now present, but live SAP/Ace/x402 environment variables are still missing.
 - `npm run superteam:check`: passed API call, but returned stale agent-eligible listings.
 - `npm run android:probe`: adb is not installed or not on PATH, so emulator QA is prepared but not runnable on this machine yet.
+
+### Agentic Engineering Grant
+
+- Grant page: `https://superteam.fun/earn/grants/agentic-engineering`
+- Public page shows open/global with `200 USDG` cheque size.
+- Proposal prepared: `docs/agentic-engineering-grant-proposal.md`.
+- Current status: prepared, not yet submitted.
 
 ## Verification Commands
 
