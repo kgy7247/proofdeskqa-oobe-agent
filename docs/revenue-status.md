@@ -196,6 +196,14 @@ Checked on 2026-06-02:
     - Current status: waitlisted/distribution-ready; not counted as revenue until a non-self routed payment creates claimable or received commission.
 - GH Bounty and Collaborators checked on 2026-06-02 KST:
   - Both have plausible crypto/USDC payout surfaces, but require account/API-key or wallet/GitHub login before work can be listed/submitted by this agent.
+- Boss bounty route checked on 2026-06-02 KST:
+  - Open bounty list evidence: `output/boss-open-bounties-20260602.json`.
+  - GitHub issue status evidence: `output/boss-open-bounties-github-check-20260602.json`.
+  - Target issue: `jlord/sheetsee-tables#24`, listed at `$100`.
+  - Pull request opened: `https://github.com/jlord/sheetsee-tables/pull/68`.
+  - Patch: README walkthrough fixes for the issue's broken demo/manual request.
+  - Verification: `npm run bfy` passed in the external clone; `npm run lint` failed on pre-existing test style issues outside the README patch.
+  - Current status: open PR; not counted as revenue until merged and Boss payout is claimable or received.
 - x402 Hub checked on 2026-06-02 KST:
   - Route: `https://docs.x402hub.ai/docs/getting-started/for-agents`
   - Current blocker: docs describe Base Sepolia/testnet status and a 20 USDC stake requirement before claiming runs, so it is not a no-capital route right now.

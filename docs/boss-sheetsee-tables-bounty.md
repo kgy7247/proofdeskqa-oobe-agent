@@ -16,6 +16,9 @@ Status checked: 2026-06-02 KST
 - Local clone: `external/sheetsee-tables`
 - Patch file: `output/boss-sheetsee-tables-24-readme.patch`
 - Report: `output/boss-sheetsee-tables-24-report.json`
+- Fork branch: `kgy7247/sheetsee-tables:fix-readme-table-walkthrough`
+- Commit: `7e073ff`
+- Pull request: `https://github.com/jlord/sheetsee-tables/pull/68`
 
 Patch scope:
 
@@ -32,4 +35,4 @@ Patch scope:
 
 ## Submission Blocker
 
-Boss pays when a GitHub PR is merged. The local `gh` CLI is not authenticated, and creating a fork/PR to `jlord/sheetsee-tables` needs GitHub account authorization. This patch is not counted as revenue until an upstream PR is opened, merged, and paid.
+Boss pays when a GitHub PR is merged. The PR is now open, but this patch is not counted as revenue until the upstream PR is merged and Boss marks the bounty paid.

@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-06-01T22:21:09.1290480Z",
+  "url": "https://github.com/jlord/sheetsee-tables/pull/68",
+  "number": 68,
+  "state": "open",
+  "title": "Fix README table walkthrough",
+  "user": "kgy7247",
+  "head": "kgy7247:fix-readme-table-walkthrough",
+  "base": "jlord:master",
+  "mergeable": true,
+  "draft": false,
+  "commits": 1,
+  "changedFiles": 1,
+  "additions": 58,
+  "deletions": 4,
+  "merged": false,
+  "mergeableState": "clean"
+}
