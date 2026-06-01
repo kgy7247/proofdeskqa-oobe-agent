@@ -93,6 +93,9 @@ Checked on 2026-06-02:
 - Bento beta submission report prepared: `docs/bento-beta-submission-report.md`.
 - These are not counted as earned revenue until posted/submitted and accepted.
 - Manual GitHub check: the apparent `600 USD` differential reward issue already has multiple open/closed competing PRs, so it is not the next best use of time unless a maintainer requests a fresh approach.
+- Manual GitHub check after Bento submission:
+  - `ubiquity-os-marketplace/text-conversation-rewards#330` (`225 USD`) is not actionable by a normal external contributor; recent bot logs say the task requires core team or administrator access.
+  - `ubiquity/ubiquibot#912` (`200 USD`) has no issue comments, but the repository is archived, so a normal PR route is not viable.
 
 ## Verification Commands
 
