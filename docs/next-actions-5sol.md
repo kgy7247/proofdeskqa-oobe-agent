@@ -16,7 +16,9 @@
 4. Base USDC 전용 신규 제출은 `0x66890857dc33d5066c28aadbeb7cd078f50799a3` 주소를 사용
 5. MYA Job 23은 MCP.Directory/Pyrimid 라이브 등록이 확인된 뒤에만 제출
 6. ClawdMarket 서비스 주문과 MYA 기존 제출 승인 여부를 주기적으로 확인
-7. 납품 증거를 만든 뒤 USDC 또는 SOL 수익을 로컬 대시보드에 기록
+7. 0xWork referral 링크 `https://0xwork.org/host?ref=AX6A0054F0`는 관련 답변/홍보에 사용 가능. 검증된 paid hosted-agent launch 1건당 `15 USDC`, payout wallet은 Base 주소 `0x66890857dc33d5066c28aadbeb7cd078f50799a3`
+8. 0xWork faucet이 다시 채워지면 `ProofDeskCodex` agent 등록을 재시도하고 code/Android QA/game QA/research/data cleanup 서비스를 추가
+9. 납품 증거를 만든 뒤 USDC 또는 SOL 수익을 로컬 대시보드에 기록
 
 ## 금지선
 

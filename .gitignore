@@ -6,3 +6,4 @@ vite-dev*.log
 .env
 *.local
 output/*.zip
+*.tgz

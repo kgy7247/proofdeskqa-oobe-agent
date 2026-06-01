@@ -1,0 +1,159 @@
+{
+  "checkedAt": "2026-06-02 KST",
+  "referralEnsure": {
+    "ok": true,
+    "command": "referrals ensure",
+    "mode": "external_agent",
+    "agentId": null,
+    "externalAgent": true,
+    "code": "AX6A0054F0",
+    "url": "https://0xwork.org/host?ref=AX6A0054F0",
+    "rewardUsd": 15,
+    "payoutWallet": "0x66890857dc33d5066c28aadbeb7cd078f50799a3",
+    "stats": {
+      "clicks": 0,
+      "signups": 0,
+      "agentsCreated": 0,
+      "paidConversions": 0,
+      "pendingRewardsUsd": 0,
+      "approvedRewardsUsd": 0,
+      "paidRewardsUsd": 0,
+      "voidedConversions": 0
+    },
+    "snippets": {
+      "short": "Launch a 0xWork Agent: https://0xwork.org/host?ref=AX6A0054F0",
+      "proofOfWork": "This was built with a 0xWork Agent. Launch yours: https://0xwork.org/host?ref=AX6A0054F0",
+      "disclosure": "Optional reward note: the referrer earns $15 USDC when someone launches a paid 0xWork Agent from this link."
+    }
+  },
+  "referralStats": {
+    "ok": true,
+    "command": "referrals stats",
+    "mode": "external_agent",
+    "agentId": null,
+    "externalAgent": true,
+    "code": "AX6A0054F0",
+    "url": "https://0xwork.org/host?ref=AX6A0054F0",
+    "rewardUsd": 15,
+    "payoutWallet": "0x66890857dc33d5066c28aadbeb7cd078f50799a3",
+    "stats": {
+      "clicks": 0,
+      "signups": 0,
+      "agentsCreated": 0,
+      "paidConversions": 0,
+      "pendingRewardsUsd": 0,
+      "approvedRewardsUsd": 0,
+      "paidRewardsUsd": 0,
+      "voidedConversions": 0
+    },
+    "snippets": {
+      "short": "Launch a 0xWork Agent: https://0xwork.org/host?ref=AX6A0054F0",
+      "proofOfWork": "This was built with a 0xWork Agent. Launch yours: https://0xwork.org/host?ref=AX6A0054F0",
+      "disclosure": "Optional reward note: the referrer earns $15 USDC when someone launches a paid 0xWork Agent from this link."
+    }
+  },
+  "canonicalCampaignClaim": {
+    "ok": true,
+    "command": "campaigns claim-info",
+    "claim": {
+      "id": "428d92b1-b120-4d7b-89b0-49e974abac00",
+      "campaignId": "campaign_0xwork_agent_launches",
+      "campaignSlug": "promote-0xwork-agents",
+      "claimantType": "human",
+      "claimantUserId": null,
+      "claimantAgentId": null,
+      "claimantWalletAddress": "0xb2421b08d2d6bde9e10269ed07db48e427eb0a1d",
+      "payoutWalletAddress": "0xb2421b08d2d6bde9e10269ed07db48e427eb0a1d",
+      "trackingCode": "L5F11182115405F",
+      "promoCode": null,
+      "trackingUrl": "https://0xwork.org/host?ref=L5F11182115405F&campaign=campaign_0xwork_agent_launches&claim=428d92b1-b120-4d7b-89b0-49e974abac00",
+      "credentialsStatus": "active",
+      "status": "active",
+      "approvalStatus": "approved",
+      "sourceType": "public_campaign",
+      "stats": {
+        "clicks": 0,
+        "walletConnects": 0,
+        "conversions": 0,
+        "paidConversions": 0,
+        "payableConversions": 0,
+        "heldConversions": 0,
+        "grossCents": 0,
+        "payoutCents": 0,
+        "paidPayoutCents": 0,
+        "pendingPayoutCents": 0,
+        "processingPayoutCents": 0,
+        "heldPayoutCents": 0,
+        "failedPayoutCents": 0,
+        "failedPayouts": 0
+      },
+      "campaign": {
+        "id": "campaign_0xwork_agent_launches",
+        "slug": "promote-0xwork-agents",
+        "title": "Promote 0xWork Agent launches",
+        "summary": "Always-on affiliate campaign for humans and agents promoting paid 0xWork hosted-agent launches.",
+        "campaignType": "paid_activation",
+        "targetType": "hosted_agent_launch",
+        "targetId": "0xwork-hosted-agent",
+        "targetUrl": "https://0xwork.org/host",
+        "status": "open",
+        "claimMode": "open",
+        "owner": {
+          "type": "platform",
+          "userId": null,
+          "agentId": null,
+          "walletAddress": null,
+          "agent": null
+        },
+        "payout": {
+          "mode": "instant",
+          "currency": "USDC",
+          "type": "fixed",
+          "amountCents": 1500,
+          "rateBps": null,
+          "label": "$15.00 USDC per verified paid activation"
+        },
+        "attributionWindowDays": 30,
+        "brief": {
+          "targetAudience": "Builders, founders, and operators who need a hosted 0xWork Agent.",
+          "valueProps": [
+            "Launch an always-on agent workspace.",
+            "Use agents to ship, research, sell, and operate.",
+            "Campaign promoters earn when a referred paid launch is verified."
+          ],
+          "disclosureRules": "Disclose that you may earn a reward when a paid launch completes."
+        },
+        "tracking": {
+          "issuedBy": "0xwork",
+          "mechanism": "platform_issued_claim",
+          "primaryLandingPath": "/host?ref={trackingCode}",
+          "primaryConversion": "paid_hosted_agent_launch",
+          "sourceAdapter": "referrals"
+        },
+        "stats": {
+          "claims": 22,
+          "activeClaims": 22,
+          "clicks": 0,
+          "conversions": 0,
+          "paidConversions": 0,
+          "paidPayoutCents": 0,
+          "epcCents": 0,
+          "conversionRate": 0
+        },
+        "launchedAt": "2026-05-11 17:08:12",
+        "createdAt": "2026-05-11 17:08:12",
+        "updatedAt": "2026-05-11 17:08:12"
+      },
+      "claimedAt": "2026-06-01 22:40:28",
+      "activatedAt": "2026-06-01 22:40:28",
+      "pausedAt": null,
+      "createdAt": "2026-06-01 22:40:28",
+      "updatedAt": "2026-06-01 22:40:28"
+    }
+  },
+  "notes": [
+    "0xWork CLI on Windows returns a libuv assertion after successful JSON output; JSON ok=true was preserved.",
+    "User Base USDC payout address is configured on the external referral route.",
+    "On-chain agent registration is blocked because faucet is empty and the generated wallet has no AXOBOTL/ETH."
+  ]
+}

@@ -207,6 +207,19 @@ Checked on 2026-06-02:
 - x402 Hub checked on 2026-06-02 KST:
   - Route: `https://docs.x402hub.ai/docs/getting-started/for-agents`
   - Current blocker: docs describe Base Sepolia/testnet status and a 20 USDC stake requirement before claiming runs, so it is not a no-capital route right now.
+- 0xWork checked on 2026-06-02 KST:
+  - Public task board evidence from CLI discover: two open `50 USDC` results-based social outcome tasks.
+  - Open tasks require getting Jesse Pollak to follow, retweet, or quote-tweet specific 0xWork/Inner Axiom content, so they are not immediate deterministic code bounties.
+  - Generated local 0xWork wallet: `0xB2421B08D2D6BDE9e10269ed07dB48E427eb0a1D`.
+  - On-chain agent registration attempted as `ProofDeskCodex`, but blocked by `Need 10,000 $AXOBOTL for stake`.
+  - Faucet status endpoint reported available, but the actual faucet request returned `Faucet is empty (AXOBOTL)`.
+  - Active referral route created with user Base USDC payout wallet:
+    - Referral URL: `https://0xwork.org/host?ref=AX6A0054F0`.
+    - Reward: `15 USDC` per verified paid 0xWork Agent launch.
+    - Payout wallet: `0x66890857dc33d5066c28aadbeb7cd078f50799a3`.
+    - Evidence file: `output/0xwork-referral-status-20260602.json`.
+    - Current stats: 0 clicks, 0 signups, 0 paid conversions, 0 pending rewards, 0 paid rewards.
+  - Current status: referral-ready; not counted as revenue until 0xWork stats show pending/approved/paid rewards or Base USDC is received.
 - Base USDC payout note:
   - User supplied verified Base-format payout address: `0x66890857dc33d5066c28aadbeb7cd078f50799a3`.
   - Virtuals UI still only exposed an abbreviated EVM agent wallet during the checked clipboard flow; do not infer that it equals the user supplied Base address.
