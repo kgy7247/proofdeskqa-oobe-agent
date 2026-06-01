@@ -1,0 +1,144 @@
+diff --git a/app/api/v1/paid/[product]/route.ts b/app/api/v1/paid/[product]/route.ts
+index 65076eb..73c078d 100644
+--- a/app/api/v1/paid/[product]/route.ts
++++ b/app/api/v1/paid/[product]/route.ts
+@@ -24,6 +24,50 @@ function paymentRequired(req: NextRequest, product: NonNullable<ReturnType<typeo
+   );
+ }
+ 
++function parseAuditTarget(rawUrl: string) {
++  const input = rawUrl.trim() || 'https://example.com/mcp';
++  const normalized = /^https?:\/\//i.test(input) ? input : `https://${input}`;
++
++  try {
++    const parsed = new URL(normalized);
++    return {
++      input,
++      url: parsed.toString(),
++      host: parsed.hostname,
++      path: parsed.pathname,
++      is_local: ['localhost', '127.0.0.1', '0.0.0.0'].includes(parsed.hostname),
++      uses_https: parsed.protocol === 'https:',
++    };
++  } catch {
++    return {
++      input,
++      url: 'https://example.com/mcp',
++      host: 'example.com',
++      path: '/mcp',
++      is_local: false,
++      uses_https: true,
++    };
++  }
++}
++
++function scoreAuditTarget(target: ReturnType<typeof parseAuditTarget>, toolCount: number) {
++  const score = 45
++    + (target.uses_https ? 15 : 0)
++    + (target.path.includes('mcp') ? 15 : 0)
++    + Math.min(toolCount, 4) * 5
++    - (target.is_local ? 20 : 0);
++
++  return Math.max(0, Math.min(100, score));
++}
++
++function splitTools(rawTools: string | undefined) {
++  return (rawTools || 'search,enrich,export,analyze')
++    .split(',')
++    .map((tool) => tool.trim())
++    .filter(Boolean)
++    .slice(0, 8);
++}
++
+ function payload(productId: string, req: NextRequest, proof: string) {
+   const query = Object.fromEntries(req.nextUrl.searchParams.entries());
+ 
+@@ -63,17 +107,49 @@ function payload(productId: string, req: NextRequest, proof: string) {
+       };
+     }
+     case 'mcp-server-audit': {
+-      const url = query.url || 'https://example.com/mcp';
++      const target = parseAuditTarget(query.url || 'https://example.com/mcp');
++      const tools = splitTools(query.tools);
++      const readinessScore = scoreAuditTarget(target, tools.length);
+       return {
+         audit: {
+-          url,
+-          recommended_paid_tools: ['search', 'enrich', 'export', 'analyze'],
+-          pricing: '$0.01-$0.25 per call depending on compute/data cost',
+-          integration_steps: [
+-            'Add 402 response with x402 accepts[] metadata',
+-            'Register vendor/product in Pyrimid catalog',
+-            'Expose tool schema in MCP server card',
+-            'Add affiliateBps for distribution agents',
++          target,
++          monetization_readiness_score: readinessScore,
++          summary: `${target.host} can expose ${tools.length} MCP tool(s) as agent-purchasable Base USDC products through Pyrimid.`,
++          recommended_paid_tools: tools.map((tool, index) => ({
++            name: tool,
++            product_id: `${target.host.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}-${tool.toLowerCase()}-${index + 1}`,
++            suggested_price_usdc: index === 0 ? '0.05' : index < 3 ? '0.10' : '0.25',
++            pricing_reason: index === 0
++              ? 'Low-friction starter tool for first buyer-agent calls.'
++              : index < 3
++                ? 'Useful repeat-call workflow with moderate compute or data value.'
++                : 'Higher-value tool likely to include enrichment, export, or analysis work.',
++            buyer_agent_value: `Lets an agent call ${tool} without opening a vendor account or negotiating a custom API key.`,
++          })),
++          x402_response_shape: {
++            status: 402,
++            headers: ['X-PAYMENT-REQUIRED', 'X-Pyrimid-Vendor', 'X-Pyrimid-Product', 'Cache-Control'],
++            accepts_fields: ['scheme', 'network', 'asset', 'maxAmountRequired', 'payTo', 'resource', 'vendorId', 'productId', 'affiliateBps'],
++            retry_headers: ['X-PAYMENT', 'X-PAYMENT-TX'],
++          },
++          catalog_metadata: {
++            vendorId: target.host,
++            category: 'mcp-tools',
++            tags: ['mcp', 'x402', 'base-usdc', 'paid-tools', target.host],
++            endpoint: target.url,
++            output_schema_hint: 'Return a JSON object with result, usage, provenance, and routed_by fields.',
++          },
++          launch_plan: [
++            { step: 1, action: 'Publish a free MCP server card with tool names, input schemas, and paid-call policy.' },
++            { step: 2, action: 'Gate only the high-value execution route with a 402 response; keep discovery endpoints free.' },
++            { step: 3, action: 'Register one Pyrimid product per monetized tool with a clear productId and affiliateBps.' },
++            { step: 4, action: 'Log payment_tx, buyer, productId, latency_ms, and tool result size for buyer-agent debugging.' },
++            { step: 5, action: 'Add a sample buyer-agent script that retries after payment and validates routed_by=pyrimid.' },
++          ],
++          risk_notes: [
++            target.uses_https ? 'HTTPS is present for buyer-agent callbacks.' : 'Use HTTPS before listing publicly; buyer agents should not pay insecure endpoints.',
++            target.is_local ? 'Localhost targets are fine for demos but cannot be purchased by public buyer agents.' : 'Public host is suitable for catalog discovery.',
++            tools.length > 4 ? 'Many paid tools are listed; launch with the top 2-4 to simplify pricing and support.' : 'Tool count is small enough for an initial catalog launch.',
+           ],
+         },
+       };
+diff --git a/lib/seed-products.ts b/lib/seed-products.ts
+index c47b524..d3f21ce 100644
+--- a/lib/seed-products.ts
++++ b/lib/seed-products.ts
+@@ -144,7 +144,24 @@ export const SEED_PRODUCTS: Omit<SeedProduct, 'indexed_at'>[] = [
+     affiliate_bps: 4000,
+     endpoint: `${SEED_PRODUCT_BASE}/mcp-server-audit?url=https://example.com/mcp`,
+     method: 'GET',
+-    output_schema: { type: 'object', properties: { audit: { type: 'object' }, routed_by: { const: 'pyrimid' } } },
++    output_schema: {
++      type: 'object',
++      properties: {
++        audit: {
++          type: 'object',
++          properties: {
++            target: { type: 'object' },
++            monetization_readiness_score: { type: 'number' },
++            recommended_paid_tools: { type: 'array' },
++            x402_response_shape: { type: 'object' },
++            catalog_metadata: { type: 'object' },
++            launch_plan: { type: 'array' },
++            risk_notes: { type: 'array' },
++          },
++        },
++        routed_by: { const: 'pyrimid' },
++      },
++    },
+     monthly_volume: 0,
+     monthly_buyers: 0,
+     network: 'base',
